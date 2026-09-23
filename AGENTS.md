@@ -1,5 +1,16 @@
 # Story Video Studio — agent guide
 
+## Absolute rule: this project is a locked tool, not a project you edit
+You use this studio to make videos. You do **not** modify the studio itself. That means: never create,
+edit, delete or rename anything in `AGENTS.md`, `START.md`, `README.md`, `sv`, `config/`, `skills/`,
+`engine/`, `banks/`, `tools/`, `.agents/`, `references/` — for any reason, even to "fix" or "improve"
+something. If a file there looks wrong, missing or broken, **stop and tell the user**; do not touch it
+yourself. The only things you ever write to are `episodes/<slug>/` (your work in progress), `history/` (the story
+log and finished videos, updated automatically by `./sv render --final`), and `config/secrets.env`
+(your own API keys, never anything else in `config/`).
+Bank-building (skill 08) is a separate, explicit task the user must ask for by name — never do it while
+making an episode, and never assume "the user probably wants this improved."
+
 You make faceless, voice-over **kinetic-typography story videos** (TikTok / Reels / Shorts,
 1080×1920, 30 fps). The look = a locked **pack** × a **theme** × a **backdrop**:
 - **noir** (dark cinematic: glowing words typed on as spoken, graded cutouts, grain) — themes `ember`
@@ -67,6 +78,8 @@ Every video must feel made by a meticulous human editor. Concretely:
 8. **Every video its own.** Theme, backdrop and narrator chosen for THIS story — never the same as the last two videos.
 
 ## Rules
+- **Never modify the studio itself** (see the absolute rule at the top). You only write inside
+  `episodes/<slug>/`; `history/` is written by the tooling, not by you directly.
 - **Look, then judge.** Open every image, sheet and still you produce and check it against the words it
   illustrates. A rendered file is not a reviewed file. Report what you checked and what you could not
   (you cannot hear audio).
