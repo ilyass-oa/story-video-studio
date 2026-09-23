@@ -25,6 +25,15 @@ picture is why people stay.
 6. **Right world.** Era, place, weather, social class, mood must match the story (no smartphones in 1843,
    no sunny beach in a horror night).
 
+## Photo coverage and composition
+Illustrate most concrete beats with relevant photos so the episode feels visually rich. Text-only is
+for a deliberate pause, emphasis or a withheld reveal; do not default to long runs of text because
+sourcing takes effort. Review visual coverage across the timeline, not just the number of assets.
+Choose a new image when the subject or action changes, while keeping each shot long enough to read.
+Mix framed photos, full photos where the crop fits, and background-removed subjects when their
+silhouette carries the beat. Keep faces, hands and key objects clear of captions. More photos must
+still match the spoken words, era and setting; source selection follows skill 05.
+
 ## Input → output
 - Input: `04-edit/edit.json` from `./sv draft` (scenes split on the real narration timing, `template: "?"`).
 - Output: every scene filled; `./sv check <slug>` prints ✓ (it also counts images still to fetch or generate).
@@ -68,14 +77,16 @@ picture is why people stay.
 - `kind` = `cutout` (one object/person, background removed) · `photo` (full rectangle) · `video` (b-roll).
 - `at` = the spoken word the image lands on (`"start"` = visible from the scene's start). Omit when the
   brief already shares a word with the line (auto-anchor).
-- `"gen": true` (only if you can generate images — Codex `$imagegen` or your own tool) = don't search, this
-  moment is generated in the episode's art direction (skill 05 §4); keep the precise `see`, drop `find`.
-  Use it for what no bank has — legend/fiction scenes, a specific action, a fictional object, a recurring
-  character — and for the 2–4 beats that carry the video (hook, turn, climax, ending). Never for real
-  evidence (records, artifacts, real places or people of a true story): those are found.
+- `"gen": true` = generate this slot only after the bank/found-first necessity check in skill 05;
+  record why existing assets cannot show the essential visual. Keep precise `see`, drop `find`.
+  Fiction, recurring characters, hooks and climaxes are not automatic reasons to generate.
+  Real evidence must use real assets.
 - `focus` / `zoom` (full-bleed photo/video only) = framing after you have LOOKED at the still: when the
   subject is small in its frame (a fire far away, a face in a crowd), `"focus": [x, y]` (0..1, where the
-  subject is) + `"zoom": 1.3–2` fills the screen with it. Above ~2× a photo gets soft — pick a closer image instead.
+  subject is) + `"zoom": 1.3–2` can enlarge it, but only if the intended subject stays intact throughout
+  the shot. Check the maximum zoom/punch and movement, not just a settled still. If heads, hands, feet
+  or key objects are cut off, reduce zoom, adjust focus, use `photo-framed`, or replace the asset.
+  Specify intentional close-up crops in `see`. Above ~2× a photo gets soft — pick a closer image instead.
 Optional per scene: `variant`, `transition`, `camera` (push|pull|drift|still), `quiet: true` (a beat of
 silence: no auto sfx, music and ambience drop to near-nothing, anything still ringing is cut — use it
 once, on the line where the sound *stops*: "The knocking stopped.").

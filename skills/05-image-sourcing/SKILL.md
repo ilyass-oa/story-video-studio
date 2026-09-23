@@ -1,17 +1,18 @@
 ---
 name: 05-image-sourcing
-description: Get the right image for every scene — search the reusable bank and free/licensed sources, rank and cut out automatically (BiRefNet, GroundingDINO), or — if you have your own image tool (e.g. Codex $imagegen) — generate story-specific moments in one consistent art direction; then LOOK at every image and judge if it truly fits the words (anti-slop checklist for generated ones); replace misfits. Use whenever a scene needs a picture, a cutout or a device, or after `./sv assets`.
+description: Source and review scene images from the reusable bank and licensed sources, generating only necessary exceptions. Use when a scene needs a photo, cutout or device, or to review resolved assets and their framing.
 ---
 
 # 05 · Images
 
-**First: can you generate images yourself?** (Codex `$imagegen` or any image tool of your own — this studio
-calls no image API.)
-- **No** → bank + found images only (§1–3). Plenty for any story.
-- **Yes** → generation is a *normal* source, not a last resort (§4): real things (records, artifacts,
-  places, real people of a true story) are **found**; story-specific moments (an action, a fictional object,
-  a legend scene, a recurring character, the hook and the climax) are **generated** in one art direction.
-  One search round per slot at most: no exact fit on the sheet → generate, don't hunt for hours.
+**Found first; generate only when needed.** Check the reusable bank and licensed/public-domain sources,
+including for fiction. Prefer an existing image that honestly shows the line's subject or action; it
+need not recreate every detail of an imagined cinematic shot. Do not weaken era, identity or factual fit.
+If a search fails, refine the query or choose a simpler accurate shot, a better-fitting template, or a
+text-only beat. Generation is reserved for an essential visual these options cannot adequately show.
+Having an image tool, wanting matching aesthetics, saving search time, or illustrating a hook/climax
+is not enough. Record the specific need and why existing options fail in `05-assets/review.md` before
+marking a slot `"gen": true`. Without an image tool, use found assets or text-only.
 Every file gets a provenance record in `episodes/<slug>/05-assets/manifest.json`.
 
 ## 1 · Resolve all slots
@@ -23,13 +24,23 @@ and two slots with the same brief are refused. The slot keeps its brief and gain
 It ends with **`05-assets/review.jpg`** (every image labelled with its scene words; clips shown as a frame)
 and **`05-assets/review.md`**: time · spoken words · brief · *fit brief* · *fit words* · flags · **verdict**.
 
+## Choose photos and cutouts deliberately
+Use more relevant photos across concrete story beats (skill 04). Remove backgrounds for selected
+objects or people when isolation makes the subject clearer and suits a locked object/figure template;
+keep full photos when the surroundings tell the story. Do not strip every background or force a cutout
+just for variety. Inspect the processed result against the original: preserve hands, feet, hair, thin
+parts and meaningful objects, with clean edges and no halos or leftover background. If removal damages
+the subject, retry selection or retain the intact photo in a fitting frame. Check the actual rendered
+crop and motion before approving either treatment. Generate some images when needed under the
+necessity rule above; more photos does not mean more generated images by default.
+
 ## 2 · LOOK and judge — mandatory, every image, every time
 Open `review.jpg` next to `review.md`. The scores are CLIP similarities (≈0.26+ on-topic): a flag or a
 low score means *look twice*; a high score is **not** a pass — only your eyes are. For each image:
 1. **Does it show what the words say?** ("the old man's eye" → an old eye, not a child's; "a vulture" → a vulture, not a crow.)
 2. **Same world as the story?** Era, place, mood (no modern objects in 1843, no cartoon in a photographic pack).
 3. **Clean?** Cutout: one whole object, no halo, not cut by the frame. Photo: sharp, no text, no watermark, no border.
-4. **Works in its template?** object-hero/word-behind want one strong silhouette; photo-full wants a calm area for text; card-stack wants varied faces/moments.
+4. **Works in its template?** Inspect the actual rendered crop, not just the source or asset sheet. Keep the intended subject and story-critical details visible, with margin for camera movement and punch-ins; no accidental cut-off heads, hands, feet or objects. Deliberate detail shots must be specified in `see`. Wide images usually need `photo-framed`, not `photo-full`. Finish the motion framing check in skill 07.
 5. **Variety:** no image repeats and none looks like another (`looks like #n` flag); a recurring motif is shown differently each time (another angle, a detail, a related object).
 Then write the verdict in `review.md`: replace `?` with `✓ <why it fits these exact words>` — e.g.
 `✓ clouded blue eye, old skin, matches "pale blue eye with a film"`. Anything that fails → fix it (below),
@@ -61,26 +72,18 @@ Thomson", "Portrait of Lord Byron") — viewers may recognise the face, and it i
 | nothing good on the sheet | new, more concrete queries, ranked against the brief — look, then pick: `./sv img find <slug> <id> "<q1> \| <q2> \| <q3>" --see "<what must be visible>" --kind cutout` (or change `find` in edit.json and re-run `./sv assets`) |
 | a reusable asset exists | `./sv img bank "watch"` → put `"bank:<id>"` in the slot |
 | you have your own file / URL | `./sv img add <slug> <id> <file-or-url> --kind cutout --license "…"` |
-| **no exact fit on the first sheet, and you can generate images** | generate it (§4) — don't run a third search |
+| no suitable fit on the first sheet | refine the query or simplify the shot; generate only if the essential visual still requires it (§4) |
 | the object itself doesn't exist in any bank (a second, different monkey's paw) | show the line's **action** instead: "He dropped to the floor, found the paw" → a hand reaching down into light on a dark floor (new slot id, `photo-full`) |
 | nothing fits and you cannot generate | choose the closest honest image and say what is off in the verdict, or change the scene to `type-center` (no image) — never a random "close enough" |
 
 After any change: `./sv img review <slug>` and look again.
 
 ## 4 · Generate (agents with their own image tool — e.g. Codex `$imagegen`)
-Generation makes the video *more* accurate and immersive when it shows exactly what is said at that moment
-— the thing no bank has. It is also faster than hunting. It must never look like AI slop.
-
-**Plan it in the edit (skill 04).** Mark the slots to generate with `"gen": true` (keep a precise `see`):
-- moments no camera saw: legend and fiction scenes, actions ("a hand closing on the paw on the floorboards"),
-  fictional objects, a specific character doing a specific thing;
-- the 2–4 beats that carry the video: the hook image, the turn, the climax, the ending;
-- a recurring character (consistent across shots through `ART.md`);
-- anything the first search sheet did not show exactly.
-Keep **found** images for real evidence: documents, records, artifacts, maps, real places and real people
-of a true story. **Never generate fake evidence** (a "medieval chronicle page", "the 1592 watercolour", a
-"real" coin) and never a real or famous person's likeness.
-Typical mix: fiction / legend 40–70 % generated; true story mostly found, generated only for re-enactments.
+Use generation only after the necessity check above. Mark only those justified slots `"gen": true`,
+with a precise `see`; do not preselect fiction, recurring characters, hooks or endings for generation.
+There is no target percentage or minimum number of generated images. Use only as many as the story
+actually requires. Keep found images for real documents, records, artifacts, maps, places and people;
+never generate fake evidence or a real or famous person's likeness.
 
 **Workflow**
 1. `./sv img style <slug> [--style photo|art]` → `05-assets/ART.md`: the style block for the episode's theme

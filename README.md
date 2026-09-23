@@ -20,10 +20,12 @@ rendering — so every video looks edited by a meticulous human, and the agent h
   across their duration, images land on the word that names them, sounds hit on their word.
 - **Images that fit the line** — found: museums (Met, Cleveland, Art Institute, Smithsonian), Wikimedia,
   Openverse, Pexels, Pixabay, Unsplash; ranked with CLIP, background removed with BiRefNet, one object
-  selected out of a busy photo with GroundingDINO, exposure-matched and graded. Generated: agents with
-  their own image tool (e.g. Codex `$imagegen`) generate story-specific moments in one art direction per
-  video, each passing an anti-slop checklist. Every image gets a written verdict; characters are always
-  anonymous, never famous faces; no image is ever reused in a video.
+  selected out of a busy photo with GroundingDINO, exposure-matched and graded. Found first, even for
+  fiction; an agent with its own image tool (e.g. Codex `$imagegen`) generates only an essential visual no
+  existing image can show (reason recorded), in one art direction, passing an anti-slop checklist.
+  Framing is checked in the actual render, through zooms and camera moves: no cut-off heads, hands or
+  objects. Every image gets a written verdict; characters are always anonymous, never famous faces; no
+  image is ever reused in a video.
 - **Looks**: 2 layout families × 11 colour themes × 7 moving backdrops, 14 scene templates.
 - **Sound**: ~140 CC0 effects + music beds, auto-placed on cuts and words, ducked under the voice,
   silence as an effect, mastered to -14 LUFS.
@@ -61,8 +63,11 @@ and which are optional. Only `GEMINI_API_KEY` is required (narration); `PEXELS_A
 
 ## Make a video
 **With an AI agent** — open the folder in Codex / Claude Code / Cursor and say:
-> *"Make a story video. Pick a story from the backlog in history/STORIES.md."*
-> *"Make a noir video about the Mary Celeste, abyss theme, female narrator."*
+> **`start`** — the agent follows [`START.md`](START.md): hunts a public-domain story with a wow twist that
+> was never made before, writes it, casts the voice, builds every scene and renders the final video.
+> (`start scary`, `start true fact`, `start atelier`… narrow the hunt.)
+
+Or be specific: *"Make a noir video about the Mary Celeste, abyss theme, female narrator."*
 
 **By hand**
 ```bash
@@ -78,6 +83,7 @@ and which are optional. Only `GEMINI_API_KEY` is required (narration); `PEXELS_A
 ## Project structure
 ```
 AGENTS.md            start here (agents) — the rules, the pipeline, the standard
+START.md             the "start" prompt: new story hunt → finished video, autonomously
 README.md  sv        this file · the only command you need (./sv help)
 config/              studio.json (defaults) · voices.json (30 narrators) · secrets.example.env (keys rubric)
 skills/              00-story-director → 08-bank-builder, in pipeline order · KNOWN-MISTAKES.md · _library/

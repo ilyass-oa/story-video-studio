@@ -68,17 +68,20 @@ must still do. Read the section of each step before doing that step.
   a larger one; never stretch past ~2×.
 - **Wikimedia downloads failed (HTTP 429).** → a contact User-Agent + automatic back-off. **You**: set
   `contact` in `config/studio.json` to your repo URL when you publish.
-- **Hours spent hunting the perfect stock image.** **You**: one search round per slot; if the sheet has no
-  exact fit and you can generate → generate (skill 05 §4).
+- **Hours spent hunting the perfect stock image.** **You**: refine an unhelpful query or simplify the shot;
+  an accurate existing image or text-only beat can suffice. A failed first search does not justify generation.
 
 ## Images (generated — agents with an image tool, e.g. Codex)
+- **The Interlopers used generated images for every image slot.** **You**: bank and found images first,
+  even for fiction. Generate only essential visuals existing assets cannot adequately show, and record
+  the reason per slot (skill 05). No automatic generation for hooks/climaxes and no target percentage.
 - **Slop risks**: mismatched styles between shots, melted hands, fake lettering, modern details in a
   period story, plastic "AI" skin and glow. → every brief carries the episode's `ART.md` style, negatives
   and an 8-point checklist; review.md marks generated images. **You**: run the checklist on every image;
   one "no" = regenerate with the fix; 3 fails = found image or text beat.
 - **Never generate "evidence"**: a real document, record, artifact, place or person presented as real
-  (the 1592 watercolour, a real coin) must be the real image. Generate dramatisations, legend, fiction,
-  moments no camera saw.
+  (the 1592 watercolour, a real coin) must be the real image. Fictional dramatisations may be generated
+  only when the necessity check in skill 05 is satisfied.
 
 ## Sound
 - **A long sound ran under three scenes** (a 14 s flute riff for "He played…"). → `"durMs"` cuts it with a
@@ -90,6 +93,9 @@ must still do. Read the section of each step before doing that step.
   same thing (distant children laughing) rather than nothing or a wrong one.
 
 ## Render & review
+- **The Interlopers passed review despite photos appearing cut off.** **You**: source-image approval
+  does not approve the rendered framing. Inspect individual scenes at entry, settled position, maximum
+  zoom/punch and camera movement, and exit; fix accidental subject clipping before passing (skill 07).
 - **The gallery showed an empty outro** (captured during its fade). → captured before the fade.
 - **Previews look fine at a glance but a frame is wrong.** **You**: check the contact sheet second by second
   and extract single frames (`ffmpeg -ss <t>`) at every fix you made.

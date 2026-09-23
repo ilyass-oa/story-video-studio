@@ -10,6 +10,9 @@ You make faceless, voice-over **kinetic-typography story videos** (TikTok / Reel
 Menu with pictures: `./sv looks` → `engine/gallery/looks.jpg`. Choose by the story's mood; **never the same
 theme or narrator as the previous two videos** (`history/STORIES.md` logs both).
 
+**If the user says `start`** (or asks for a new video without details): follow [`START.md`](START.md) — hunt an
+unused public-domain story with a wow twist and make the whole video on your own.
+
 **Before starting any episode, read `skills/KNOWN-MISTAKES.md`** — every mistake already made here, and how
 to avoid it.
 
@@ -23,6 +26,7 @@ Never write CSS/JSX, fonts, colours or effects for an episode. Missing capabilit
 ## Map
 ```
 AGENTS.md       you are here                 README.md   human quick start
+START.md        "start" = find a new story + make the whole video, autonomously
 sv              the only command you need    ./sv help · ./sv go <slug> · ./sv status <slug>
 config/         studio.json (defaults) · secrets.env (keys — never print or copy)
 skills/         00…08 = the pipeline, in order · KNOWN-MISTAKES.md · _library/ = writing craft references
@@ -65,13 +69,23 @@ Every video must feel made by a meticulous human editor. Concretely:
 - **Look, then judge.** Open every image, sheet and still you produce and check it against the words it
   illustrates. A rendered file is not a reviewed file. Report what you checked and what you could not
   (you cannot hear audio).
-- **Images — know your tools.** *Without* an image tool: bank + found images (plenty). *With* your own
-  image tool (e.g. Codex `$imagegen`; this studio calls no image API): generation is a normal source —
-  mark story-specific moments `"gen": true` (legend/fiction scenes, actions, fictional objects, recurring
-  characters, the hook and climax), keep **found** images for real evidence (records, artifacts, real
-  places/people), one search round per slot at most, then generate. One art direction per video
-  (`./sv img style` → `05-assets/ART.md`), and every generated image passes the 8-point anti-slop check
-  (skill 05 §4) — fit, style, anatomy, no text, era, no AI gloss, composition, anonymous people.
+- **More photos, purposeful composition.** Illustrate most concrete story beats with relevant photos;
+  keep text-only scenes for deliberate pauses, emphasis or withheld reveals, not as an easy default.
+  Alternate well-framed photographs with clean background-removed subjects where isolation helps.
+  Preserve the setting when it matters; follow skills 04–05 for shot choice and cutout review.
+- **Use the workflow efficiently.** Reuse context, known commands and established assets already checked
+  in this task. Read only changed or newly relevant guidance; batch independent sourcing work and review
+  stills before rendering. Spend the saved time on image choice and composition, never skip visual checks.
+- **Images — found first, generate only when needed.** Use the reusable bank and licensed/public-domain
+  sources first, including for fiction. Generate only an essential visual that suitable existing assets
+  cannot show; record the specific need in `05-assets/review.md` (skill 05). Tool availability, a hook or
+  climax, convenience, and an unsuccessful first search are not sufficient reasons. No generated-image
+  quota or target percentage. Real evidence must remain real; generated exceptions follow ART.md and
+  the 8-point check.
+- **Framing must survive the render.** Check each image in its actual template, including the strongest
+  zoom/punch and camera movement. No accidental cut-off heads, hands, feet or story-critical objects.
+  Use a fitting template, reduce zoom, reposition or replace the asset; a clean source image is not proof
+  of a clean rendered crop (skills 04, 07).
 - **Order matters**: words → voice → timing → edit. Changed words ⇒ re-voice + re-align. Changed
   images/templates only ⇒ re-render.
 - **No paid APIs.** Gemini TTS free tier with the user's key, free/CC0 sources. Quota errors stop the step.
