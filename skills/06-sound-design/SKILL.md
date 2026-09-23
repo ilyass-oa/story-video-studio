@@ -26,11 +26,28 @@ Every file has source + licence in `index.json`.
 2. **Ambience beds** — one continuous bed sets the world: `"ambience": [{"sfx": "rain-heavy", "from": "start", "to": "end", "volume": 0.18}]`.
    Layer at most 2. A tension bed (heartbeat-slow → heartbeat-fast, drone) can start at a scene id to
    mark an escalation.
-3. **Music** (optional): `"music": {"id": "<group>", "volume": 0.14}`. Many creators add a trending
-   sound in-app instead — then leave `music: null`.
+3. **Music — always** (no dead air): `"music": {"id": "<group>", "volume": 0.09–0.14}`, chosen for THIS story
+   (see "The sound bed" below). `music: null` only if the user will add a trending sound in the app.
+
+## The sound bed — never silent, never crowded
+Every second has three layers under the voice, each quieter than the last:
+1. **Music** (0.09–0.14) — matches the story's emotion, not just its genre. Listen to the choice through
+   its metadata: `./sv music search "<mood>"` (dark-ambient, horror-score, suspense, mystery, sad-piano,
+   calm-ambient, epic-cinematic, uplifting…). Horror/curse → dark-ambient or horror-score; mystery / true
+   unsolved → mystery or suspense; tragedy / love / loss → sad-piano; legend with wonder → mystery or
+   epic-cinematic (low); parable / gentle → calm-ambient or lofi; hopeful twist → uplifting. Nothing fits?
+   `./sv music fetch "<precise mood> instrumental" --category <mood>` and pick the best. **Never** a track
+   with vocals, a strong beat that fights the narration, or a mood that contradicts the story.
+2. **Ambience** (0.12–0.25) — the place: wind, rain, fire, sea, crowd, church, forest, room tone. Change it
+   when the story moves (`from`/`to` scene ids). At least one bed from start to end.
+3. **Story cues** (0.3–0.9) — what the words name, on their word, in the gaps (`offsetMs`), long ones cut
+   with `durMs`. Aim for **one meaningful cue every ~2–3 s of action**, fewer in calm stretches.
+A motif makes it memorable: one signature sound for the story's object (the pipe's flute, the clock's tick)
+that returns and grows, then stops. Planned silence (`quiet: true`) is the only silence — once, at the peak.
 
 ## Taste rules
-- ≤ 1 story cue per 2 scenes; silence before a reveal makes the reveal louder.
+- Enough to be cinematic, never so much the voice fights it: max 2 beds + music, never 3 cues on one frame.
+- Silence before a reveal makes the reveal louder — as a *planned* beat, never as a gap.
 - Sound follows meaning: the heartbeat grows as the guilt grows; it stops at the confession.
 - Never put a cue on every word; never stack three sounds on one frame.
 

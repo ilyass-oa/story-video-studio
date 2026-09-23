@@ -42,6 +42,7 @@ rendering — so every video looks edited by a meticulous human, and the agent h
 | 5 | images: found / generated, **looked at**, verdict per image | agent + studio | `05-assets/` |
 | 6 | sound: story cues + ambience (the rest is automatic) | agent + studio | in `edit.json` |
 | 7 | render: stills → preview → director's scorecard → final | studio + agent | `06-render/final.mp4` |
+| 8 | publish: title, caption, hashtags → YouTube Shorts + Instagram Reels (Composio) | agent | `06-render/post/` |
 
 The agent follows [`AGENTS.md`](AGENTS.md) and the numbered skills in [`skills/`](skills/) (00 → 08), and
 reads [`skills/KNOWN-MISTAKES.md`](skills/KNOWN-MISTAKES.md) first. `./sv go <slug>` runs every mechanical

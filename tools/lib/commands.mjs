@@ -218,6 +218,7 @@ C.render = async ([slug], flags) => {
 	if (final) {
 		await C.credits([slug]);
 		(await import('./history.mjs')).record(slug);
+		(await import('./publish.mjs')).postPack(slug);
 	}
 	log.info(`next: ./sv review ${slug}${final ? ' --final' : ''}`);
 };
@@ -307,6 +308,27 @@ C.studio = async ([slug]) => {
 	writeJSON(ep.f('props'), r.props);
 	log.info('opening Remotion Studio (Ctrl+C to stop) …');
 	spawnSync('npx', ['remotion', 'studio', 'src/index.ts', `--props=${ep.f('props')}`], {cwd: P.engine, stdio: 'inherit'});
+};
+
+// ───────────────────────── publish (YouTube Shorts + Instagram Reels) ─────────────────────────
+// sv post pack|check|host|done <slug> — the words are written by the agent (skills/09-publish); posting goes
+// through the agent's own tools (e.g. Composio). Nothing here posts by itself.
+C.post = async ([sub, slug], flags) => {
+	const P = await import('./publish.mjs');
+	need(slug, '<slug>');
+	if (sub === 'pack') return P.postPack(slug, {force: !!flags.force});
+	if (sub === 'check') {
+		const r = P.checkPost(slug);
+		if (r.errors.length) fail(`${r.errors.length} error(s) in the posting pack — fix them before posting`);
+		return;
+	}
+	if (sub === 'host') return P.host(slug, {hours: Number(flags.hours ?? 24)});
+	if (sub === 'done') {
+		if (!flags.youtube && !flags.instagram) fail('give at least one link: --youtube <url> --instagram <url>');
+		return P.posted(slug, {youtube: flags.youtube, instagram: flags.instagram});
+	}
+	if (sub === 'status') return console.log(P.alreadyPosted(slug));
+	throw new UserError('post subcommands: pack | check | host | done | status');
 };
 
 // sv looks [--only abyss,gilded] — the theme menu (palette · accent font · backdrop) → engine/gallery/looks.jpg

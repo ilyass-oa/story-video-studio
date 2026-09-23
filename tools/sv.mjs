@@ -61,6 +61,10 @@ sv — story video studio. Run from the project root:  ./sv <command>   (Windows
   gallery [--pack noir|atelier]          render every template → engine/gallery/<pack>.jpg (the visual menu)
   looks [--list]                         the themes (palette · accent font · backdrop) → engine/gallery/looks.jpg
   device add <id> <cutout.png> [--screen-prompt "screen"]   add an object-with-screen (TV, monitor…)
+  post pack <slug>                       after --final: posting pack (06-render/post/post.json + cover.jpg) for Shorts + Reels
+  post check <slug>                      validate titles/captions/hashtags/credits against platform limits (skill 09)
+  post host <slug> [--hours 24]          temporary public URL of final.mp4 (Instagram fetches videos from a URL)
+  post done <slug> --youtube <url> --instagram <url>   record the published links (never post twice)
   credits <slug> | credits --banks       licences for a video's post description | banks/CREDITS.md for the repo
   studio <slug>                          open Remotion Studio on the episode (frame-by-frame scrubbing)
   setup | doctor                         install everything / health report
@@ -90,6 +94,7 @@ const main = async () => {
 			if (dup.length) log.warn(`history/STORIES.md already has: ${dup.map((r) => `${r.title} (${r.date})`).join(', ')} — make sure this is a different story`);
 			// variety: never the same look or narrator as the previous two videos
 			const rc = recent(2);
+			if (!flags.theme) log.warn(`no --theme: defaulting to ${looks.defaults[pack]} — choose the theme that matches the story's energy (./sv looks)`);
 			const look = `${pack}/${flags.theme ?? looks.defaults[pack]}`;
 			if (rc.looks.includes(look)) {
 				const fresh = Object.keys(looks.themes).filter((t) => !rc.looks.includes(`${looks.themes[t].pack}/${t}`));

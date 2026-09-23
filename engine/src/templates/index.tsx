@@ -13,6 +13,9 @@ import {EASE, clamp01, float, prog} from '../lib/anim';
 export type Ctx = {scene: CompiledScene; pack: Pack};
 
 const firstAt = (s: CompiledScene) => Math.max(0, Math.min(...s.words.map((w) => w.start), s.duration) - 6);
+// Shorts / Reels overlay the bottom ~22 % (caption, channel, audio) and the lower right (buttons):
+// no caption may extend below SAFE_BOTTOM.
+const SAFE_BOTTOM = 1480;
 /** Entrance frame for a slot: lands on the word that names it (compiler anchor), else the scene's first word. */
 const slotAt = (s: CompiledScene, slot: string) => (s.anchors?.[slot] !== undefined ? Math.max(0, s.anchors[slot] - 5) : firstAt(s));
 /** the big background word rises onto the spoken word it stands for (BigWord already leads by a few frames) */
@@ -46,16 +49,16 @@ const TypeCenter: React.FC<Ctx> = ({scene, pack}) => {
 const ObjectHero: React.FC<Ctx> = ({scene, pack}) => {
 	const obj = asImage(scene.slots.object);
 	const v = scene.variant % 3;
-	const textY = v === 1 ? 1530 : 470;
-	const objY = v === 1 ? 900 : 1170;
+	const textY = v === 1 ? SAFE_BOTTOM : 470;
+	const objY = v === 1 ? 820 : 1170;
 	return (
 		<AbsoluteFill>
 			{obj ? (
-				<Cutout slot={obj} pack={pack} cx={540} cy={objY} maxW={v === 2 ? 980 : 880} maxH={v === 1 ? 900 : 980} at={slotAt(scene, 'object')} enter={v === 2 ? 'pop' : 'rise'} echo={pack.id === 'atelier'} seed={scene.from} />
+				<Cutout slot={obj} pack={pack} cx={540} cy={objY} maxW={v === 2 ? 980 : 880} maxH={v === 1 ? 820 : 980} at={slotAt(scene, 'object')} enter={v === 2 ? 'pop' : 'rise'} echo={pack.id === 'atelier'} seed={scene.from} />
 			) : (
 				<Missing what="object" />
 			)}
-			<KineticText words={scene.words} pack={pack} box={{sceneEnd: scene.duration, x: 80, y: textY, width: 920, align: v === 2 ? 'left' : 'center'}} />
+			<KineticText words={scene.words} pack={pack} box={{sceneEnd: scene.duration, x: 80, y: textY, width: 920, align: v === 2 ? 'left' : 'center', ...(v === 1 ? {anchor: 'bottom' as const} : {})}} />
 		</AbsoluteFill>
 	);
 };
@@ -84,9 +87,9 @@ const WordBehind: React.FC<Ctx> = ({scene, pack}) => {
 	const wide = !!obj && obj.width / Math.max(1, obj.height) > 1.25;
 	return (
 		<AbsoluteFill>
-			<BigWord text={big} pack={pack} cy={wide ? 640 : 880} at={bigAt(scene)} />
-			{obj ? <Cutout slot={obj} pack={pack} cx={540} cy={wide ? 1030 : 990} maxW={wide ? 860 : 900} maxH={wide ? 600 : 1060} at={slotAt(scene, 'object') + 4} enter="zoom" seed={scene.from} floatAmp={6} /> : <Missing what="object" />}
-			<KineticText words={scene.words.filter((w) => w.text !== big)} pack={pack} box={{sceneEnd: scene.duration, x: 80, y: 1790, anchor: 'bottom', width: 920, scale: 0.85}} />
+			<BigWord text={big} pack={pack} cy={wide ? 520 : 780} at={bigAt(scene)} />
+			{obj ? <Cutout slot={obj} pack={pack} cx={540} cy={wide ? 820 : 860} maxW={wide ? 820 : 880} maxH={wide ? 500 : 860} at={slotAt(scene, 'object') + 4} enter="zoom" seed={scene.from} floatAmp={6} /> : <Missing what="object" />}
+			<KineticText words={scene.words.filter((w) => w.text !== big)} pack={pack} box={{sceneEnd: scene.duration, x: 80, y: SAFE_BOTTOM, anchor: 'bottom', width: 920, scale: 0.85}} />
 		</AbsoluteFill>
 	);
 };
@@ -98,7 +101,7 @@ const PhotoFull: React.FC<Ctx> = ({scene, pack}) => {
 	return (
 		<AbsoluteFill>
 			{media ? <FullMedia slot={media} pack={pack} dur={scene.duration + scene.exit} scrim={top ? 'top' : 'bottom'} zoom={scene.variant % 3 === 2 ? [1.0, 1.12] : [1.14, 1.0]} /> : <Missing what="photo" />}
-			<KineticText words={scene.words} pack={pack} box={{sceneEnd: scene.duration, x: 80, y: top ? 480 : 1300, width: 920, fill: 104}} />
+			<KineticText words={scene.words} pack={pack} box={{sceneEnd: scene.duration, x: 80, y: top ? 480 : SAFE_BOTTOM, anchor: top ? 'center' : 'bottom', width: 920, fill: 104}} />
 		</AbsoluteFill>
 	);
 };
@@ -122,10 +125,10 @@ const PhotoFramed: React.FC<Ctx> = ({scene, pack}) => {
 
 /* 7 ─ card-stack: 2–4 photo cards fly in one by one on the narration, stacking */
 const CARD_SPOTS = [
-	{cx: 360, cy: 800, rot: -9, from: 'left' as const},
-	{cx: 720, cy: 930, rot: 8, from: 'right' as const},
-	{cx: 470, cy: 1120, rot: -3, from: 'bottom' as const},
-	{cx: 760, cy: 1230, rot: 6, from: 'right' as const},
+	{cx: 360, cy: 640, rot: -9, from: 'left' as const},
+	{cx: 720, cy: 770, rot: 8, from: 'right' as const},
+	{cx: 470, cy: 950, rot: -3, from: 'bottom' as const},
+	{cx: 760, cy: 1050, rot: 6, from: 'right' as const},
 ];
 const CardStack: React.FC<Ctx> = ({scene, pack}) => {
 	const imgs = asImages(scene.slots.photos).slice(0, 4);
@@ -138,7 +141,7 @@ const CardStack: React.FC<Ctx> = ({scene, pack}) => {
 					return <PhotoCard key={i} slot={img} pack={pack} cx={scene.variant % 2 ? 1080 - s.cx : s.cx} cy={s.cy} w={450} h={560} rotate={s.rot} at={wordAt(scene, i / imgs.length)} from={s.from} seed={i + scene.from} />;
 				})}
 			</Flat3D>
-			<KineticText words={scene.words} pack={pack} box={{sceneEnd: scene.duration, x: 80, y: 1600, width: 920, scale: 0.95}} />
+			<KineticText words={scene.words} pack={pack} box={{sceneEnd: scene.duration, x: 80, y: SAFE_BOTTOM, anchor: 'bottom', width: 920, scale: 0.95}} />
 		</AbsoluteFill>
 	);
 };

@@ -58,6 +58,13 @@ copyright (film versions, modern retellings, living authors); inventing facts to
    `start` has a head start.
 
 ## 2 · Choose the look and the voice (vary them)
+- **First re-watch the last 2–3 videos quickly**: open a frame from each (`ffmpeg -ss 5 -i history/videos/<file>.mp4
+  -frames:v 1 /tmp/last.jpg` or the episode's `06-render/review/stills.jpg`) and note their colour, background
+  and energy. The new video must look **visibly different** — another theme *and* another backdrop.
+- Match the **energy** of the story, not just its genre: cold dread → `abyss`/mist · rot, plague, poison → `venom` ·
+  greed, power → `gilded`/rays · archive truth → `bone`/void · dream, madness, doomed love → `violet` ·
+  blood, fire, violence → `ember` · warmth, childhood → `cream` · calm wisdom → `sage` · love, letters → `blush`
+  · science, investigation → `slate`. `ember`/smoke is **not** a default: use it only when the story is truly red.
 - **Pack + theme** by the story's feeling (`./sv looks`, `engine/gallery/looks.jpg`), **not the theme of either
   of the last two videos** in the history table. A colour that matters to the story must survive the theme.
 - **Narrator** cast for this story (who would tell it? age, gender, temperament, accent of the place) —
@@ -103,11 +110,18 @@ image count. Reuse the established workflow and current task context; focus effo
 covering a face, no accidental subject cropping at the strongest zoom or camera movement) → fill the director's scorecard in `06-render/review/report.md` (every line ≥ 4, voice and
 sound = "user to check") → `./sv render <slug> --final` (logs the story in history, copies the video).
 
-## 7 · Report to the user (short)
+## 7 · Publish (skill 09) — YouTube Shorts + Instagram Reels
+Unless the user said `start no-post`: follow `skills/09-publish/SKILL.md` — fill `06-render/post/post.json`
+(title, description, tags, caption, hashtags written for reach), `./sv post check <slug>` (0 errors), post with
+the Composio YouTube and Instagram tools, then `./sv post done <slug> --youtube <url> --instagram <url>`.
+Tools not connected → leave the pack ready and say which account to connect.
+
+## 8 · Report to the user (short)
 - The story, its source and **why it won** (the winning scores, one line on the twist) + the runners-up added
   to the backlog.
 - Look (pack/theme/backdrop) and narrator, and why they fit.
-- The video path (`history/videos/<date>_<slug>.mp4`), its length, and what you verified by looking.
+- The video path (`history/videos/<date>_<slug>.mp4`), its length, what you verified by looking, and the
+  YouTube + Instagram links (or why not posted).
 - What only the user can check: the voice and the sound (you cannot hear), plus anything you were unsure of.
 
 **The bar**: a stranger watches it on a phone with sound on, stops scrolling in the first second, feels the

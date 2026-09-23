@@ -51,6 +51,10 @@ still match the spoken words, era and setting; source selection follows skill 05
   atelier `grid | plain | lines`.
 - The theme's grade changes every image: `bone` turns photos sepia, `abyss` blue, `venom` green. If a colour
   is part of the story ("a coat of many colours", "a red door"), choose a theme that keeps it.
+- **Look at the last videos before choosing** (a frame of each in `history/videos/`): the new one must
+  differ in colour *and* background. Pick the theme by the story's **energy** (cold, toxic, golden, archival,
+  dreamlike, blood-red, warm, calm, tender, clinical) and the backdrop by its motion (smoke, rays, mist, void
+  / grid, plain, lines). `ember` + `smoke` is not a default — justify it like any other choice.
 - **Never the same theme as the last two videos** (`history/STORIES.md` → look column). Same story mood
   twice in a row? pick the second-best theme, or the same theme with another backdrop.
 

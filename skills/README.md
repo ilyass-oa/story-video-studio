@@ -14,5 +14,6 @@ Read [`KNOWN-MISTAKES.md`](KNOWN-MISTAKES.md) first, then each skill when its st
 | 06 | [sound-design](06-sound-design/SKILL.md) | story cues, ambience, music | `edit.json` |
 | 07 | [render-review](07-render-review/SKILL.md) | stills → preview → scorecard → final | `06-render/` |
 | 08 | [bank-builder](08-bank-builder/SKILL.md) | extend templates, themes, sounds (separate task) | `engine/`, `banks/` |
+| 09 | [publish](09-publish/SKILL.md) | titles, captions, hashtags; post to YouTube Shorts + Instagram Reels | `06-render/post/` |
 
 [`_library/`](_library/) holds writing-craft references (hooks, retention, de-slopping) used by skill 01.

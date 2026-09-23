@@ -46,6 +46,8 @@ must still do. Read the section of each step before doing that step.
   after renumbering, re-check every `ambience` from/to.
 - **The same look every video.** → `theme` + `backdrop` (engine/gallery/looks.jpg); history logs the look.
   **You**: choose the theme by the story's mood, never the same as the last two videos.
+- **Every video looked the same** (ember/smoke by default). → `./sv new` warns without `--theme`. **You**: look at
+  a frame of the last videos first; choose theme + backdrop by the story's energy; justify ember like any other.
 - **A theme contradicted the words**: `bone` (sepia) turned "a coat of *many colours*" grey. **You**: when a
   colour is part of the story (a red cloak, golden hair, a green light), pick a theme that keeps colour
   (`bone` desaturates most, `abyss`/`violet` tint everything) — check those scenes in the stills.
@@ -96,6 +98,8 @@ must still do. Read the section of each step before doing that step.
 - **The Interlopers passed review despite photos appearing cut off.** **You**: source-image approval
   does not approve the rendered framing. Inspect individual scenes at entry, settled position, maximum
   zoom/punch and camera movement, and exit; fix accidental subject clipping before passing (skill 07).
+- **Captions sat under the Shorts/Reels interface** (bottom ~22 %: caption, channel, audio). → every template
+  keeps text above y = 1480. **You**: never rely on anything important in the bottom fifth or lower-right corner.
 - **The gallery showed an empty outro** (captured during its fade). → captured before the fade.
 - **Previews look fine at a glance but a frame is wrong.** **You**: check the contact sheet second by second
   and extract single frames (`ffmpeg -ss <t>`) at every fix you made.

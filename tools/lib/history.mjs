@@ -10,7 +10,7 @@ const VIDEOS = path.join(P.root, 'history', 'videos');
 const START = '<!-- sv:stories -->';
 const END = '<!-- /sv:stories -->';
 // look = pack/theme, voice = narrator: logged so the next episodes vary them (never the same as the last two)
-const COLS = ['date', 'slug', 'title', 'source', 'look', 'voice', 'length', 'hook', 'video'];
+const COLS = ['date', 'slug', 'title', 'source', 'look', 'voice', 'length', 'hook', 'video', 'posted'];
 
 const TEMPLATE = `# Story history
 
@@ -103,6 +103,7 @@ export const record = (slug) => {
 		length: props ? `${(props.durationInFrames / props.fps).toFixed(0)}s` : '',
 		hook,
 		video: rel(video),
+		posted: prev?.posted ?? '',
 	};
 	writeHistory(prev ? rows.map((r) => (r.slug === slug ? row : r)) : [...rows, row]);
 	// a produced idea leaves the backlog
@@ -131,4 +132,11 @@ export const similar = ({title = '', source = ''}) => {
 export const recent = (n = 2) => {
 	const rows = readHistory().rows.slice(-n);
 	return {looks: rows.map((r) => r.look).filter(Boolean), voices: rows.map((r) => r.voice).filter(Boolean)};
+};
+
+/** Log where a video was published (YT/IG links) in its history row. */
+export const setPosted = (slug, text) => {
+	const {rows} = readHistory();
+	if (!rows.some((r) => r.slug === slug)) return log.warn(`${slug} is not in history/STORIES.md yet (render --final first)`);
+	writeHistory(rows.map((r) => (r.slug === slug ? {...r, posted: text} : r)));
 };

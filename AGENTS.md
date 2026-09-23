@@ -29,7 +29,7 @@ AGENTS.md       you are here                 README.md   human quick start
 START.md        "start" = find a new story + make the whole video, autonomously
 sv              the only command you need    ./sv help · ./sv go <slug> · ./sv status <slug>
 config/         studio.json (defaults) · secrets.env (keys — never print or copy)
-skills/         00…08 = the pipeline, in order · KNOWN-MISTAKES.md · _library/ = writing craft references
+skills/         00…09 = the pipeline, in order · KNOWN-MISTAKES.md · _library/ = writing craft references
 engine/         renderer + LOCKED templates: src/templates/catalog.json (the menu), gallery/<pack>.jpg (how each looks)
                 src/looks.json (themes + backdrops), gallery/looks.jpg (how each theme looks)
 banks/          sfx/ music/ images/ devices/ textures/ — reusable, indexed, licensed
@@ -50,6 +50,7 @@ references/     optional, local only (not in the repo): style references you col
 | 5 | images | found **and/or generated** (if you have an image tool); **look at every image**, fix misfits, ✓ verdict per image | `./sv img style` → `./sv assets <slug>` → `05-assets/review.jpg` + `review.md` | skills/05-image-sourcing |
 | 6 | sound | story cues + ambience (transitions are automatic) | in edit.json | skills/06-sound-design |
 | 7 | render | **look at the stills**, score the preview (director's scorecard ≥ 4), render | `./sv stills` → `./sv render` → `./sv render --final` | skills/07-render-review |
+| 8 | publish | title, description, caption, hashtags for reach; post to Shorts + Reels | `./sv post check` → Composio tools → `./sv post done` | skills/09-publish |
 
 `--final` also copies the video to `history/videos/` and logs the story in `history/STORIES.md`.
 Checkpoints with the user (unless told to run on your own): **A** script · **B** narration (they listen — you can't) · **C** stills.
