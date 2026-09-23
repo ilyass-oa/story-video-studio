@@ -96,7 +96,8 @@ must still do. Read the section of each step before doing that step.
 
 ## Publishing
 - **A caption came out as a 9-line paragraph and the hashtags posted as `%23DarkHistory`.** → `./sv post check`
-  blocks long captions, > 3 hashtags and URL-encoded text. **You**: 3 short lines, plain text with real `#`;
+  blocks long captions, > 3 hashtags and URL-encoded text. **You**: 3 short lines (hook, question or send-prompt,
+  hashtags), plain text with real `#`, no credits, no AI notes; keep the first comment;
   read the post back — broken tags → remove them.
 
 ## Render & review

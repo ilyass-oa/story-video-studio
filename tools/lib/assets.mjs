@@ -103,6 +103,8 @@ export const findCandidates = async (slug, id, queries, {kind = 'cutout', n = 10
 	const lic = (l = '') => (/cc0|public domain|pdm|pexels|pixabay|unsplash|open access/i.test(l) ? 0.15 : /sa\b|share/i.test(l) ? -0.25 : /by/i.test(l) ? 0 : -0.1);
 	const ranked = ok
 		.filter((c) => allowSA || !/sa\b|share/i.test(c.license ?? ''))
+		// credit-free only: CC BY / BY-SA would need a credit line in every caption
+		.filter((c) => !config().licenses?.creditFreeOnly || !/\bby\b/i.test(c.license ?? '') || /cc0|public domain|pdm/i.test(c.license ?? ''))
 		.map((c) => ({...c, rank: byFile.get(c.thumbFile)}))
 		.filter((c) => c.rank)
 		.map((c) => ({...c, named: namedMisfit(brief, c.title, c.desc) ?? undefined}))

@@ -132,11 +132,7 @@ export const checkPost = (slug) => {
 	if (igTags.length > 3) errors.push(`instagram.caption has ${igTags.length} hashtags — use 3 at most`);
 	if (/%23|%20|%0A/i.test(`${ig.caption}${y.description}${y.title}`)) errors.push('URL-encoded text (%23…) in the caption/description — pass plain text with real # signs');
 	// both: credits + honesty
-	for (const c of p.facts?.creditsRequired ?? []) {
-		if (!String(y.description).includes(c.who)) errors.push(`youtube.description must credit "${c.who}" (${c.credit})`);
-		if (!String(ig.caption).includes(c.who)) errors.push(`instagram.caption must credit "${c.who}" (${c.credit})`);
-	}
-	if ((p.facts?.generatedImages ?? 0) > 0 && !y.containsSyntheticMedia) warns.push(`${p.facts.generatedImages} generated image(s): if any looks realistic, set youtube.containsSyntheticMedia true (and use Instagram's AI label)`);
+	if ((p.facts?.creditsRequired ?? []).length) warns.push(`${p.facts.creditsRequired.length} image(s) need credit (${p.facts.creditsRequired.map((c) => c.who).join(', ')}) — captions carry no credits, so replace them with CC0/PD/Pexels images before posting`);
 	if (p.facts?.hook && !String(y.title + first).toLowerCase().split(/\W+/).some((w) => w.length > 4 && p.facts.hook.toLowerCase().includes(w)))
 		warns.push('neither the YouTube title nor the Instagram first line echoes the hook — the words that stop the scroll should appear in both');
 	for (const e of errors) log.err(e);

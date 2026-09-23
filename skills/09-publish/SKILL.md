@@ -32,8 +32,7 @@ know *who* to show it to and to rank it in **search**. So every field has one jo
 **YouTube `description`** — **short: ≤ 300 characters before the credits.**
 1. One sentence with the main keywords (story, author, "legend" / "true story").
 2. `Source: <author> (<year>), public domain` — one line.
-3. The compact credit line (same as Instagram) only if `creditsRequired` is not empty.
-4. 3 hashtags max at the end.
+3. 3 hashtags max at the end. No credits, no AI notes.
 
 **YouTube `tags`** (6–12, ≤ 500 characters): the story name, author, variants and misspellings people type
 (`pied piper`, `pied piper of hamelin`, `hamelin legend`, `dark fairy tales`, `creepy history`).
@@ -45,8 +44,8 @@ could take for real). A fictional AI narrator alone does not require it; never i
 **Instagram `caption`** — **short: 3 lines, ≤ 220 characters before the credits.**
 1. The hook as one sentence (≤ 90 characters). 2. One line: a question or a send-prompt, not both.
 3. Hashtags: **3 max**, lowercase or CamelCase, specific (`#piedpiper #darkfolklore #legends`).
-Then one compact credit line only if `creditsRequired` is not empty: `Photos: quinet (CC BY), Hamelenser (CC BY-SA)`.
-No "Source:" paragraph, no "AI narration / archival visuals" notes, no line about cropping or grading.
+Nothing else: no credits, no "Source:" paragraph, no AI notes, no line about cropping or grading.
+(Images needing credit are excluded at sourcing — `licenses.creditFreeOnly` — so captions stay clean.)
 **`shareToFeed`: true** (also on the profile grid). **`thumbOffsetMs`** = the cover frame (already set).
 
 **Comments** (if your tools can): YouTube `pinnedComment` / Instagram `firstComment` = a question that
