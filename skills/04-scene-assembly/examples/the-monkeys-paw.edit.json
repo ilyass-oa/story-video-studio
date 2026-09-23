@@ -1,0 +1,418 @@
+{
+  "pack": "noir",
+  "music": {
+    "id": "dark-ambient",
+    "volume": 0.09
+  },
+  "ambience": [
+    {
+      "sfx": "wind-howling",
+      "from": "start",
+      "to": "end",
+      "volume": 0.12
+    },
+    {
+      "sfx": "fire-crackling",
+      "from": "s05",
+      "to": "s10",
+      "volume": 0.2
+    },
+    {
+      "sfx": "clock-room",
+      "from": "s18",
+      "to": "s20",
+      "volume": 0.16
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "The *paw* / granted three wishes.",
+      "template": "type-center",
+      "slots": {
+        "bigWord": "III"
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Every single one / came ^true.^",
+      "template": "type-center",
+      "variant": 1
+    },
+    {
+      "id": "s03",
+      "text": "It was a dried, _shrivelled_ / monkey's *paw,*",
+      "template": "object-hero",
+      "slots": {
+        "object": {
+          "see": "a mummified monkey's paw, dried and shrivelled, curled fingers, dark leathery skin",
+          "find": [
+            "mummified monkey paw",
+            "dried monkey hand",
+            "mummified hand"
+          ],
+          "kind": "cutout",
+          "at": "paw,",
+          "id": "s03-object"
+        }
+      }
+    },
+    {
+      "id": "s04",
+      "text": "brought home by / an old *soldier* from India.",
+      "template": "photo-framed",
+      "slots": {
+        "photo": {
+          "see": "an old anonymous soldier in a Victorian-era uniform with a white moustache, sepia portrait photograph",
+          "find": [
+            "unidentified soldier portrait 19th century",
+            "old soldier portrait victorian photograph",
+            "veteran soldier medals vintage portrait"
+          ],
+          "kind": "photo",
+          "at": "soldier",
+          "id": "s04-photo"
+        }
+      }
+    },
+    {
+      "id": "s05",
+      "text": "\"Throw it on the *fire,*\" / he warned them.",
+      "template": "photo-full",
+      "slots": {
+        "photo": {
+          "see": "flames burning in an old stone fireplace at night, close",
+          "find": [
+            "fireplace fire",
+            "burning logs fireplace night"
+          ],
+          "kind": "video",
+          "at": "start",
+          "id": "s05-photo",
+          "focus": [
+            0.5,
+            0.55
+          ],
+          "zoom": 1.7
+        }
+      },
+      "sfx": [
+        {
+          "id": "fire-crackling",
+          "at": "fire,",
+          "volume": 0.5
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "\"It gives you / what you ask for…",
+      "template": "pinned-note"
+    },
+    {
+      "id": "s07",
+      "text": "and makes you ^pay.\"^",
+      "template": "type-center",
+      "variant": 1
+    },
+    {
+      "id": "s08",
+      "text": "Mr. White / only *laughed,*",
+      "template": "split-panel",
+      "variant": 1,
+      "slots": {
+        "photo": {
+          "see": "an elderly Victorian gentleman with a white beard smiling, old portrait photograph",
+          "find": [
+            "victorian old man smiling portrait",
+            "elderly gentleman portrait 1890 photograph"
+          ],
+          "kind": "photo",
+          "at": "start",
+          "id": "s08-photo"
+        }
+      }
+    },
+    {
+      "id": "s09",
+      "text": "and wished for / two hundred *pounds.*",
+      "template": "object-hero",
+      "variant": 1,
+      "slots": {
+        "object": {
+          "see": "a small pile of old gold sovereign coins",
+          "find": [
+            "gold sovereign coins",
+            "pile of antique gold coins"
+          ],
+          "kind": "cutout",
+          "at": "pounds.",
+          "id": "s09-object"
+        }
+      },
+      "sfx": [
+        {
+          "id": "coin-drop",
+          "at": "pounds.",
+          "volume": 0.45
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "The next *morning,*",
+      "template": "type-center"
+    },
+    {
+      "id": "s11",
+      "text": "a *stranger* / came to the door.",
+      "template": "figure-spotlight",
+      "slots": {
+        "figure": {
+          "see": "a man in a dark Victorian suit and bowler hat standing full length, formal and grave",
+          "find": [
+            "victorian man bowler hat full length photograph",
+            "edwardian gentleman standing portrait"
+          ],
+          "kind": "cutout",
+          "at": "stranger",
+          "id": "s11-figure"
+        }
+      },
+      "sfx": [
+        {
+          "id": "door-open-close",
+          "at": "door.",
+          "volume": 0.4
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Their *son* / had been caught",
+      "template": "type-center",
+      "variant": 1
+    },
+    {
+      "id": "s13",
+      "text": "in the *machinery* / at the factory.",
+      "template": "photo-full",
+      "slots": {
+        "photo": {
+          "see": "dark old industrial factory machinery, huge iron gears and belts, 19th century",
+          "find": [
+            "old factory machinery gears",
+            "victorian industrial machine",
+            "steam engine gears"
+          ],
+          "kind": "photo",
+          "id": "s13-photo"
+        }
+      },
+      "sfx": [
+        {
+          "id": "metal-hit",
+          "at": "machinery",
+          "volume": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "The company was / deeply _sorry._",
+      "template": "photo-framed",
+      "slots": {
+        "photo": {
+          "see": "an old handwritten letter on yellowed paper, early 1900s",
+          "find": [
+            "old handwritten letter",
+            "vintage letter 1900 handwriting"
+          ],
+          "kind": "photo",
+          "at": "company",
+          "id": "s14-photo"
+        }
+      }
+    },
+    {
+      "id": "s15",
+      "text": "As compensation, / they offered… / *two hundred pounds.*",
+      "template": "word-behind",
+      "slots": {
+        "object": {
+          "see": "an old British banknote from the early 1900s",
+          "find": [
+            "old british banknote",
+            "antique pound note",
+            "vintage british bank note"
+          ],
+          "kind": "cutout",
+          "at": "pounds.",
+          "id": "s15-object"
+        },
+        "bigWord": "£200"
+      }
+    },
+    {
+      "id": "s16",
+      "text": "A week later, his wife / shook him *awake.*",
+      "template": "photo-full",
+      "variant": 1,
+      "slots": {
+        "photo": {
+          "see": "a dark Victorian bedroom at night, an old bed lit by a single candle",
+          "find": [
+            "victorian bedroom candle night",
+            "old bedroom dark candle"
+          ],
+          "kind": "photo",
+          "at": "start",
+          "id": "s16-photo"
+        }
+      }
+    },
+    {
+      "id": "s17",
+      "text": "\"The *paw.* / Wish our boy _back._\"",
+      "template": "type-center",
+      "transition": "blur-dissolve"
+    },
+    {
+      "id": "s18",
+      "text": "He *wished.* / Hours passed.",
+      "template": "object-side",
+      "slots": {
+        "object": {
+          "see": "an old pendulum wall clock in a dark room",
+          "find": [
+            "antique pendulum wall clock",
+            "old wall clock dark"
+          ],
+          "kind": "cutout",
+          "at": "hours",
+          "id": "s18-object"
+        }
+      },
+      "sfx": [
+        {
+          "id": "clock-tick",
+          "at": "hours",
+          "volume": 0.5
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Then, at the front door… / a ^knock.^",
+      "template": "photo-full",
+      "slots": {
+        "photo": {
+          "see": "an old wooden front door at night seen from inside a dark hallway",
+          "find": [
+            "old wooden front door night inside",
+            "victorian front door dark hallway"
+          ],
+          "kind": "photo",
+          "at": "start",
+          "id": "s19-photo"
+        }
+      },
+      "sfx": [
+        {
+          "id": "knock-door",
+          "at": "knock.",
+          "volume": 0.9
+        },
+        {
+          "id": "knock-door-01",
+          "at": "knock.",
+          "offsetMs": 550,
+          "volume": 0.75
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "She ran / for the *bolt.*",
+      "template": "type-center",
+      "transition": "whip-left",
+      "sfx": [
+        {
+          "id": "lock-click",
+          "at": "bolt.",
+          "volume": 0.6
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "He dropped to the floor, / found the *paw,*",
+      "template": "photo-full",
+      "slots": {
+        "photo": {
+          "see": "a man's hand groping across a dark floor into a strip of light",
+          "find": [
+            "hand reaching on wooden floor dark",
+            "hand reaching in darkness"
+          ],
+          "kind": "photo",
+          "at": "start",
+          "id": "s21-floor"
+        }
+      },
+      "sfx": [
+        {
+          "id": "thud",
+          "at": "floor,",
+          "volume": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "and made the / third *wish.*",
+      "template": "type-center",
+      "transition": "flash",
+      "slots": {
+        "bigWord": "3"
+      },
+      "sfx": [
+        {
+          "id": "knock-door-02",
+          "at": "made",
+          "volume": 0.55
+        },
+        {
+          "id": "sub-drop",
+          "at": "wish.",
+          "volume": 0.5
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "The knocking / *stopped.*",
+      "template": "type-center",
+      "transition": "cut",
+      "quiet": true
+    },
+    {
+      "id": "s24",
+      "text": "The road outside / was _empty._",
+      "template": "photo-full",
+      "transition": "blur-dissolve",
+      "slots": {
+        "photo": {
+          "see": "an empty cobbled street at night under a single gas lamp, fog, no people",
+          "find": [
+            "empty foggy street night lamp",
+            "foggy cobblestone street night"
+          ],
+          "kind": "photo",
+          "at": "start",
+          "id": "s24-photo"
+        }
+      }
+    }
+  ]
+}

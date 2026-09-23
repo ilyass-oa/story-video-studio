@@ -1,0 +1,433 @@
+{
+  "pack": "noir",
+  "music": null,
+  "ambience": [
+    {
+      "sfx": "eerie-drone",
+      "from": "start",
+      "to": "end",
+      "volume": 0.22
+    },
+    {
+      "sfx": "clock-room",
+      "from": "s08",
+      "to": "s17",
+      "volume": 0.16
+    },
+    {
+      "sfx": "heartbeat-slow",
+      "from": "s14",
+      "to": "s21",
+      "volume": 0.4,
+      "duck": 0.8
+    },
+    {
+      "sfx": "heartbeat-fast",
+      "from": "s21",
+      "to": "end",
+      "volume": 0.55,
+      "duck": 0.85
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "He committed / the *perfect* *murder.*",
+      "template": "figure-spotlight",
+      "slots": {
+        "figure": {
+          "see": "a Victorian gentleman in a long dark overcoat standing full length, calm and composed",
+          "find": "victorian gentleman standing full length photograph",
+          "kind": "cutout"
+        }
+      },
+      "sfx": [
+        {
+          "id": "boom-cinematic",
+          "at": "murder",
+          "volume": 0.55,
+          "align": "peak"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "Then he started hearing / the dead man's *heart,*",
+      "template": "object-hero",
+      "slots": {
+        "object": {
+          "see": "an anatomical model of a human heart, detailed, museum object",
+          "find": [
+            "anatomical human heart model",
+            "heart anatomy model"
+          ],
+          "kind": "cutout",
+          "at": "heart"
+        }
+      },
+      "sfx": [
+        {
+          "id": "heartbeat-single",
+          "at": "heart",
+          "volume": 0.9
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "beneath the *floor.*",
+      "template": "photo-full",
+      "variant": 1,
+      "slots": {
+        "photo": {
+          "see": "old dark wooden floorboards of a 19th-century room, low angle, moody",
+          "find": [
+            "old dark wooden floorboards",
+            "antique wood floor planks"
+          ],
+          "kind": "photo",
+          "at": "floor."
+        }
+      }
+    },
+    {
+      "id": "s04",
+      "text": "It began / with an *eye.*",
+      "template": "type-center",
+      "transition": "flash",
+      "slots": {
+        "bigWord": "EYE"
+      }
+    },
+    {
+      "id": "s05",
+      "text": "A pale blue *eye,*",
+      "template": "tv-screen",
+      "slots": {
+        "screen": {
+          "see": "an old man's pale blue eye clouded by a milky cataract film, extreme close-up",
+          "find": [
+            "cataract eye close up",
+            "old man eye macro"
+          ],
+          "kind": "photo",
+          "at": "eye,"
+        }
+      }
+    },
+    {
+      "id": "s06",
+      "text": "with a _film_ over it.",
+      "template": "type-center",
+      "variant": 1
+    },
+    {
+      "id": "s07",
+      "text": "Like a *vulture's.*",
+      "template": "object-hero",
+      "variant": 2,
+      "slots": {
+        "object": {
+          "see": "a vulture with spread wings",
+          "find": [
+            "vulture bird",
+            "turkey vulture flying"
+          ],
+          "kind": "cutout"
+        }
+      },
+      "sfx": [
+        {
+          "id": "crow",
+          "at": "vulture's",
+          "volume": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "For seven nights, / at *midnight,*",
+      "template": "object-side",
+      "slots": {
+        "object": {
+          "see": "an antique mantel clock showing midnight",
+          "find": [
+            "antique mantel clock",
+            "old clock face"
+          ],
+          "kind": "cutout"
+        }
+      },
+      "sfx": [
+        {
+          "id": "clock-chime",
+          "at": "midnight",
+          "volume": 0.45
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "he opened / the old man's *door.*",
+      "template": "photo-full",
+      "slots": {
+        "photo": {
+          "see": "an old wooden bedroom door slightly ajar in a pitch-dark 19th-century hallway, a thin ray of lamplight",
+          "find": [
+            "old wooden door dark hallway",
+            "door ajar dark corridor"
+          ],
+          "kind": "photo",
+          "at": "door."
+        }
+      },
+      "sfx": [
+        {
+          "id": "door-creak",
+          "at": "opened",
+          "volume": 0.6
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "_Slowly._",
+      "template": "type-center",
+      "transition": "blur-dissolve"
+    },
+    {
+      "id": "s11",
+      "text": "So _slowly._",
+      "template": "object-hero",
+      "transition": "blur-dissolve",
+      "slots": {
+        "object": {
+          "see": "an antique tin oil lantern, unlit",
+          "find": [
+            "antique oil lantern",
+            "old tin lantern"
+          ],
+          "kind": "cutout",
+          "at": "start"
+        }
+      }
+    },
+    {
+      "id": "s12",
+      "text": "On the *eighth* night,",
+      "template": "type-center",
+      "slots": {
+        "bigWord": "8"
+      }
+    },
+    {
+      "id": "s13",
+      "text": "the old man *woke.*",
+      "template": "photo-framed",
+      "slots": {
+        "photo": {
+          "see": "a 19th-century portrait photograph of an elderly man with a white beard",
+          "find": [
+            "portrait photograph of an elderly man 19th century",
+            "victorian old man portrait"
+          ],
+          "kind": "photo",
+          "at": "man"
+        }
+      },
+      "sfx": [
+        {
+          "id": "gasp",
+          "at": "woke",
+          "volume": 0.5
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "And he *heard* it.",
+      "template": "type-center",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "text": "A low, dull, / quick *sound.*",
+      "template": "word-behind",
+      "slots": {
+        "object": {
+          "see": "an anatomical heart illustration engraved in an old medical book",
+          "find": [
+            "anatomical heart engraving",
+            "heart anatomy vintage illustration"
+          ],
+          "kind": "cutout"
+        },
+        "bigWord": "THUD"
+      }
+    },
+    {
+      "id": "s16",
+      "text": "Like a *watch* / wrapped in _cotton._",
+      "template": "object-hero",
+      "slots": {
+        "object": {
+          "see": "an antique gold pocket watch, open, face visible",
+          "find": [
+            "antique gold pocket watch",
+            "old pocket watch open"
+          ],
+          "kind": "cutout",
+          "at": "watch"
+        }
+      },
+      "sfx": [
+        {
+          "id": "clock-tick",
+          "at": "watch",
+          "volume": 0.5
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "He hid the body / beneath the *floorboards.*",
+      "template": "photo-full",
+      "variant": 2,
+      "slots": {
+        "photo": {
+          "see": "wide shot of a dim 19th-century room with bare wooden floorboards",
+          "find": [
+            "old empty room wooden floor",
+            "victorian room floorboards"
+          ],
+          "kind": "photo",
+          "at": "floorboards."
+        }
+      },
+      "sfx": [
+        {
+          "id": "floor-creak",
+          "at": "hid",
+          "volume": 0.5
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Not a drop / of ^blood.^",
+      "template": "type-center",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "text": "When the police came, / he *smiled.*",
+      "template": "split-panel",
+      "slots": {
+        "photo": {
+          "see": "a group of 19th-century police constables in uniform, old photograph",
+          "find": [
+            "victorian police constable",
+            "19th century policemen photograph"
+          ],
+          "kind": "photo",
+          "at": "police"
+        }
+      },
+      "sfx": [
+        {
+          "id": "knock-door",
+          "at": "police",
+          "volume": 0.55
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "He set his *chair* / right above the _corpse._",
+      "template": "object-hero",
+      "variant": 1,
+      "slots": {
+        "object": {
+          "see": "an antique upholstered wooden chair",
+          "find": [
+            "antique wooden chair",
+            "victorian armchair"
+          ],
+          "kind": "cutout",
+          "at": "chair"
+        }
+      }
+    },
+    {
+      "id": "s21",
+      "text": "But the sound *grew.*",
+      "template": "type-center",
+      "transition": "flash"
+    },
+    {
+      "id": "s22",
+      "text": "Louder. Louder. / *Louder!*",
+      "template": "word-behind",
+      "transition": "cut",
+      "slots": {
+        "object": {
+          "see": "a terrified man pressing both hands over his ears",
+          "find": [
+            "man covering ears",
+            "hands over ears fear"
+          ],
+          "kind": "cutout"
+        },
+        "bigWord": "LOUDER"
+      }
+    },
+    {
+      "id": "s23",
+      "text": "\"Tear up / the *planks!*",
+      "template": "photo-full",
+      "transition": "glitch",
+      "slots": {
+        "photo": {
+          "see": "a crowbar prying up old wooden floorboards, close-up",
+          "find": [
+            "crowbar floorboards",
+            "prying up floor boards"
+          ],
+          "kind": "photo",
+          "at": "planks!"
+        }
+      },
+      "sfx": [
+        {
+          "id": "thud",
+          "at": "planks!",
+          "volume": 0.6
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "It is the beating / of his hideous ^heart!\"^",
+      "template": "outro-hold",
+      "transition": "zoom-through",
+      "slots": {
+        "object": {
+          "see": "a dark red human heart, anatomical wax model",
+          "find": [
+            "anatomical wax heart",
+            "human heart wax model museum"
+          ],
+          "kind": "cutout",
+          "at": "heart!\""
+        }
+      },
+      "sfx": [
+        {
+          "id": "horror-stinger",
+          "at": "heart!\"",
+          "volume": 0.6
+        }
+      ]
+    }
+  ]
+}

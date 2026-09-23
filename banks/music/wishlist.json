@@ -1,0 +1,164 @@
+{
+  "_doc": "Music beds by mood (CC-licensed, commercial + modification allowed; many are CC BY \u2192 credit via ./sv credits). Always ducked under narration. `./sv music build`.",
+  "categories": {
+    "dark": "horror, thriller, true crime",
+    "tension": "suspense, investigation",
+    "emotional": "sad, nostalgic, reflective",
+    "mystery": "curious, unsettling, magical",
+    "calm": "soft ambient, lo-fi, peaceful",
+    "epic": "cinematic, heroic, historical",
+    "uplifting": "hopeful, motivational"
+  },
+  "sounds": [
+    {
+      "id": "dark-ambient",
+      "category": "dark",
+      "query": "dark ambient",
+      "tags": [
+        "dark",
+        "ambient",
+        "horror",
+        "drone"
+      ],
+      "dur": [
+        60,
+        600
+      ],
+      "n": 2,
+      "loop": true
+    },
+    {
+      "id": "horror-score",
+      "category": "dark",
+      "query": "horror soundtrack",
+      "tags": [
+        "horror",
+        "creepy",
+        "scary"
+      ],
+      "dur": [
+        45,
+        600
+      ],
+      "n": 2,
+      "loop": true
+    },
+    {
+      "id": "suspense",
+      "category": "tension",
+      "query": "suspense cinematic",
+      "tags": [
+        "suspense",
+        "tension",
+        "thriller"
+      ],
+      "dur": [
+        45,
+        600
+      ],
+      "n": 2,
+      "loop": true
+    },
+    {
+      "id": "sad-piano",
+      "category": "emotional",
+      "query": "sad piano",
+      "tags": [
+        "sad",
+        "piano",
+        "emotional",
+        "melancholy"
+      ],
+      "dur": [
+        45,
+        600
+      ],
+      "n": 2,
+      "loop": true
+    },
+    {
+      "id": "mystery",
+      "category": "mystery",
+      "query": "mysterious music",
+      "tags": [
+        "mystery",
+        "curious",
+        "magic"
+      ],
+      "dur": [
+        45,
+        600
+      ],
+      "n": 2,
+      "loop": true
+    },
+    {
+      "id": "calm-ambient",
+      "category": "calm",
+      "query": "calm ambient",
+      "tags": [
+        "calm",
+        "ambient",
+        "peaceful",
+        "soft"
+      ],
+      "dur": [
+        45,
+        600
+      ],
+      "n": 2,
+      "loop": true
+    },
+    {
+      "id": "lofi",
+      "category": "calm",
+      "query": "lofi chill",
+      "tags": [
+        "lofi",
+        "chill",
+        "beat",
+        "study"
+      ],
+      "dur": [
+        45,
+        600
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "epic-cinematic",
+      "category": "epic",
+      "query": "epic cinematic orchestral",
+      "tags": [
+        "epic",
+        "cinematic",
+        "orchestral",
+        "history"
+      ],
+      "dur": [
+        45,
+        600
+      ],
+      "n": 2,
+      "loop": true
+    },
+    {
+      "id": "uplifting",
+      "category": "uplifting",
+      "query": "inspiring uplifting",
+      "tags": [
+        "uplifting",
+        "inspiring",
+        "motivational",
+        "hope"
+      ],
+      "dur": [
+        45,
+        600
+      ],
+      "n": 2,
+      "loop": true
+    }
+  ]
+}

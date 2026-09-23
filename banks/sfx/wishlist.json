@@ -1,0 +1,1651 @@
+{
+  "_doc": "Curated storytelling SFX bank. `./sv sfx build` fetches every entry (CC0, via Openverse → Freesound previews; or the Freesound API when FREESOUND_API_KEY is set), trims, normalises and indexes it into banks/sfx/<category>/. dur = acceptable source length in seconds. n = variants to keep (variants avoid the 'same whoosh every cut' tell). Add entries freely; ids must be unique.",
+  "categories": {
+    "transitions": "whooshes, swishes, whips, risers — placed automatically on scene cuts",
+    "impacts": "booms, hits, thuds, sub drops — for reveals and hard cuts",
+    "text-ui": "typing, clicks, pops, shutters, notifications, glitches",
+    "paper": "page turns, rustles, crumples, pen on paper",
+    "body": "heartbeats, breathing, footsteps, gasps, knocks",
+    "horror": "creaks, drones, stingers, whispers, bells, animals of the night",
+    "ambience": "long loopable beds: rain, wind, fire, night, city, rooms",
+    "objects": "clocks, glass, keys, matches, locks, doors, water, coins",
+    "tension": "drones, pulses, rising tension, heartbeat-like rhythm beds",
+    "cinematic": "stingers, shimmers, reveals, braams",
+    "nature": "thunder, birds, waves, storms",
+    "crowd": "murmur, gasps, applause, laughter, children"
+  },
+  "sounds": [
+    {
+      "id": "whoosh-soft",
+      "category": "transitions",
+      "query": "whoosh soft",
+      "tags": [
+        "whoosh",
+        "swoosh",
+        "transition",
+        "soft"
+      ],
+      "dur": [
+        0.3,
+        2.5
+      ],
+      "n": 3
+    },
+    {
+      "id": "whoosh-fast",
+      "category": "transitions",
+      "query": "fast whoosh",
+      "tags": [
+        "whoosh",
+        "fast",
+        "transition",
+        "swipe"
+      ],
+      "dur": [
+        0.2,
+        1.5
+      ],
+      "n": 3
+    },
+    {
+      "id": "whoosh-deep",
+      "category": "transitions",
+      "query": "whoosh low",
+      "tags": [
+        "whoosh",
+        "deep",
+        "cinematic",
+        "transition"
+      ],
+      "dur": [
+        0.4,
+        4
+      ],
+      "n": 2
+    },
+    {
+      "id": "swish",
+      "category": "transitions",
+      "query": "swish",
+      "tags": [
+        "swish",
+        "swoosh",
+        "whip",
+        "transition"
+      ],
+      "dur": [
+        0.15,
+        1.2
+      ],
+      "n": 3
+    },
+    {
+      "id": "whip",
+      "category": "transitions",
+      "query": "whip",
+      "tags": [
+        "whip",
+        "fast",
+        "transition"
+      ],
+      "dur": [
+        0.15,
+        1.5
+      ],
+      "n": 2
+    },
+    {
+      "id": "riser-short",
+      "category": "transitions",
+      "query": "riser",
+      "tags": [
+        "riser",
+        "build",
+        "rise",
+        "transition"
+      ],
+      "dur": [
+        1,
+        5
+      ],
+      "n": 2
+    },
+    {
+      "id": "reverse-cymbal",
+      "category": "transitions",
+      "query": "reverse cymbal",
+      "tags": [
+        "reverse",
+        "cymbal",
+        "swell",
+        "transition"
+      ],
+      "dur": [
+        0.8,
+        4
+      ],
+      "n": 2
+    },
+    {
+      "id": "air-swoosh-flame",
+      "category": "transitions",
+      "query": "fire whoosh",
+      "tags": [
+        "fire",
+        "whoosh",
+        "flame",
+        "transition"
+      ],
+      "dur": [
+        0.3,
+        3
+      ],
+      "n": 1
+    },
+    {
+      "id": "boom-cinematic",
+      "category": "impacts",
+      "query": "cinematic boom",
+      "tags": [
+        "boom",
+        "impact",
+        "cinematic",
+        "hit",
+        "reveal"
+      ],
+      "dur": [
+        0.8,
+        6
+      ],
+      "n": 3
+    },
+    {
+      "id": "sub-drop",
+      "category": "impacts",
+      "query": "sub drop bass",
+      "tags": [
+        "sub",
+        "drop",
+        "bass",
+        "impact"
+      ],
+      "dur": [
+        0.8,
+        5
+      ],
+      "n": 2
+    },
+    {
+      "id": "hit-deep",
+      "category": "impacts",
+      "query": "deep impact hit",
+      "tags": [
+        "impact",
+        "hit",
+        "deep",
+        "punch"
+      ],
+      "dur": [
+        0.3,
+        4
+      ],
+      "n": 2
+    },
+    {
+      "id": "thud",
+      "category": "impacts",
+      "query": "thud",
+      "tags": [
+        "thud",
+        "fall",
+        "body",
+        "impact"
+      ],
+      "dur": [
+        0.2,
+        2.5
+      ],
+      "n": 2
+    },
+    {
+      "id": "punch-soft",
+      "category": "impacts",
+      "query": "punch hit",
+      "tags": [
+        "punch",
+        "hit",
+        "impact"
+      ],
+      "dur": [
+        0.1,
+        1.5
+      ],
+      "n": 1
+    },
+    {
+      "id": "metal-hit",
+      "category": "impacts",
+      "query": "metal impact clang",
+      "tags": [
+        "metal",
+        "clang",
+        "impact"
+      ],
+      "dur": [
+        0.3,
+        4
+      ],
+      "n": 1
+    },
+    {
+      "id": "door-slam",
+      "category": "impacts",
+      "query": "door slam",
+      "tags": [
+        "door",
+        "slam",
+        "impact"
+      ],
+      "dur": [
+        0.3,
+        3
+      ],
+      "n": 1
+    },
+    {
+      "id": "typewriter-keys",
+      "category": "text-ui",
+      "query": "typewriter typing",
+      "tags": [
+        "typewriter",
+        "typing",
+        "keys",
+        "text"
+      ],
+      "dur": [
+        0.5,
+        8
+      ],
+      "n": 2
+    },
+    {
+      "id": "typewriter-ding",
+      "category": "text-ui",
+      "query": "bell ding",
+      "tags": [
+        "typewriter",
+        "bell",
+        "ding"
+      ],
+      "dur": [
+        0.2,
+        3
+      ],
+      "n": 1
+    },
+    {
+      "id": "keyboard-typing",
+      "category": "text-ui",
+      "query": "keyboard typing",
+      "tags": [
+        "keyboard",
+        "typing",
+        "computer"
+      ],
+      "dur": [
+        0.5,
+        8
+      ],
+      "n": 1
+    },
+    {
+      "id": "click",
+      "category": "text-ui",
+      "query": "mouse click",
+      "tags": [
+        "click",
+        "ui",
+        "tap"
+      ],
+      "dur": [
+        0.02,
+        0.8
+      ],
+      "n": 2
+    },
+    {
+      "id": "pop",
+      "category": "text-ui",
+      "query": "pop sound",
+      "tags": [
+        "pop",
+        "bubble",
+        "appear",
+        "ui"
+      ],
+      "dur": [
+        0.03,
+        0.8
+      ],
+      "n": 3
+    },
+    {
+      "id": "camera-shutter",
+      "category": "text-ui",
+      "query": "camera shutter",
+      "tags": [
+        "camera",
+        "shutter",
+        "photo",
+        "snap"
+      ],
+      "dur": [
+        0.1,
+        2
+      ],
+      "n": 2
+    },
+    {
+      "id": "notification",
+      "category": "text-ui",
+      "query": "notification chime",
+      "tags": [
+        "notification",
+        "phone",
+        "message",
+        "chime"
+      ],
+      "dur": [
+        0.2,
+        2.5
+      ],
+      "n": 2
+    },
+    {
+      "id": "glitch",
+      "category": "text-ui",
+      "query": "glitch digital",
+      "tags": [
+        "glitch",
+        "digital",
+        "error",
+        "static"
+      ],
+      "dur": [
+        0.2,
+        3
+      ],
+      "n": 2
+    },
+    {
+      "id": "tv-static",
+      "category": "text-ui",
+      "query": "tv static noise",
+      "tags": [
+        "tv",
+        "static",
+        "noise",
+        "white noise"
+      ],
+      "dur": [
+        0.5,
+        10
+      ],
+      "n": 1
+    },
+    {
+      "id": "tv-switch-on",
+      "category": "text-ui",
+      "query": "old tv turn on",
+      "tags": [
+        "tv",
+        "power",
+        "on",
+        "crt"
+      ],
+      "dur": [
+        0.2,
+        4
+      ],
+      "n": 1
+    },
+    {
+      "id": "phone-vibrate",
+      "category": "text-ui",
+      "query": "phone vibrate",
+      "tags": [
+        "phone",
+        "vibrate",
+        "buzz"
+      ],
+      "dur": [
+        0.3,
+        4
+      ],
+      "n": 1
+    },
+    {
+      "id": "page-turn",
+      "category": "paper",
+      "query": "page turn",
+      "tags": [
+        "page",
+        "turn",
+        "book",
+        "paper"
+      ],
+      "dur": [
+        0.2,
+        2
+      ],
+      "n": 3
+    },
+    {
+      "id": "paper-rustle",
+      "category": "paper",
+      "query": "paper rustle",
+      "tags": [
+        "paper",
+        "rustle",
+        "handling"
+      ],
+      "dur": [
+        0.3,
+        4
+      ],
+      "n": 2
+    },
+    {
+      "id": "paper-crumple",
+      "category": "paper",
+      "query": "paper crumple",
+      "tags": [
+        "paper",
+        "crumple",
+        "crush"
+      ],
+      "dur": [
+        0.3,
+        4
+      ],
+      "n": 1
+    },
+    {
+      "id": "paper-slide",
+      "category": "paper",
+      "query": "paper slide",
+      "tags": [
+        "paper",
+        "slide",
+        "swipe"
+      ],
+      "dur": [
+        0.2,
+        2
+      ],
+      "n": 2
+    },
+    {
+      "id": "pen-writing",
+      "category": "paper",
+      "query": "pencil writing",
+      "tags": [
+        "pen",
+        "pencil",
+        "writing",
+        "scribble"
+      ],
+      "dur": [
+        0.5,
+        8
+      ],
+      "n": 1
+    },
+    {
+      "id": "pin-stick",
+      "category": "paper",
+      "query": "thumbtack",
+      "tags": [
+        "pin",
+        "tack",
+        "board"
+      ],
+      "dur": [
+        0.05,
+        1.5
+      ],
+      "n": 1
+    },
+    {
+      "id": "heartbeat-single",
+      "category": "body",
+      "query": "single heartbeat",
+      "tags": [
+        "heartbeat",
+        "heart",
+        "beat",
+        "pulse"
+      ],
+      "dur": [
+        0.3,
+        2
+      ],
+      "n": 2
+    },
+    {
+      "id": "heartbeat-slow",
+      "category": "body",
+      "query": "heartbeat slow",
+      "tags": [
+        "heartbeat",
+        "heart",
+        "slow",
+        "pulse",
+        "calm"
+      ],
+      "dur": [
+        3,
+        40
+      ],
+      "n": 2
+    },
+    {
+      "id": "heartbeat-fast",
+      "category": "body",
+      "query": "heartbeat fast",
+      "tags": [
+        "heartbeat",
+        "heart",
+        "fast",
+        "panic",
+        "pulse"
+      ],
+      "dur": [
+        3,
+        40
+      ],
+      "n": 2
+    },
+    {
+      "id": "breathing-heavy",
+      "category": "body",
+      "query": "heavy breathing",
+      "tags": [
+        "breath",
+        "breathing",
+        "panting",
+        "fear"
+      ],
+      "dur": [
+        1,
+        15
+      ],
+      "n": 2
+    },
+    {
+      "id": "gasp",
+      "category": "body",
+      "query": "gasp",
+      "tags": [
+        "gasp",
+        "shock",
+        "breath"
+      ],
+      "dur": [
+        0.2,
+        2
+      ],
+      "n": 2
+    },
+    {
+      "id": "footsteps-wood",
+      "category": "body",
+      "query": "footsteps wooden floor",
+      "tags": [
+        "footsteps",
+        "wood",
+        "floor",
+        "walking"
+      ],
+      "dur": [
+        1,
+        12
+      ],
+      "n": 2
+    },
+    {
+      "id": "footsteps-slow",
+      "category": "body",
+      "query": "slow footsteps",
+      "tags": [
+        "footsteps",
+        "slow",
+        "walking",
+        "approach"
+      ],
+      "dur": [
+        1,
+        12
+      ],
+      "n": 1
+    },
+    {
+      "id": "knock-door",
+      "category": "body",
+      "query": "knocking on door",
+      "tags": [
+        "knock",
+        "door",
+        "knocking"
+      ],
+      "dur": [
+        0.4,
+        5
+      ],
+      "n": 2
+    },
+    {
+      "id": "whisper",
+      "category": "body",
+      "query": "whisper",
+      "tags": [
+        "whisper",
+        "voice",
+        "breath",
+        "eerie"
+      ],
+      "dur": [
+        0.5,
+        8
+      ],
+      "n": 1
+    },
+    {
+      "id": "door-creak",
+      "category": "horror",
+      "query": "door creak",
+      "tags": [
+        "door",
+        "creak",
+        "hinge",
+        "open",
+        "horror"
+      ],
+      "dur": [
+        0.5,
+        6
+      ],
+      "n": 3
+    },
+    {
+      "id": "floor-creak",
+      "category": "horror",
+      "query": "floorboard creak",
+      "tags": [
+        "floor",
+        "floorboard",
+        "creak",
+        "wood"
+      ],
+      "dur": [
+        0.3,
+        5
+      ],
+      "n": 2
+    },
+    {
+      "id": "horror-stinger",
+      "category": "horror",
+      "query": "horror stinger",
+      "tags": [
+        "stinger",
+        "horror",
+        "scare",
+        "jump"
+      ],
+      "dur": [
+        0.5,
+        5
+      ],
+      "n": 2
+    },
+    {
+      "id": "eerie-drone",
+      "category": "horror",
+      "query": "eerie drone",
+      "tags": [
+        "drone",
+        "eerie",
+        "dark",
+        "ambient",
+        "horror"
+      ],
+      "dur": [
+        8,
+        120
+      ],
+      "n": 2,
+      "loop": true
+    },
+    {
+      "id": "church-bell",
+      "category": "horror",
+      "query": "church bell toll",
+      "tags": [
+        "bell",
+        "church",
+        "toll",
+        "midnight"
+      ],
+      "dur": [
+        1,
+        15
+      ],
+      "n": 1
+    },
+    {
+      "id": "crow",
+      "category": "horror",
+      "query": "crow caw",
+      "tags": [
+        "crow",
+        "raven",
+        "bird",
+        "caw"
+      ],
+      "dur": [
+        0.3,
+        5
+      ],
+      "n": 1
+    },
+    {
+      "id": "wolf-howl",
+      "category": "horror",
+      "query": "wolf howl",
+      "tags": [
+        "wolf",
+        "howl",
+        "night"
+      ],
+      "dur": [
+        1,
+        10
+      ],
+      "n": 1
+    },
+    {
+      "id": "chains",
+      "category": "horror",
+      "query": "chains rattle",
+      "tags": [
+        "chains",
+        "metal",
+        "rattle",
+        "prison"
+      ],
+      "dur": [
+        0.5,
+        6
+      ],
+      "n": 1
+    },
+    {
+      "id": "scream-distant",
+      "category": "horror",
+      "query": "distant scream",
+      "tags": [
+        "scream",
+        "shout",
+        "fear",
+        "distant"
+      ],
+      "dur": [
+        0.5,
+        5
+      ],
+      "n": 1
+    },
+    {
+      "id": "violin-screech",
+      "category": "horror",
+      "query": "violin scratch",
+      "tags": [
+        "violin",
+        "strings",
+        "screech",
+        "horror"
+      ],
+      "dur": [
+        0.5,
+        8
+      ],
+      "n": 1
+    },
+    {
+      "id": "rain-light",
+      "category": "ambience",
+      "query": "light rain",
+      "tags": [
+        "rain",
+        "light",
+        "drizzle",
+        "calm"
+      ],
+      "dur": [
+        15,
+        300
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "rain-heavy",
+      "category": "ambience",
+      "query": "heavy rain",
+      "tags": [
+        "rain",
+        "heavy",
+        "storm",
+        "downpour"
+      ],
+      "dur": [
+        15,
+        300
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "rain-window",
+      "category": "ambience",
+      "query": "rain on window",
+      "tags": [
+        "rain",
+        "window",
+        "indoors",
+        "glass"
+      ],
+      "dur": [
+        15,
+        300
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "wind-howling",
+      "category": "ambience",
+      "query": "wind howling",
+      "tags": [
+        "wind",
+        "howling",
+        "storm",
+        "cold"
+      ],
+      "dur": [
+        10,
+        300
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "fire-crackling",
+      "category": "ambience",
+      "query": "fire crackling",
+      "tags": [
+        "fire",
+        "fireplace",
+        "crackle",
+        "warm"
+      ],
+      "dur": [
+        10,
+        300
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "night-crickets",
+      "category": "ambience",
+      "query": "night crickets",
+      "tags": [
+        "night",
+        "crickets",
+        "insects",
+        "summer"
+      ],
+      "dur": [
+        10,
+        300
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "city-night",
+      "category": "ambience",
+      "query": "city night traffic ambience",
+      "tags": [
+        "city",
+        "night",
+        "traffic",
+        "urban"
+      ],
+      "dur": [
+        15,
+        300
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "room-tone",
+      "category": "ambience",
+      "query": "room tone",
+      "tags": [
+        "room",
+        "tone",
+        "silence",
+        "indoor"
+      ],
+      "dur": [
+        10,
+        300
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "clock-room",
+      "category": "ambience",
+      "query": "clock ticking room",
+      "tags": [
+        "clock",
+        "ticking",
+        "room",
+        "time"
+      ],
+      "dur": [
+        8,
+        120
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "forest-day",
+      "category": "ambience",
+      "query": "forest birds ambience",
+      "tags": [
+        "forest",
+        "birds",
+        "day",
+        "nature"
+      ],
+      "dur": [
+        15,
+        300
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "ocean-waves",
+      "category": "ambience",
+      "query": "ocean waves",
+      "tags": [
+        "ocean",
+        "sea",
+        "waves",
+        "beach"
+      ],
+      "dur": [
+        15,
+        300
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "cafe",
+      "category": "ambience",
+      "query": "cafe ambience",
+      "tags": [
+        "cafe",
+        "restaurant",
+        "people",
+        "chatter"
+      ],
+      "dur": [
+        15,
+        300
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "underwater",
+      "category": "ambience",
+      "query": "underwater ambience",
+      "tags": [
+        "underwater",
+        "water",
+        "deep",
+        "muffled"
+      ],
+      "dur": [
+        8,
+        200
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "hospital",
+      "category": "ambience",
+      "query": "heart monitor",
+      "tags": [
+        "hospital",
+        "monitor",
+        "beep",
+        "ecg"
+      ],
+      "dur": [
+        3,
+        60
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "clock-tick",
+      "category": "objects",
+      "query": "clock tick",
+      "tags": [
+        "clock",
+        "tick",
+        "tock",
+        "watch",
+        "time"
+      ],
+      "dur": [
+        1,
+        20
+      ],
+      "n": 2
+    },
+    {
+      "id": "clock-chime",
+      "category": "objects",
+      "query": "grandfather clock chime",
+      "tags": [
+        "clock",
+        "chime",
+        "midnight",
+        "bell"
+      ],
+      "dur": [
+        1,
+        20
+      ],
+      "n": 1
+    },
+    {
+      "id": "glass-break",
+      "category": "objects",
+      "query": "glass break",
+      "tags": [
+        "glass",
+        "break",
+        "shatter"
+      ],
+      "dur": [
+        0.3,
+        4
+      ],
+      "n": 2
+    },
+    {
+      "id": "keys-jingle",
+      "category": "objects",
+      "query": "keys jingle",
+      "tags": [
+        "keys",
+        "jingle",
+        "metal"
+      ],
+      "dur": [
+        0.3,
+        4
+      ],
+      "n": 1
+    },
+    {
+      "id": "lock-click",
+      "category": "objects",
+      "query": "door lock click",
+      "tags": [
+        "lock",
+        "unlock",
+        "click",
+        "key"
+      ],
+      "dur": [
+        0.1,
+        2.5
+      ],
+      "n": 1
+    },
+    {
+      "id": "match-strike",
+      "category": "objects",
+      "query": "match strike",
+      "tags": [
+        "match",
+        "strike",
+        "fire",
+        "light"
+      ],
+      "dur": [
+        0.3,
+        4
+      ],
+      "n": 1
+    },
+    {
+      "id": "candle-blow",
+      "category": "objects",
+      "query": "blow out candle",
+      "tags": [
+        "candle",
+        "blow",
+        "extinguish"
+      ],
+      "dur": [
+        0.2,
+        3
+      ],
+      "n": 1
+    },
+    {
+      "id": "lantern",
+      "category": "objects",
+      "query": "creaking metal",
+      "tags": [
+        "lantern",
+        "creak",
+        "metal",
+        "swing"
+      ],
+      "dur": [
+        0.3,
+        5
+      ],
+      "n": 1
+    },
+    {
+      "id": "water-drip",
+      "category": "objects",
+      "query": "water drip",
+      "tags": [
+        "water",
+        "drip",
+        "drop",
+        "cave"
+      ],
+      "dur": [
+        0.3,
+        10
+      ],
+      "n": 1
+    },
+    {
+      "id": "coin-drop",
+      "category": "objects",
+      "query": "coin drop",
+      "tags": [
+        "coin",
+        "money",
+        "drop",
+        "metal"
+      ],
+      "dur": [
+        0.2,
+        3
+      ],
+      "n": 1
+    },
+    {
+      "id": "door-open-close",
+      "category": "objects",
+      "query": "door open close",
+      "tags": [
+        "door",
+        "open",
+        "close"
+      ],
+      "dur": [
+        0.5,
+        5
+      ],
+      "n": 1
+    },
+    {
+      "id": "gunshot-distant",
+      "category": "objects",
+      "query": "gunshot distant",
+      "tags": [
+        "gun",
+        "shot",
+        "gunshot",
+        "distant"
+      ],
+      "dur": [
+        0.3,
+        5
+      ],
+      "n": 1
+    },
+    {
+      "id": "sword-unsheathe",
+      "category": "objects",
+      "query": "sword unsheathe",
+      "tags": [
+        "sword",
+        "blade",
+        "metal",
+        "draw"
+      ],
+      "dur": [
+        0.3,
+        3
+      ],
+      "n": 1
+    },
+    {
+      "id": "car-pass",
+      "category": "objects",
+      "query": "car passing by",
+      "tags": [
+        "car",
+        "pass",
+        "traffic",
+        "vehicle"
+      ],
+      "dur": [
+        1,
+        10
+      ],
+      "n": 1
+    },
+    {
+      "id": "phone-ring-old",
+      "category": "objects",
+      "query": "old telephone ring",
+      "tags": [
+        "phone",
+        "telephone",
+        "ring",
+        "old"
+      ],
+      "dur": [
+        1,
+        10
+      ],
+      "n": 1
+    },
+    {
+      "id": "drone-dark",
+      "category": "tension",
+      "query": "dark drone",
+      "tags": [
+        "drone",
+        "dark",
+        "tension",
+        "low"
+      ],
+      "dur": [
+        8,
+        120
+      ],
+      "n": 2,
+      "loop": true
+    },
+    {
+      "id": "suspense-pulse",
+      "category": "tension",
+      "query": "tension pulse",
+      "tags": [
+        "suspense",
+        "pulse",
+        "tension",
+        "beat"
+      ],
+      "dur": [
+        4,
+        60
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "tension-riser",
+      "category": "tension",
+      "query": "tension riser",
+      "tags": [
+        "riser",
+        "tension",
+        "build",
+        "crescendo"
+      ],
+      "dur": [
+        3,
+        20
+      ],
+      "n": 2
+    },
+    {
+      "id": "tinnitus",
+      "category": "tension",
+      "query": "tinnitus ringing",
+      "tags": [
+        "tinnitus",
+        "ringing",
+        "ear",
+        "shock"
+      ],
+      "dur": [
+        1,
+        15
+      ],
+      "n": 1
+    },
+    {
+      "id": "stinger-reveal",
+      "category": "cinematic",
+      "query": "cinematic stinger",
+      "tags": [
+        "stinger",
+        "reveal",
+        "cinematic",
+        "hit"
+      ],
+      "dur": [
+        0.8,
+        8
+      ],
+      "n": 2
+    },
+    {
+      "id": "braam",
+      "category": "cinematic",
+      "query": "braam",
+      "tags": [
+        "braam",
+        "horn",
+        "epic",
+        "trailer"
+      ],
+      "dur": [
+        1,
+        8
+      ],
+      "n": 1
+    },
+    {
+      "id": "shimmer",
+      "category": "cinematic",
+      "query": "sparkle",
+      "tags": [
+        "shimmer",
+        "magic",
+        "sparkle",
+        "twinkle"
+      ],
+      "dur": [
+        0.5,
+        6
+      ],
+      "n": 2
+    },
+    {
+      "id": "piano-hit-dark",
+      "category": "cinematic",
+      "query": "piano low note hit",
+      "tags": [
+        "piano",
+        "hit",
+        "dark",
+        "note"
+      ],
+      "dur": [
+        1,
+        10
+      ],
+      "n": 1
+    },
+    {
+      "id": "music-box",
+      "category": "cinematic",
+      "query": "music box",
+      "tags": [
+        "music box",
+        "lullaby",
+        "creepy",
+        "child"
+      ],
+      "dur": [
+        2,
+        40
+      ],
+      "n": 1
+    },
+    {
+      "id": "thunder",
+      "category": "nature",
+      "query": "thunder",
+      "tags": [
+        "thunder",
+        "storm",
+        "lightning",
+        "rumble"
+      ],
+      "dur": [
+        2,
+        20
+      ],
+      "n": 2
+    },
+    {
+      "id": "birds-morning",
+      "category": "nature",
+      "query": "birds chirping morning",
+      "tags": [
+        "birds",
+        "morning",
+        "chirp",
+        "dawn"
+      ],
+      "dur": [
+        5,
+        120
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "owl",
+      "category": "nature",
+      "query": "owl hoot",
+      "tags": [
+        "owl",
+        "hoot",
+        "night",
+        "bird"
+      ],
+      "dur": [
+        0.5,
+        8
+      ],
+      "n": 1
+    },
+    {
+      "id": "dog-bark",
+      "category": "nature",
+      "query": "dog bark",
+      "tags": [
+        "dog",
+        "bark"
+      ],
+      "dur": [
+        0.3,
+        5
+      ],
+      "n": 1
+    },
+    {
+      "id": "horse-gallop",
+      "category": "nature",
+      "query": "horse galloping",
+      "tags": [
+        "horse",
+        "gallop",
+        "hooves",
+        "rider"
+      ],
+      "dur": [
+        1,
+        15
+      ],
+      "n": 1
+    },
+    {
+      "id": "crowd-murmur",
+      "category": "crowd",
+      "query": "crowd murmur",
+      "tags": [
+        "crowd",
+        "murmur",
+        "people",
+        "chatter"
+      ],
+      "dur": [
+        5,
+        120
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "crowd-gasp",
+      "category": "crowd",
+      "query": "crowd gasp",
+      "tags": [
+        "crowd",
+        "gasp",
+        "shock",
+        "audience"
+      ],
+      "dur": [
+        0.5,
+        5
+      ],
+      "n": 1
+    },
+    {
+      "id": "applause",
+      "category": "crowd",
+      "query": "applause",
+      "tags": [
+        "applause",
+        "clapping",
+        "audience"
+      ],
+      "dur": [
+        1,
+        15
+      ],
+      "n": 1
+    },
+    {
+      "id": "children-laugh",
+      "category": "crowd",
+      "query": "children laughing",
+      "tags": [
+        "children",
+        "kids",
+        "laugh",
+        "playground"
+      ],
+      "dur": [
+        1,
+        15
+      ],
+      "n": 1
+    },
+    {
+      "id": "rats-squeak",
+      "category": "horror",
+      "query": "rats squeaking",
+      "tags": [
+        "rats",
+        "squeaking"
+      ],
+      "dur": [
+        0.2,
+        20
+      ],
+      "n": 1
+    },
+    {
+      "id": "piper-flute",
+      "category": "ambience",
+      "query": "flute melody medieval",
+      "tags": [
+        "flute",
+        "melody",
+        "medieval"
+      ],
+      "dur": [
+        8,
+        300
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "river",
+      "category": "ambience",
+      "query": "river water flowing",
+      "tags": [
+        "river",
+        "water",
+        "flowing"
+      ],
+      "dur": [
+        8,
+        300
+      ],
+      "n": 1,
+      "loop": true
+    },
+    {
+      "id": "footsteps-running",
+      "category": "body",
+      "query": "children running footsteps",
+      "tags": [
+        "children",
+        "running",
+        "footsteps"
+      ],
+      "dur": [
+        0.2,
+        20
+      ],
+      "n": 1
+    }
+  ]
+}

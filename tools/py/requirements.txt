@@ -1,0 +1,14 @@
+# Python 3.12 env for tools/py (created by ./sv setup). CPU is enough; an NVIDIA GPU is optional.
+whisperx==3.8.6
+rembg==2.0.67
+onnxruntime>=1.20
+transformers>=4.57,<5
+torch>=2.8
+torchvision
+pillow>=11
+numpy>=2
+opencv-python-headless
+scikit-image
+pymatting
+soundfile
+pyloudnorm

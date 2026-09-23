@@ -1,0 +1,38 @@
+{
+  "_doc": "Project defaults. Episodes override pack/theme/voice/pace in episodes/<slug>/episode.json; narration direction in 02-voice/direction.md; looks in engine/src/looks.json.",
+  "defaultPack": "noir",
+  "_contact": "Your repository URL or contact page. Image hosts (Wikimedia) ask every client for a contact in its User-Agent; empty = a generic one (more rate-limiting).",
+  "contact": "https://github.com/ilyass-oa/story-video-studio",
+  "narrator": {
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-tts-preview"
+  },
+  "packs": {
+    "noir": {
+      "voice": "Algieba"
+    },
+    "atelier": {
+      "voice": "Sulafat"
+    }
+  },
+  "voicesToAudition": [
+    "Algieba",
+    "Charon",
+    "Enceladus",
+    "Sulafat",
+    "Achernar",
+    "Gacrux"
+  ],
+  "licenses": {
+    "allowShareAlike": true,
+    "_doc": "CC BY-SA assets are ranked last; set false to exclude them entirely (safest for monetised channels). CC BY needs credit (./sv credits)."
+  },
+  "render": {
+    "previewScale": 0.5,
+    "crf": 17
+  },
+  "budget": {
+    "allowPaidApis": false,
+    "_doc": "The studio never calls a paid API. Image generation is not an API here: an agent that has its own image tool (e.g. Codex $imagegen) may use it as a last resort (skills/05-image-sourcing)."
+  }
+}

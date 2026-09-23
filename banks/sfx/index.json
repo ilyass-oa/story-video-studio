@@ -1,0 +1,3958 @@
+{
+  "sounds": {
+    "whoosh-soft-01": {
+      "group": "whoosh-soft",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/whoosh-soft-01.mp3",
+      "tags": [
+        "whoosh",
+        "swoosh",
+        "transition",
+        "soft",
+        "buzz",
+        "digital",
+        "electrical"
+      ],
+      "duration": 0.932,
+      "peak": 0.413,
+      "lufs": -19,
+      "loop": false,
+      "title": "digital_whoosh_soft.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/71/71852_1062668-hq.mp3",
+        "page": "https://freesound.org/people/ludvique/sounds/71852",
+        "author": "ludvique"
+      }
+    },
+    "whoosh-soft-02": {
+      "group": "whoosh-soft",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/whoosh-soft-02.mp3",
+      "tags": [
+        "whoosh",
+        "swoosh",
+        "transition",
+        "soft",
+        "boomy",
+        "design",
+        "fight",
+        "foley",
+        "heavy",
+        "knife",
+        "light",
+        "punch"
+      ],
+      "duration": 0.35,
+      "peak": 0.056,
+      "lufs": -18.6,
+      "loop": false,
+      "title": "Swing 1_5",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/485/485250_9961300-hq.mp3",
+        "page": "https://freesound.org/people/Joao_Janz/sounds/485250",
+        "author": "Joao_Janz"
+      }
+    },
+    "whoosh-soft-03": {
+      "group": "whoosh-soft",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/whoosh-soft-03.mp3",
+      "tags": [
+        "whoosh",
+        "swoosh",
+        "transition",
+        "soft",
+        "boomy",
+        "design",
+        "fight",
+        "foley",
+        "heavy",
+        "knife",
+        "light",
+        "punch"
+      ],
+      "duration": 0.35,
+      "peak": 0.063,
+      "lufs": -19,
+      "loop": false,
+      "title": "Swing 1_9",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/485/485275_9961300-hq.mp3",
+        "page": "https://freesound.org/people/Joao_Janz/sounds/485275",
+        "author": "Joao_Janz"
+      }
+    },
+    "whoosh-fast-01": {
+      "group": "whoosh-fast",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/whoosh-fast-01.mp3",
+      "tags": [
+        "whoosh",
+        "fast",
+        "transition",
+        "swipe",
+        "bamboo",
+        "swing",
+        "swinging",
+        "swish",
+        "whooshing",
+        "woosh",
+        "air"
+      ],
+      "duration": 0.29,
+      "peak": 0.06,
+      "lufs": -20.2,
+      "loop": false,
+      "title": "Fast whoosh, bamboo swoosh through air, version 2",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/719/719637_15601358-hq.mp3",
+        "page": "https://freesound.org/people/zapsplat.com/sounds/719637",
+        "author": "zapsplat.com"
+      }
+    },
+    "whoosh-fast-02": {
+      "group": "whoosh-fast",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/whoosh-fast-02.mp3",
+      "tags": [
+        "whoosh",
+        "fast",
+        "transition",
+        "swipe",
+        "fizz",
+        "fizzle",
+        "flog",
+        "flup",
+        "frizzle",
+        "hiss",
+        "lash"
+      ],
+      "duration": 0.33,
+      "peak": 0.049,
+      "lufs": -20.8,
+      "loop": false,
+      "title": "swosh-08.flac - 'stick cutting air'",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/59/59995_71257-hq.mp3",
+        "page": "https://freesound.org/people/qubodup/sounds/59995",
+        "author": "qubodup"
+      }
+    },
+    "whoosh-fast-03": {
+      "group": "whoosh-fast",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/whoosh-fast-03.mp3",
+      "tags": [
+        "whoosh",
+        "fast",
+        "transition",
+        "swipe",
+        "cartoon",
+        "electronic"
+      ],
+      "duration": 0.66,
+      "peak": 0.245,
+      "lufs": -17.1,
+      "loop": false,
+      "title": "hi speed electronic whoosh 1.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/19/19307_84709-hq.mp3",
+        "page": "https://freesound.org/people/martian/sounds/19307",
+        "author": "martian"
+      }
+    },
+    "swish-01": {
+      "group": "swish",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/swish-01.mp3",
+      "tags": [
+        "swish",
+        "swoosh",
+        "whip",
+        "transition",
+        "knife",
+        "knives",
+        "metal"
+      ],
+      "duration": 0.25,
+      "peak": 0.056,
+      "lufs": -21.6,
+      "loop": false,
+      "title": "Knife Swish 2.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/344/344408_4986214-hq.mp3",
+        "page": "https://freesound.org/people/jawbutch/sounds/344408",
+        "author": "jawbutch"
+      }
+    },
+    "swish-02": {
+      "group": "swish",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/swish-02.mp3",
+      "tags": [
+        "swish",
+        "swoosh",
+        "whip",
+        "transition",
+        "fast",
+        "fx",
+        "post"
+      ],
+      "duration": 0.422,
+      "peak": 0.149,
+      "lufs": -29.1,
+      "loop": false,
+      "title": "swish Bamboo pole w insect net 12.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/75/75544_94000-hq.mp3",
+        "page": "https://freesound.org/people/ra_gun/sounds/75544",
+        "author": "ra_gun"
+      }
+    },
+    "swish-03": {
+      "group": "swish",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/swish-03.mp3",
+      "tags": [
+        "swish",
+        "swoosh",
+        "whip",
+        "transition",
+        "swosh",
+        "woosh"
+      ],
+      "duration": 0.577,
+      "peak": 0.067,
+      "lufs": -19.8,
+      "loop": false,
+      "title": "Funny Swish",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/388/388005_6479820-hq.mp3",
+        "page": "https://freesound.org/people/deleted_user_6479820/sounds/388005",
+        "author": "deleted_user_6479820"
+      }
+    },
+    "whip-01": {
+      "group": "whip",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/whip-01.mp3",
+      "tags": [
+        "whip",
+        "fast",
+        "transition",
+        "swish",
+        "swing",
+        "whipping",
+        "swoosh",
+        "whoosh",
+        "air",
+        "crack"
+      ],
+      "duration": 0.55,
+      "peak": 0.194,
+      "lufs": -28.4,
+      "loop": false,
+      "title": "Hard Swing 1",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/523/523230_11537497-hq.mp3",
+        "page": "https://freesound.org/people/magnuswaker/sounds/523230",
+        "author": "magnuswaker"
+      }
+    },
+    "riser-short-01": {
+      "group": "riser-short",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/riser-short-01.mp3",
+      "tags": [
+        "riser",
+        "build",
+        "rise",
+        "transition",
+        "1",
+        "accoustic",
+        "acoustic",
+        "button",
+        "click",
+        "hand",
+        "hit",
+        "industrial"
+      ],
+      "duration": 3.2,
+      "peak": 2.913,
+      "lufs": -21.2,
+      "loop": false,
+      "title": "Build-up riser ticking glass vs metal scrape.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/643/643963_13590673-hq.mp3",
+        "page": "https://freesound.org/people/Duisterwho/sounds/643963",
+        "author": "Duisterwho"
+      }
+    },
+    "reverse-cymbal-01": {
+      "group": "reverse-cymbal",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/reverse-cymbal-01.mp3",
+      "tags": [
+        "reverse",
+        "cymbal",
+        "swell",
+        "transition",
+        "crash",
+        "glass"
+      ],
+      "duration": 2.168,
+      "peak": 2.019,
+      "lufs": -16.1,
+      "loop": false,
+      "title": "cymbal-reversed-glassy-resonance.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/9/9523_24197-hq.mp3",
+        "page": "https://freesound.org/people/burnttoys/sounds/9523",
+        "author": "burnttoys"
+      }
+    },
+    "reverse-cymbal-02": {
+      "group": "reverse-cymbal",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/reverse-cymbal-02.mp3",
+      "tags": [
+        "reverse",
+        "cymbal",
+        "swell",
+        "transition",
+        "reverb"
+      ],
+      "duration": 1.21,
+      "peak": 0.262,
+      "lufs": -16.7,
+      "loop": false,
+      "title": "reverse cymbal.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/23/23127_135910-hq.mp3",
+        "page": "https://freesound.org/people/John%20Rayson/sounds/23127",
+        "author": "John Rayson"
+      }
+    },
+    "air-swoosh-flame-01": {
+      "group": "air-swoosh-flame",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/air-swoosh-flame-01.mp3",
+      "tags": [
+        "fire",
+        "whoosh",
+        "flame",
+        "transition",
+        "monster"
+      ],
+      "duration": 2.22,
+      "peak": 0.742,
+      "lufs": -16,
+      "loop": false,
+      "title": "red whoosh gladiator 04.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/178/178886_84709-hq.mp3",
+        "page": "https://freesound.org/people/martian/sounds/178886",
+        "author": "martian"
+      }
+    },
+    "boom-cinematic-01": {
+      "group": "boom-cinematic",
+      "category": "impacts",
+      "file": "banks/sfx/impacts/boom-cinematic-01.mp3",
+      "tags": [
+        "boom",
+        "impact",
+        "cinematic",
+        "hit",
+        "reveal",
+        "design",
+        "effect",
+        "explosion",
+        "game",
+        "games"
+      ],
+      "duration": 5.02,
+      "peak": 0.875,
+      "lufs": -17.4,
+      "loop": false,
+      "title": "Low impact.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/430/430978_8698658-hq.mp3",
+        "page": "https://freesound.org/people/AudioPapkin/sounds/430978",
+        "author": "AudioPapkin"
+      }
+    },
+    "boom-cinematic-02": {
+      "group": "boom-cinematic",
+      "category": "impacts",
+      "file": "banks/sfx/impacts/boom-cinematic-02.mp3",
+      "tags": [
+        "boom",
+        "impact",
+        "cinematic",
+        "hit",
+        "reveal",
+        "air",
+        "background",
+        "bakground",
+        "drama",
+        "effect",
+        "film",
+        "fx"
+      ],
+      "duration": 3.15,
+      "peak": 0.216,
+      "lufs": -15.7,
+      "loop": false,
+      "title": "[Boom SFX] air effect 2",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/264/264212_1676145-hq.mp3",
+        "page": "https://freesound.org/people/waveplaySFX/sounds/264212",
+        "author": "waveplaySFX"
+      }
+    },
+    "boom-cinematic-03": {
+      "group": "boom-cinematic",
+      "category": "impacts",
+      "file": "banks/sfx/impacts/boom-cinematic-03.mp3",
+      "tags": [
+        "boom",
+        "impact",
+        "cinematic",
+        "hit",
+        "reveal",
+        "alarm",
+        "cinema",
+        "danger",
+        "dangerous",
+        "dark",
+        "drama"
+      ],
+      "duration": 4.73,
+      "peak": 0.037,
+      "lufs": -18.7,
+      "loop": false,
+      "title": "Cinematic Alarm Hit",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/560/560157_10825267-hq.mp3",
+        "page": "https://freesound.org/people/Rizzard/sounds/560157",
+        "author": "Rizzard"
+      }
+    },
+    "sub-drop-01": {
+      "group": "sub-drop",
+      "category": "impacts",
+      "file": "banks/sfx/impacts/sub-drop-01.mp3",
+      "tags": [
+        "sub",
+        "drop",
+        "bass",
+        "impact",
+        "a",
+        "sharp"
+      ],
+      "duration": 1.985,
+      "peak": 1.511,
+      "lufs": -16,
+      "loop": false,
+      "title": "SUB A# 2 secs.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/63/63138_704648-hq.mp3",
+        "page": "https://freesound.org/people/uzerx/sounds/63138",
+        "author": "uzerx"
+      }
+    },
+    "sub-drop-02": {
+      "group": "sub-drop",
+      "category": "impacts",
+      "file": "banks/sfx/impacts/sub-drop-02.mp3",
+      "tags": [
+        "sub",
+        "drop",
+        "bass",
+        "impact",
+        "bomb",
+        "boom",
+        "hit"
+      ],
+      "duration": 2.436,
+      "peak": 2.362,
+      "lufs": -16,
+      "loop": false,
+      "title": "sub bass 4 secondsssss.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/59/59540_704648-hq.mp3",
+        "page": "https://freesound.org/people/uzerx/sounds/59540",
+        "author": "uzerx"
+      }
+    },
+    "hit-deep-01": {
+      "group": "hit-deep",
+      "category": "impacts",
+      "file": "banks/sfx/impacts/hit-deep-01.mp3",
+      "tags": [
+        "impact",
+        "hit",
+        "deep",
+        "punch",
+        "cut",
+        "gash",
+        "knife",
+        "slash",
+        "slice"
+      ],
+      "duration": 0.37,
+      "peak": 0.114,
+      "lufs": -9.9,
+      "loop": false,
+      "title": "Deep Cut / Slash / Gash",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/420/420674_6544098-hq.mp3",
+        "page": "https://freesound.org/people/SypherZent/sounds/420674",
+        "author": "SypherZent"
+      }
+    },
+    "hit-deep-02": {
+      "group": "hit-deep",
+      "category": "impacts",
+      "file": "banks/sfx/impacts/hit-deep-02.mp3",
+      "tags": [
+        "impact",
+        "hit",
+        "deep",
+        "punch",
+        "bass",
+        "boom",
+        "crash",
+        "explosion"
+      ],
+      "duration": 2.48,
+      "peak": 0.083,
+      "lufs": -20,
+      "loop": false,
+      "title": "Bass Impact - Ki_01.mp3",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/512/512389_3997858-hq.mp3",
+        "page": "https://freesound.org/people/Kievinay/sounds/512389",
+        "author": "Kievinay"
+      }
+    },
+    "thud-01": {
+      "group": "thud",
+      "category": "impacts",
+      "file": "banks/sfx/impacts/thud-01.mp3",
+      "tags": [
+        "thud",
+        "fall",
+        "body",
+        "impact",
+        "bassy",
+        "slam"
+      ],
+      "duration": 2.025,
+      "peak": 0.808,
+      "lufs": -21.9,
+      "loop": false,
+      "title": "thud bassy slam.aiff",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/51/51817_612689-hq.mp3",
+        "page": "https://freesound.org/people/kyles/sounds/51817",
+        "author": "kyles"
+      }
+    },
+    "thud-02": {
+      "group": "thud",
+      "category": "impacts",
+      "file": "banks/sfx/impacts/thud-02.mp3",
+      "tags": [
+        "thud",
+        "fall",
+        "body",
+        "impact",
+        "bassy",
+        "bump"
+      ],
+      "duration": 1.335,
+      "peak": 0.644,
+      "lufs": -18.1,
+      "loop": false,
+      "title": "thud bassy bump2.aiff",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/51/51816_612689-hq.mp3",
+        "page": "https://freesound.org/people/kyles/sounds/51816",
+        "author": "kyles"
+      }
+    },
+    "punch-soft-01": {
+      "group": "punch-soft",
+      "category": "impacts",
+      "file": "banks/sfx/impacts/punch-soft-01.mp3",
+      "tags": [
+        "punch",
+        "hit",
+        "impact",
+        "combat",
+        "sfx",
+        "slap",
+        "fight",
+        "smack"
+      ],
+      "duration": 0.41,
+      "peak": 0.068,
+      "lufs": -27.9,
+      "loop": false,
+      "title": "Punch Hit 1.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/439/439747_3507073-hq.mp3",
+        "page": "https://freesound.org/people/joe_anderson22/sounds/439747",
+        "author": "joe_anderson22"
+      }
+    },
+    "metal-hit-01": {
+      "group": "metal-hit",
+      "category": "impacts",
+      "file": "banks/sfx/impacts/metal-hit-01.mp3",
+      "tags": [
+        "metal",
+        "clang",
+        "impact",
+        "bell",
+        "blacksmith",
+        "factory",
+        "hammer",
+        "hit",
+        "industrial"
+      ],
+      "duration": 2.01,
+      "peak": 0.271,
+      "lufs": -22.7,
+      "loop": false,
+      "title": "metal-touch.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/337/337853_4067257-hq.mp3",
+        "page": "https://freesound.org/people/newagesoup/sounds/337853",
+        "author": "newagesoup"
+      }
+    },
+    "door-slam-01": {
+      "group": "door-slam",
+      "category": "impacts",
+      "file": "banks/sfx/impacts/door-slam-01.mp3",
+      "tags": [
+        "door",
+        "slam",
+        "impact",
+        "cerrar",
+        "cierre",
+        "close",
+        "closing",
+        "distance",
+        "far",
+        "portazo"
+      ],
+      "duration": 0.64,
+      "peak": 0.081,
+      "lufs": -16,
+      "loop": false,
+      "title": "Door slam far.aiff",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/217/217796_1560047-hq.mp3",
+        "page": "https://freesound.org/people/kd_jack/sounds/217796",
+        "author": "kd_jack"
+      }
+    },
+    "typewriter-keys-01": {
+      "group": "typewriter-keys",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/typewriter-keys-01.mp3",
+      "tags": [
+        "typewriter",
+        "typing",
+        "keys",
+        "text",
+        "antique",
+        "antique-typewriter",
+        "carriage-reset",
+        "margin-bell",
+        "old",
+        "sound-museum"
+      ],
+      "duration": 2.921,
+      "peak": 0.129,
+      "lufs": -24.3,
+      "loop": false,
+      "title": "Typewriter bell & carriage reset",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/345/345955_191884-hq.mp3",
+        "page": "https://freesound.org/people/knufds/sounds/345955",
+        "author": "knufds"
+      }
+    },
+    "typewriter-keys-02": {
+      "group": "typewriter-keys",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/typewriter-keys-02.mp3",
+      "tags": [
+        "typewriter",
+        "typing",
+        "keys",
+        "text",
+        "schreibmaschine",
+        "dry",
+        "impulse",
+        "key",
+        "keyboard",
+        "keystroke",
+        "letter",
+        "mechanical"
+      ],
+      "duration": 0.62,
+      "peak": 0.225,
+      "lufs": -21.3,
+      "loop": false,
+      "title": "Typewriter snippet 03",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/360/360601_5450487-hq.mp3",
+        "page": "https://freesound.org/people/cabled_mess/sounds/360601",
+        "author": "cabled_mess"
+      }
+    },
+    "keyboard-typing-01": {
+      "group": "keyboard-typing",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/keyboard-typing-01.mp3",
+      "tags": [
+        "keyboard",
+        "typing",
+        "computer",
+        "clicks",
+        "enter",
+        "keys",
+        "tapping"
+      ],
+      "duration": 3.96,
+      "peak": 0.947,
+      "lufs": -25.3,
+      "loop": false,
+      "title": "Keyboard Typing Tapping.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/250/250390_10476-hq.mp3",
+        "page": "https://freesound.org/people/Psykophobia/sounds/250390",
+        "author": "Psykophobia"
+      }
+    },
+    "click-01": {
+      "group": "click",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/click-01.mp3",
+      "tags": [
+        "click",
+        "ui",
+        "tap",
+        "double",
+        "mouse"
+      ],
+      "duration": 0.47,
+      "peak": 0.249,
+      "lufs": -22.9,
+      "loop": false,
+      "title": "mouse-click-double-00.flac",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/534/534104_11830391-hq.mp3",
+        "page": "https://freesound.org/people/pbimal/sounds/534104",
+        "author": "pbimal"
+      }
+    },
+    "click-02": {
+      "group": "click",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/click-02.mp3",
+      "tags": [
+        "click",
+        "ui",
+        "tap",
+        "compute",
+        "computer",
+        "clicking",
+        "keyboard",
+        "mouse"
+      ],
+      "duration": 0.325,
+      "peak": 0.184,
+      "lufs": -26.8,
+      "loop": false,
+      "title": "Mouse Click",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/333/333575_5889445-hq.mp3",
+        "page": "https://freesound.org/people/Sillyslimeball/sounds/333575",
+        "author": "Sillyslimeball"
+      }
+    },
+    "pop-01": {
+      "group": "pop",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/pop-01.mp3",
+      "tags": [
+        "pop",
+        "bubble",
+        "appear",
+        "ui",
+        "blip",
+        "cartoon",
+        "disappear"
+      ],
+      "duration": 0.17,
+      "peak": 0.037,
+      "lufs": -17.5,
+      "loop": false,
+      "title": "Pop Sound",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/401/401542_2331641-hq.mp3",
+        "page": "https://freesound.org/people/ConarB13/sounds/401542",
+        "author": "ConarB13"
+      }
+    },
+    "pop-02": {
+      "group": "pop",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/pop-02.mp3",
+      "tags": [
+        "pop",
+        "bubble",
+        "appear",
+        "ui",
+        "computer",
+        "explode",
+        "game",
+        "game-interface",
+        "reward",
+        "snap"
+      ],
+      "duration": 0.27,
+      "peak": 0.041,
+      "lufs": -22,
+      "loop": false,
+      "title": "The Best Bubble Pop Sound For Game and UI",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/669/669918_9129912-hq.mp3",
+        "page": "https://freesound.org/people/el_boss/sounds/669918",
+        "author": "el_boss"
+      }
+    },
+    "pop-03": {
+      "group": "pop",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/pop-03.mp3",
+      "tags": [
+        "pop",
+        "bubble",
+        "appear",
+        "ui",
+        "burst",
+        "cartoon",
+        "simple"
+      ],
+      "duration": 0.128,
+      "peak": 0.039,
+      "lufs": -17.3,
+      "loop": false,
+      "title": "Simple Pop Sound Effect",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/570/570459_8258964-hq.mp3",
+        "page": "https://freesound.org/people/SplendidJams/sounds/570459",
+        "author": "SplendidJams"
+      }
+    },
+    "camera-shutter-01": {
+      "group": "camera-shutter",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/camera-shutter-01.mp3",
+      "tags": [
+        "camera",
+        "shutter",
+        "photo",
+        "snap",
+        "camera-shutter"
+      ],
+      "duration": 0.295,
+      "peak": 0.107,
+      "lufs": -24.3,
+      "loop": false,
+      "title": "Camera Shutter",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/170/170229_3133582-hq.mp3",
+        "page": "https://freesound.org/people/roachpowder/sounds/170229",
+        "author": "roachpowder"
+      }
+    },
+    "camera-shutter-02": {
+      "group": "camera-shutter",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/camera-shutter-02.mp3",
+      "tags": [
+        "camera",
+        "shutter",
+        "photo",
+        "snap",
+        "canon",
+        "click",
+        "dslr",
+        "nikon",
+        "olympus"
+      ],
+      "duration": 1.29,
+      "peak": 0.654,
+      "lufs": -22.1,
+      "loop": false,
+      "title": "Camera Shutter Click",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/271/271010_2276808-hq.mp3",
+        "page": "https://freesound.org/people/Kodack/sounds/271010",
+        "author": "Kodack"
+      }
+    },
+    "notification-01": {
+      "group": "notification",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/notification-01.mp3",
+      "tags": [
+        "notification",
+        "phone",
+        "message",
+        "chime",
+        "alert",
+        "audio",
+        "call",
+        "cell",
+        "cell-phone",
+        "effect",
+        "high"
+      ],
+      "duration": 0.324,
+      "peak": 0.031,
+      "lufs": -12.1,
+      "loop": false,
+      "title": "Chime Notification",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/380/380482_6512973-hq.mp3",
+        "page": "https://freesound.org/people/Jofae/sounds/380482",
+        "author": "Jofae"
+      }
+    },
+    "notification-02": {
+      "group": "notification",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/notification-02.mp3",
+      "tags": [
+        "notification",
+        "phone",
+        "message",
+        "chime",
+        "jingle",
+        "game",
+        "bell",
+        "chimes"
+      ],
+      "duration": 1.27,
+      "peak": 0.168,
+      "lufs": -18.1,
+      "loop": false,
+      "title": "jingle3",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/255/255102_2127539-hq.mp3",
+        "page": "https://freesound.org/people/soneproject/sounds/255102",
+        "author": "soneproject"
+      }
+    },
+    "glitch-01": {
+      "group": "glitch",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/glitch-01.mp3",
+      "tags": [
+        "glitch",
+        "digital",
+        "error",
+        "static",
+        "fuzz",
+        "interference",
+        "video"
+      ],
+      "duration": 0.6,
+      "peak": 0.394,
+      "lufs": -18.4,
+      "loop": false,
+      "title": "interference.aif",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/58/58929_593503-hq.mp3",
+        "page": "https://freesound.org/people/mattwasser/sounds/58929",
+        "author": "mattwasser"
+      }
+    },
+    "glitch-02": {
+      "group": "glitch",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/glitch-02.mp3",
+      "tags": [
+        "glitch",
+        "digital",
+        "error",
+        "static",
+        "blip",
+        "electric",
+        "electronic",
+        "freaky",
+        "frequency"
+      ],
+      "duration": 2.723,
+      "peak": 0.89,
+      "lufs": -21,
+      "loop": false,
+      "title": "Electric static interference sound",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/347/347698_5048136-hq.mp3",
+        "page": "https://freesound.org/people/dotY21/sounds/347698",
+        "author": "dotY21"
+      }
+    },
+    "tv-static-01": {
+      "group": "tv-static",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/tv-static-01.mp3",
+      "tags": [
+        "tv",
+        "static",
+        "noise",
+        "white noise",
+        "bass",
+        "battlefield",
+        "deep",
+        "snyth"
+      ],
+      "duration": 5,
+      "peak": 0.044,
+      "lufs": -16.1,
+      "loop": false,
+      "title": "Deep Noise",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/208/208055_2901073-hq.mp3",
+        "page": "https://freesound.org/people/uEffects/sounds/208055",
+        "author": "uEffects"
+      }
+    },
+    "tv-switch-on-01": {
+      "group": "tv-switch-on",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/tv-switch-on-01.mp3",
+      "tags": [
+        "tv",
+        "power",
+        "on",
+        "crt",
+        "turning",
+        "off"
+      ],
+      "duration": 1.85,
+      "peak": 0.844,
+      "lufs": -21.4,
+      "loop": false,
+      "title": "tv click on or off.flac",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/576/576959_97550-hq.mp3",
+        "page": "https://freesound.org/people/TRP/sounds/576959",
+        "author": "TRP"
+      }
+    },
+    "phone-vibrate-01": {
+      "group": "phone-vibrate",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/phone-vibrate-01.mp3",
+      "tags": [
+        "phone",
+        "vibrate",
+        "buzz",
+        "call",
+        "message",
+        "mobile",
+        "smartphone",
+        "vibrating",
+        "vibration"
+      ],
+      "duration": 1.063,
+      "peak": 0.881,
+      "lufs": -28.6,
+      "loop": false,
+      "title": "Phone vibration",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/515/515295_9159316-hq.mp3",
+        "page": "https://freesound.org/people/Breviceps/sounds/515295",
+        "author": "Breviceps"
+      }
+    },
+    "page-turn-01": {
+      "group": "page-turn",
+      "category": "paper",
+      "file": "banks/sfx/paper/page-turn-01.mp3",
+      "tags": [
+        "page",
+        "turn",
+        "book",
+        "paper",
+        "flip"
+      ],
+      "duration": 1.72,
+      "peak": 1.091,
+      "lufs": -29.5,
+      "loop": false,
+      "title": "Page Turn",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/136/136778_2207512-hq.mp3",
+        "page": "https://freesound.org/people/davidbain/sounds/136778",
+        "author": "davidbain"
+      }
+    },
+    "page-turn-02": {
+      "group": "page-turn",
+      "category": "paper",
+      "file": "banks/sfx/paper/page-turn-02.mp3",
+      "tags": [
+        "page",
+        "turn",
+        "book",
+        "paper",
+        "anime",
+        "flip",
+        "folder",
+        "game",
+        "journal",
+        "magazine",
+        "newspaper"
+      ],
+      "duration": 0.701,
+      "peak": 0.271,
+      "lufs": -26.2,
+      "loop": false,
+      "title": "Page Turn 02.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/397/397549_6142149-hq.mp3",
+        "page": "https://freesound.org/people/MATRIXXX_/sounds/397549",
+        "author": "MATRIXXX_"
+      }
+    },
+    "page-turn-03": {
+      "group": "page-turn",
+      "category": "paper",
+      "file": "banks/sfx/paper/page-turn-03.mp3",
+      "tags": [
+        "page",
+        "turn",
+        "book",
+        "paper",
+        "flip",
+        "page-turn"
+      ],
+      "duration": 1.41,
+      "peak": 0.781,
+      "lufs": -27.9,
+      "loop": false,
+      "title": "Page Turn (2)",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/151/151221_140737-hq.mp3",
+        "page": "https://freesound.org/people/OwlStorm/sounds/151221",
+        "author": "OwlStorm"
+      }
+    },
+    "paper-rustle-01": {
+      "group": "paper-rustle",
+      "category": "paper",
+      "file": "banks/sfx/paper/paper-rustle-01.mp3",
+      "tags": [
+        "paper",
+        "rustle",
+        "handling",
+        "page",
+        "turn"
+      ],
+      "duration": 1.04,
+      "peak": 0.759,
+      "lufs": -27.6,
+      "loop": false,
+      "title": "Paper Rustle",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/353/353125_1196020-hq.mp3",
+        "page": "https://freesound.org/people/BenjaminNelan/sounds/353125",
+        "author": "BenjaminNelan"
+      }
+    },
+    "paper-rustle-02": {
+      "group": "paper-rustle",
+      "category": "paper",
+      "file": "banks/sfx/paper/paper-rustle-02.mp3",
+      "tags": [
+        "paper",
+        "rustle",
+        "handling",
+        "cruble",
+        "noise",
+        "rip",
+        "scratch",
+        "tear"
+      ],
+      "duration": 0.512,
+      "peak": 0.216,
+      "lufs": -18,
+      "loop": false,
+      "title": "rustle.paper_Tear_9.aif",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/10/10428_186-hq.mp3",
+        "page": "https://freesound.org/people/batchku/sounds/10428",
+        "author": "batchku"
+      }
+    },
+    "paper-crumple-01": {
+      "group": "paper-crumple",
+      "category": "paper",
+      "file": "banks/sfx/paper/paper-crumple-01.mp3",
+      "tags": [
+        "paper",
+        "crumple",
+        "crush",
+        "crumpled",
+        "crunch-paper",
+        "high",
+        "paper-ball",
+        "quality",
+        "sounds"
+      ],
+      "duration": 3.143,
+      "peak": 0.659,
+      "lufs": -15.8,
+      "loop": false,
+      "title": "Paper Crumpled 001",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/197/197179_127497-hq.mp3",
+        "page": "https://freesound.org/people/razrox/sounds/197179",
+        "author": "razrox"
+      }
+    },
+    "paper-slide-01": {
+      "group": "paper-slide",
+      "category": "paper",
+      "file": "banks/sfx/paper/paper-slide-01.mp3",
+      "tags": [
+        "paper",
+        "slide",
+        "swipe",
+        "page",
+        "sliding"
+      ],
+      "duration": 1.181,
+      "peak": 0.48,
+      "lufs": -31.8,
+      "loop": false,
+      "title": "Paper slide",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/352/352914_1766783-hq.mp3",
+        "page": "https://freesound.org/people/Kingofgamers_cz/sounds/352914",
+        "author": "Kingofgamers_cz"
+      }
+    },
+    "paper-slide-02": {
+      "group": "paper-slide",
+      "category": "paper",
+      "file": "banks/sfx/paper/paper-slide-02.mp3",
+      "tags": [
+        "paper",
+        "slide",
+        "swipe",
+        "envelope"
+      ],
+      "duration": 1,
+      "peak": 0.358,
+      "lufs": -16,
+      "loop": false,
+      "title": "Sliding Envelope.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/444/444431_8522109-hq.mp3",
+        "page": "https://freesound.org/people/MTJohnson/sounds/444431",
+        "author": "MTJohnson"
+      }
+    },
+    "pen-writing-01": {
+      "group": "pen-writing",
+      "category": "paper",
+      "file": "banks/sfx/paper/pen-writing-01.mp3",
+      "tags": [
+        "pen",
+        "pencil",
+        "writing",
+        "scribble",
+        "drawing",
+        "marker",
+        "paper"
+      ],
+      "duration": 1.074,
+      "peak": 0.025,
+      "lufs": -20.9,
+      "loop": false,
+      "title": "Pencil Writing on Paper",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/277/277312_2017016-hq.mp3",
+        "page": "https://freesound.org/people/elliotlp/sounds/277312",
+        "author": "elliotlp"
+      }
+    },
+    "heartbeat-single-01": {
+      "group": "heartbeat-single",
+      "category": "body",
+      "file": "banks/sfx/body/heartbeat-single-01.mp3",
+      "tags": [
+        "heartbeat",
+        "heart",
+        "beat",
+        "pulse",
+        "body",
+        "human"
+      ],
+      "duration": 0.664,
+      "peak": 0.192,
+      "lufs": -17.6,
+      "loop": false,
+      "title": "Single Heartbeat Clean HQ_BeatSmith.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/22/22440_120830-hq.mp3",
+        "page": "https://freesound.org/people/Lunardrive/sounds/22440",
+        "author": "Lunardrive"
+      }
+    },
+    "heartbeat-single-02": {
+      "group": "heartbeat-single",
+      "category": "body",
+      "file": "banks/sfx/body/heartbeat-single-02.mp3",
+      "tags": [
+        "heartbeat",
+        "heart",
+        "beat",
+        "pulse",
+        "blood",
+        "body",
+        "human"
+      ],
+      "duration": 0.902,
+      "peak": 0.217,
+      "lufs": -16.6,
+      "loop": false,
+      "title": "Single Heartbeat HQ_BeatSmith.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/22/22417_120830-hq.mp3",
+        "page": "https://freesound.org/people/Lunardrive/sounds/22417",
+        "author": "Lunardrive"
+      }
+    },
+    "heartbeat-slow-01": {
+      "group": "heartbeat-slow",
+      "category": "body",
+      "file": "banks/sfx/body/heartbeat-slow-01.mp3",
+      "tags": [
+        "heartbeat",
+        "heart",
+        "slow",
+        "pulse",
+        "calm",
+        "anatomy",
+        "beat",
+        "blood",
+        "body",
+        "decreasing-speed",
+        "drum",
+        "exercise"
+      ],
+      "duration": 12,
+      "peak": 1.615,
+      "lufs": -16.4,
+      "loop": false,
+      "title": "HEARTBEAT-FAST-SLOWDOWN.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/347/347836_4067257-hq.mp3",
+        "page": "https://freesound.org/people/newagesoup/sounds/347836",
+        "author": "newagesoup"
+      }
+    },
+    "heartbeat-slow-02": {
+      "group": "heartbeat-slow",
+      "category": "body",
+      "file": "banks/sfx/body/heartbeat-slow-02.mp3",
+      "tags": [
+        "heartbeat",
+        "heart",
+        "slow",
+        "pulse",
+        "calm",
+        "daandraait",
+        "freesound",
+        "mezcel",
+        "slow-heartbeat"
+      ],
+      "duration": 12,
+      "peak": 5.12,
+      "lufs": -16.7,
+      "loop": false,
+      "title": "249716__daandraait__slow-heartbeat(mezcelized).mp3",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/390/390425_5014420-hq.mp3",
+        "page": "https://freesound.org/people/mezcel/sounds/390425",
+        "author": "mezcel"
+      }
+    },
+    "heartbeat-fast-01": {
+      "group": "heartbeat-fast",
+      "category": "body",
+      "file": "banks/sfx/body/heartbeat-fast-01.mp3",
+      "tags": [
+        "heartbeat",
+        "heart",
+        "fast",
+        "panic",
+        "pulse",
+        "anxiety",
+        "beat",
+        "blood",
+        "excited",
+        "frightened",
+        "heart-beat"
+      ],
+      "duration": 12,
+      "peak": 0.232,
+      "lufs": -23.1,
+      "loop": false,
+      "title": "heartbeat (fast but inconsistent).wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/533/533909_11076342-hq.mp3",
+        "page": "https://freesound.org/people/ultraaxvii/sounds/533909",
+        "author": "ultraaxvii"
+      }
+    },
+    "heartbeat-fast-02": {
+      "group": "heartbeat-fast",
+      "category": "body",
+      "file": "banks/sfx/body/heartbeat-fast-02.mp3",
+      "tags": [
+        "heartbeat",
+        "heart",
+        "fast",
+        "panic",
+        "pulse",
+        "anatomy",
+        "beat",
+        "blood",
+        "body",
+        "decreasing-speed",
+        "drum",
+        "exercise"
+      ],
+      "duration": 12,
+      "peak": 1.615,
+      "lufs": -16.4,
+      "loop": false,
+      "title": "HEARTBEAT-FAST-SLOWDOWN.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/347/347836_4067257-hq.mp3",
+        "page": "https://freesound.org/people/newagesoup/sounds/347836",
+        "author": "newagesoup"
+      }
+    },
+    "breathing-heavy-01": {
+      "group": "breathing-heavy",
+      "category": "body",
+      "file": "banks/sfx/body/breathing-heavy-01.mp3",
+      "tags": [
+        "breath",
+        "breathing",
+        "panting",
+        "fear",
+        "active",
+        "heavy",
+        "man",
+        "running",
+        "sound",
+        "sounds",
+        "tired"
+      ],
+      "duration": 4.27,
+      "peak": 2.222,
+      "lufs": -16.2,
+      "loop": false,
+      "title": "Heavy Breathing",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/163/163383_2943714-hq.mp3",
+        "page": "https://freesound.org/people/Under7dude/sounds/163383",
+        "author": "Under7dude"
+      }
+    },
+    "breathing-heavy-02": {
+      "group": "breathing-heavy",
+      "category": "body",
+      "file": "banks/sfx/body/breathing-heavy-02.mp3",
+      "tags": [
+        "breath",
+        "breathing",
+        "panting",
+        "fear",
+        "male",
+        "voice"
+      ],
+      "duration": 11.389,
+      "peak": 5.394,
+      "lufs": -14.2,
+      "loop": false,
+      "title": "Heavy Breathing",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/240/240867_2620659-hq.mp3",
+        "page": "https://freesound.org/people/Shinplaster/sounds/240867",
+        "author": "Shinplaster"
+      }
+    },
+    "gasp-01": {
+      "group": "gasp",
+      "category": "body",
+      "file": "banks/sfx/body/gasp-01.mp3",
+      "tags": [
+        "gasp",
+        "shock",
+        "breath",
+        "human",
+        "male",
+        "man",
+        "voice"
+      ],
+      "duration": 0.587,
+      "peak": 0.197,
+      "lufs": -16.8,
+      "loop": false,
+      "title": "Male Gasp 1.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/344/344407_4986214-hq.mp3",
+        "page": "https://freesound.org/people/jawbutch/sounds/344407",
+        "author": "jawbutch"
+      }
+    },
+    "gasp-02": {
+      "group": "gasp",
+      "category": "body",
+      "file": "banks/sfx/body/gasp-02.mp3",
+      "tags": [
+        "gasp",
+        "shock",
+        "breath",
+        "human",
+        "male",
+        "man"
+      ],
+      "duration": 0.823,
+      "peak": 0.253,
+      "lufs": -16,
+      "loop": false,
+      "title": "Male Gasp 4.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/344/344415_4986214-hq.mp3",
+        "page": "https://freesound.org/people/jawbutch/sounds/344415",
+        "author": "jawbutch"
+      }
+    },
+    "footsteps-wood-01": {
+      "group": "footsteps-wood",
+      "category": "body",
+      "file": "banks/sfx/body/footsteps-wood-01.mp3",
+      "tags": [
+        "footsteps",
+        "wood",
+        "floor",
+        "walking",
+        "interior",
+        "wooden"
+      ],
+      "duration": 5.806,
+      "peak": 2.332,
+      "lufs": -20.3,
+      "loop": false,
+      "title": "Footsteps on Wooden Floor.aif",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/119/119914_1990698-hq.mp3",
+        "page": "https://freesound.org/people/ftpalad/sounds/119914",
+        "author": "ftpalad"
+      }
+    },
+    "footsteps-wood-02": {
+      "group": "footsteps-wood",
+      "category": "body",
+      "file": "banks/sfx/body/footsteps-wood-02.mp3",
+      "tags": [
+        "footsteps",
+        "wood",
+        "floor",
+        "walking",
+        "foley",
+        "carpet",
+        "carpeted",
+        "climb",
+        "climbing",
+        "flooring",
+        "going-up"
+      ],
+      "duration": 8.71,
+      "peak": 6.369,
+      "lufs": -22.4,
+      "loop": false,
+      "title": "footsteps staircase carpet",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/205/205749_770707-hq.mp3",
+        "page": "https://freesound.org/people/Yuval/sounds/205749",
+        "author": "Yuval"
+      }
+    },
+    "footsteps-slow-01": {
+      "group": "footsteps-slow",
+      "category": "body",
+      "file": "banks/sfx/body/footsteps-slow-01.mp3",
+      "tags": [
+        "footsteps",
+        "slow",
+        "walking",
+        "approach",
+        "slowly",
+        "walk"
+      ],
+      "duration": 3.314,
+      "peak": 0.592,
+      "lufs": -18.6,
+      "loop": false,
+      "title": "slow footsteps",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/367/367054_6090639-hq.mp3",
+        "page": "https://freesound.org/people/TheBuilder15/sounds/367054",
+        "author": "TheBuilder15"
+      }
+    },
+    "knock-door-01": {
+      "group": "knock-door",
+      "category": "body",
+      "file": "banks/sfx/body/knock-door-01.mp3",
+      "tags": [
+        "knock",
+        "door",
+        "knocking",
+        "knocks",
+        "three",
+        "wood",
+        "wooden-door"
+      ],
+      "duration": 0.718,
+      "peak": 0.482,
+      "lufs": -22.6,
+      "loop": false,
+      "title": "Knock on door",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/237/237937_1203876-hq.mp3",
+        "page": "https://freesound.org/people/jankooiker/sounds/237937",
+        "author": "jankooiker"
+      }
+    },
+    "knock-door-02": {
+      "group": "knock-door",
+      "category": "body",
+      "file": "banks/sfx/body/knock-door-02.mp3",
+      "tags": [
+        "knock",
+        "door",
+        "knocking"
+      ],
+      "duration": 1.54,
+      "peak": 0.301,
+      "lufs": -23.3,
+      "loop": false,
+      "title": "knocking on door",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/615/615427_13650383-hq.mp3",
+        "page": "https://freesound.org/people/RobSp1derp1g/sounds/615427",
+        "author": "RobSp1derp1g"
+      }
+    },
+    "whisper-01": {
+      "group": "whisper",
+      "category": "body",
+      "file": "banks/sfx/body/whisper-01.mp3",
+      "tags": [
+        "whisper",
+        "voice",
+        "breath",
+        "eerie",
+        "coming",
+        "creepy",
+        "creepypasta",
+        "delusion",
+        "drama",
+        "ghost",
+        "grisly",
+        "horror"
+      ],
+      "duration": 3.46,
+      "peak": 2.67,
+      "lufs": -17,
+      "loop": false,
+      "title": "Creepy Whispering",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/234/234044_3795287-hq.mp3",
+        "page": "https://freesound.org/people/RaspberryTickle/sounds/234044",
+        "author": "RaspberryTickle"
+      }
+    },
+    "door-creak-01": {
+      "group": "door-creak",
+      "category": "horror",
+      "file": "banks/sfx/horror/door-creak-01.mp3",
+      "tags": [
+        "door",
+        "creak",
+        "hinge",
+        "open",
+        "horror",
+        "close",
+        "creaking",
+        "groan",
+        "squeak",
+        "wooden"
+      ],
+      "duration": 1.396,
+      "peak": 0.461,
+      "lufs": -21.6,
+      "loop": false,
+      "title": "Door - Creak 02.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/219/219492_4056007-hq.mp3",
+        "page": "https://freesound.org/people/JarredGibb/sounds/219492",
+        "author": "JarredGibb"
+      }
+    },
+    "door-creak-02": {
+      "group": "door-creak",
+      "category": "horror",
+      "file": "banks/sfx/horror/door-creak-02.mp3",
+      "tags": [
+        "door",
+        "creak",
+        "hinge",
+        "open",
+        "horror",
+        "squeaky",
+        "wood",
+        "wooden"
+      ],
+      "duration": 3.22,
+      "peak": 0.163,
+      "lufs": -16.1,
+      "loop": false,
+      "title": "Wooden door creaking",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/367/367052_6090639-hq.mp3",
+        "page": "https://freesound.org/people/TheBuilder15/sounds/367052",
+        "author": "TheBuilder15"
+      }
+    },
+    "door-creak-03": {
+      "group": "door-creak",
+      "category": "horror",
+      "file": "banks/sfx/horror/door-creak-03.mp3",
+      "tags": [
+        "door",
+        "creak",
+        "hinge",
+        "open",
+        "horror",
+        "castle",
+        "creaky",
+        "creepy",
+        "drama",
+        "eerie",
+        "haunted"
+      ],
+      "duration": 3.44,
+      "peak": 2.2,
+      "lufs": -15.6,
+      "loop": false,
+      "title": "DOOR CREAKS CLOSES 2.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/393/393798_1654262-hq.mp3",
+        "page": "https://freesound.org/people/HowardV/sounds/393798",
+        "author": "HowardV"
+      }
+    },
+    "floor-creak-01": {
+      "group": "floor-creak",
+      "category": "horror",
+      "file": "banks/sfx/horror/floor-creak-01.mp3",
+      "tags": [
+        "floor",
+        "floorboard",
+        "creak",
+        "wood",
+        "squeak",
+        "squeaking",
+        "squeaky",
+        "wooden"
+      ],
+      "duration": 2.611,
+      "peak": 0.831,
+      "lufs": -26.8,
+      "loop": false,
+      "title": "floorboards creaking",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/248/248258_4190214-hq.mp3",
+        "page": "https://freesound.org/people/stondi/sounds/248258",
+        "author": "stondi"
+      }
+    },
+    "floor-creak-02": {
+      "group": "floor-creak",
+      "category": "horror",
+      "file": "banks/sfx/horror/floor-creak-02.mp3",
+      "tags": [
+        "floor",
+        "floorboard",
+        "creak",
+        "wood",
+        "board",
+        "creaking",
+        "creaky",
+        "creek",
+        "quiet"
+      ],
+      "duration": 3.042,
+      "peak": 0.441,
+      "lufs": -20.7,
+      "loop": false,
+      "title": "Quiet Creak",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/238/238288_1554038-hq.mp3",
+        "page": "https://freesound.org/people/LoafDV/sounds/238288",
+        "author": "LoafDV"
+      }
+    },
+    "horror-stinger-01": {
+      "group": "horror-stinger",
+      "category": "horror",
+      "file": "banks/sfx/horror/horror-stinger-01.mp3",
+      "tags": [
+        "stinger",
+        "horror",
+        "scare",
+        "jump",
+        "sci-fi",
+        "abstract",
+        "atmosphere",
+        "background",
+        "cinematic",
+        "dark",
+        "destruction",
+        "drone"
+      ],
+      "duration": 1.925,
+      "peak": 0.732,
+      "lufs": -17.7,
+      "loop": false,
+      "title": "Stinger 3.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/441/441342_8698658-hq.mp3",
+        "page": "https://freesound.org/people/AudioPapkin/sounds/441342",
+        "author": "AudioPapkin"
+      }
+    },
+    "horror-stinger-02": {
+      "group": "horror-stinger",
+      "category": "horror",
+      "file": "banks/sfx/horror/horror-stinger-02.mp3",
+      "tags": [
+        "stinger",
+        "horror",
+        "scare",
+        "jump",
+        "abstract",
+        "atmosphere",
+        "background",
+        "cinematic",
+        "dark",
+        "destruction",
+        "drone",
+        "futuristic"
+      ],
+      "duration": 1.83,
+      "peak": 0.777,
+      "lufs": -17.1,
+      "loop": false,
+      "title": "Swoosh 7.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/441/441345_8698658-hq.mp3",
+        "page": "https://freesound.org/people/AudioPapkin/sounds/441345",
+        "author": "AudioPapkin"
+      }
+    },
+    "eerie-drone-01": {
+      "group": "eerie-drone",
+      "category": "horror",
+      "file": "banks/sfx/horror/eerie-drone-01.mp3",
+      "tags": [
+        "drone",
+        "eerie",
+        "dark",
+        "ambient",
+        "horror",
+        "ambiance",
+        "ambience",
+        "atmos",
+        "atmosphere",
+        "background",
+        "background-sound",
+        "bass"
+      ],
+      "duration": 66.108,
+      "peak": 1.652,
+      "lufs": -22.9,
+      "loop": true,
+      "title": "Ominous and Deep Ambience",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/467/467026_9662992-hq.mp3",
+        "page": "https://freesound.org/people/Resaural/sounds/467026",
+        "author": "Resaural"
+      }
+    },
+    "eerie-drone-02": {
+      "group": "eerie-drone",
+      "category": "horror",
+      "file": "banks/sfx/horror/eerie-drone-02.mp3",
+      "tags": [
+        "drone",
+        "eerie",
+        "dark",
+        "ambient",
+        "horror",
+        "creepy",
+        "film",
+        "ominous",
+        "scary",
+        "strange",
+        "suspense",
+        "suspenseful"
+      ],
+      "duration": 26.067,
+      "peak": 20.831,
+      "lufs": -19.3,
+      "loop": true,
+      "title": "Eerie drone",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/193/193821_208303-hq.mp3",
+        "page": "https://freesound.org/people/jhumbucker/sounds/193821",
+        "author": "jhumbucker"
+      }
+    },
+    "church-bell-01": {
+      "group": "church-bell",
+      "category": "horror",
+      "file": "banks/sfx/horror/church-bell-01.mp3",
+      "tags": [
+        "bell",
+        "church",
+        "toll",
+        "midnight",
+        "church-bells",
+        "bells"
+      ],
+      "duration": 5.15,
+      "peak": 0.537,
+      "lufs": -19.9,
+      "loop": false,
+      "title": "Church Bell.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/569/569356_2496360-hq.mp3",
+        "page": "https://freesound.org/people/MVMTech/sounds/569356",
+        "author": "MVMTech"
+      }
+    },
+    "crow-01": {
+      "group": "crow",
+      "category": "horror",
+      "file": "banks/sfx/horror/crow-01.mp3",
+      "tags": [
+        "crow",
+        "raven",
+        "bird",
+        "caw",
+        "bird-croaking",
+        "black-bird",
+        "blackbird",
+        "crow-caw",
+        "raven-croaking"
+      ],
+      "duration": 4.783,
+      "peak": 0.361,
+      "lufs": -20.8,
+      "loop": false,
+      "title": "Raven Croak or Crow Caw",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/716/716962_159528-hq.mp3",
+        "page": "https://freesound.org/people/fudgealtoid/sounds/716962",
+        "author": "fudgealtoid"
+      }
+    },
+    "wolf-howl-01": {
+      "group": "wolf-howl",
+      "category": "horror",
+      "file": "banks/sfx/horror/wolf-howl-01.mp3",
+      "tags": [
+        "wolf",
+        "howl",
+        "night",
+        "abdkad",
+        "asdad",
+        "lhakdakd"
+      ],
+      "duration": 6,
+      "peak": 0.309,
+      "lufs": -17.1,
+      "loop": false,
+      "title": "wolf-howling-sound-effect.mp3",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/490/490256_10585892-hq.mp3",
+        "page": "https://freesound.org/people/cactustt/sounds/490256",
+        "author": "cactustt"
+      }
+    },
+    "chains-01": {
+      "group": "chains",
+      "category": "horror",
+      "file": "banks/sfx/horror/chains-01.mp3",
+      "tags": [
+        "chains",
+        "metal",
+        "rattle",
+        "prison",
+        "chain",
+        "owi"
+      ],
+      "duration": 2.517,
+      "peak": 2.032,
+      "lufs": -18.3,
+      "loop": false,
+      "title": "Chain rattling",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/593/593458_11182796-hq.mp3",
+        "page": "https://freesound.org/people/georgesavic/sounds/593458",
+        "author": "georgesavic"
+      }
+    },
+    "scream-distant-01": {
+      "group": "scream-distant",
+      "category": "horror",
+      "file": "banks/sfx/horror/scream-distant-01.mp3",
+      "tags": [
+        "scream",
+        "shout",
+        "fear",
+        "distant",
+        "accident",
+        "frightened",
+        "horror",
+        "man",
+        "pain",
+        "screaming"
+      ],
+      "duration": 1.35,
+      "peak": 0.359,
+      "lufs": -17.2,
+      "loop": false,
+      "title": "Grito-hombre.aif",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/356/356313_6384353-hq.mp3",
+        "page": "https://freesound.org/people/esmayorga/sounds/356313",
+        "author": "esmayorga"
+      }
+    },
+    "rain-light-01": {
+      "group": "rain-light",
+      "category": "ambience",
+      "file": "banks/sfx/ambience/rain-light-01.mp3",
+      "tags": [
+        "rain",
+        "light",
+        "drizzle",
+        "calm",
+        "ambiance",
+        "ambience",
+        "ambient",
+        "bird",
+        "birds",
+        "birdsong",
+        "cars",
+        "chirp"
+      ],
+      "duration": 90,
+      "peak": 12.425,
+      "lufs": -22.5,
+      "loop": true,
+      "title": "light rain ambience",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/270/270349_3366749-hq.mp3",
+        "page": "https://freesound.org/people/seth-m/sounds/270349",
+        "author": "seth-m"
+      }
+    },
+    "rain-heavy-01": {
+      "group": "rain-heavy",
+      "category": "ambience",
+      "file": "banks/sfx/ambience/rain-heavy-01.mp3",
+      "tags": [
+        "rain",
+        "heavy",
+        "storm",
+        "downpour",
+        "ambient",
+        "atmosphere",
+        "forest",
+        "raining",
+        "regen",
+        "starkregen"
+      ],
+      "duration": 59.292,
+      "peak": 54.397,
+      "lufs": -19.9,
+      "loop": true,
+      "title": "Heavy Rain Regen Starkregen Raining Atmosphere Ambient Forest Wald",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/651/651189_801011-hq.mp3",
+        "page": "https://freesound.org/people/Borgory/sounds/651189",
+        "author": "Borgory"
+      }
+    },
+    "rain-window-01": {
+      "group": "rain-window",
+      "category": "ambience",
+      "file": "banks/sfx/ambience/rain-window-01.mp3",
+      "tags": [
+        "rain",
+        "window",
+        "indoors",
+        "glass",
+        "ambience",
+        "raining",
+        "room-tone",
+        "roomtone",
+        "traffic",
+        "water",
+        "weather"
+      ],
+      "duration": 90,
+      "peak": 65.015,
+      "lufs": -23.2,
+      "loop": true,
+      "title": "Ambience Rain on window wet traffic outside.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/360/360783_5658680-hq.mp3",
+        "page": "https://freesound.org/people/dnlburnett/sounds/360783",
+        "author": "dnlburnett"
+      }
+    },
+    "wind-howling-01": {
+      "group": "wind-howling",
+      "category": "ambience",
+      "file": "banks/sfx/ambience/wind-howling-01.mp3",
+      "tags": [
+        "wind",
+        "howling",
+        "storm",
+        "cold",
+        "blizzard",
+        "nature",
+        "snowstorm",
+        "weather",
+        "windy"
+      ],
+      "duration": 40.53,
+      "peak": 10.27,
+      "lufs": -19.9,
+      "loop": true,
+      "title": "Wind Howling thru window crack.mp3",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/331/331527_2417207-hq.mp3",
+        "page": "https://freesound.org/people/DAVESTALKER/sounds/331527",
+        "author": "DAVESTALKER"
+      }
+    },
+    "fire-crackling-01": {
+      "group": "fire-crackling",
+      "category": "ambience",
+      "file": "banks/sfx/ambience/fire-crackling-01.mp3",
+      "tags": [
+        "fire",
+        "fireplace",
+        "crackle",
+        "warm",
+        "crackling"
+      ],
+      "duration": 34.211,
+      "peak": 29.905,
+      "lufs": -21.4,
+      "loop": true,
+      "title": "Fire Crackling 01.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/181/181563_1857065-hq.mp3",
+        "page": "https://freesound.org/people/kingsrow/sounds/181563",
+        "author": "kingsrow"
+      }
+    },
+    "night-crickets-01": {
+      "group": "night-crickets",
+      "category": "ambience",
+      "file": "banks/sfx/ambience/night-crickets-01.mp3",
+      "tags": [
+        "night",
+        "crickets",
+        "insects",
+        "summer",
+        "amazon",
+        "jungle"
+      ],
+      "duration": 90,
+      "peak": 8.467,
+      "lufs": -20.1,
+      "loop": true,
+      "title": "Amazon jungle night crickets awesome loop.flac",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/450/450537_612689-hq.mp3",
+        "page": "https://freesound.org/people/kyles/sounds/450537",
+        "author": "kyles"
+      }
+    },
+    "city-night-01": {
+      "group": "city-night",
+      "category": "ambience",
+      "file": "banks/sfx/ambience/city-night-01.mp3",
+      "tags": [
+        "city",
+        "night",
+        "traffic",
+        "urban",
+        "ambience",
+        "bus",
+        "buzz",
+        "cars",
+        "field-recording",
+        "helicopter"
+      ],
+      "duration": 90,
+      "peak": 81.479,
+      "lufs": -19.5,
+      "loop": true,
+      "title": "City at Night_Ambience.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/423/423644_2347916-hq.mp3",
+        "page": "https://freesound.org/people/YellowJacketStudios/sounds/423644",
+        "author": "YellowJacketStudios"
+      }
+    },
+    "room-tone-01": {
+      "group": "room-tone",
+      "category": "ambience",
+      "file": "banks/sfx/ambience/room-tone-01.mp3",
+      "tags": [
+        "room",
+        "tone",
+        "silence",
+        "indoor",
+        "ambience",
+        "indoors",
+        "industrial",
+        "office"
+      ],
+      "duration": 90,
+      "peak": 67.946,
+      "lufs": -21.8,
+      "loop": true,
+      "title": "Room Tone Office Industrial Ambience 09",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/203/203303_658546-hq.mp3",
+        "page": "https://freesound.org/people/mzui/sounds/203303",
+        "author": "mzui"
+      }
+    },
+    "clock-room-01": {
+      "group": "clock-room",
+      "category": "ambience",
+      "file": "banks/sfx/ambience/clock-room-01.mp3",
+      "tags": [
+        "clock",
+        "ticking",
+        "room",
+        "time",
+        "ambience",
+        "hour",
+        "multiple",
+        "small",
+        "small-clock",
+        "tic"
+      ],
+      "duration": 60.043,
+      "peak": 54.561,
+      "lufs": -20.9,
+      "loop": true,
+      "title": "small clock in room",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/211/211192_770707-hq.mp3",
+        "page": "https://freesound.org/people/Yuval/sounds/211192",
+        "author": "Yuval"
+      }
+    },
+    "forest-day-01": {
+      "group": "forest-day",
+      "category": "ambience",
+      "file": "banks/sfx/ambience/forest-day-01.mp3",
+      "tags": [
+        "forest",
+        "birds",
+        "day",
+        "nature",
+        "africa",
+        "ambi",
+        "ambience",
+        "bird",
+        "birdsong",
+        "field-recording"
+      ],
+      "duration": 59.881,
+      "peak": 8.096,
+      "lufs": -21.8,
+      "loop": true,
+      "title": "South Africa - St. Lucia Forest & Bird Ambience",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/394/394291_2291325-hq.mp3",
+        "page": "https://freesound.org/people/EpicWizard/sounds/394291",
+        "author": "EpicWizard"
+      }
+    },
+    "ocean-waves-01": {
+      "group": "ocean-waves",
+      "category": "ambience",
+      "file": "banks/sfx/ambience/ocean-waves-01.mp3",
+      "tags": [
+        "ocean",
+        "sea",
+        "waves",
+        "beach",
+        "ambience",
+        "crashing",
+        "zen",
+        "nature"
+      ],
+      "duration": 90,
+      "peak": 32.986,
+      "lufs": -21.2,
+      "loop": true,
+      "title": "Zen Ocean Waves,Ocean Waves Ambience.mp3",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/456/456899_9518146-hq.mp3",
+        "page": "https://freesound.org/people/INNORECORDS/sounds/456899",
+        "author": "INNORECORDS"
+      }
+    },
+    "cafe-01": {
+      "group": "cafe",
+      "category": "ambience",
+      "file": "banks/sfx/ambience/cafe-01.mp3",
+      "tags": [
+        "cafe",
+        "restaurant",
+        "people",
+        "chatter",
+        "ambience",
+        "talking",
+        "copenhagen",
+        "copenhagen-cafe",
+        "crowd",
+        "field-recording"
+      ],
+      "duration": 90,
+      "peak": 8.617,
+      "lufs": -22.9,
+      "loop": true,
+      "title": "People talking at cafe ambience",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/482/482990_8972317-hq.mp3",
+        "page": "https://freesound.org/people/priesjensen/sounds/482990",
+        "author": "priesjensen"
+      }
+    },
+    "underwater-01": {
+      "group": "underwater",
+      "category": "ambience",
+      "file": "banks/sfx/ambience/underwater-01.mp3",
+      "tags": [
+        "underwater",
+        "water",
+        "deep",
+        "muffled",
+        "drowning",
+        "film",
+        "submarine",
+        "submerge",
+        "swimming"
+      ],
+      "duration": 90,
+      "peak": 34.908,
+      "lufs": -19.8,
+      "loop": true,
+      "title": "Deep Sea Ambience",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/193/193822_208303-hq.mp3",
+        "page": "https://freesound.org/people/jhumbucker/sounds/193822",
+        "author": "jhumbucker"
+      }
+    },
+    "clock-tick-01": {
+      "group": "clock-tick",
+      "category": "objects",
+      "file": "banks/sfx/objects/clock-tick-01.mp3",
+      "tags": [
+        "clock",
+        "tick",
+        "tock",
+        "watch",
+        "time",
+        "tic",
+        "ticking",
+        "toc"
+      ],
+      "duration": 5.4,
+      "peak": 2.978,
+      "lufs": -19.5,
+      "loop": false,
+      "title": "Clock ticking",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/130/130388_2037384-hq.mp3",
+        "page": "https://freesound.org/people/olver/sounds/130388",
+        "author": "olver"
+      }
+    },
+    "clock-tick-02": {
+      "group": "clock-tick",
+      "category": "objects",
+      "file": "banks/sfx/objects/clock-tick-02.mp3",
+      "tags": [
+        "clock",
+        "tick",
+        "tock",
+        "watch",
+        "time",
+        "cartoon",
+        "clockwork",
+        "old",
+        "tick-tock",
+        "ticking",
+        "ticks"
+      ],
+      "duration": 6.626,
+      "peak": 2.189,
+      "lufs": -21.5,
+      "loop": false,
+      "title": "Clock Tick",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/398/398275_2351866-hq.mp3",
+        "page": "https://freesound.org/people/FlashTrauma/sounds/398275",
+        "author": "FlashTrauma"
+      }
+    },
+    "clock-chime-01": {
+      "group": "clock-chime",
+      "category": "objects",
+      "file": "banks/sfx/objects/clock-chime-01.mp3",
+      "tags": [
+        "clock",
+        "chime",
+        "midnight",
+        "bell"
+      ],
+      "duration": 12,
+      "peak": 10.879,
+      "lufs": -15.9,
+      "loop": false,
+      "title": "grandfatherclockbell.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/583/583245_9647473-hq.mp3",
+        "page": "https://freesound.org/people/ryanw2004/sounds/583245",
+        "author": "ryanw2004"
+      }
+    },
+    "glass-break-01": {
+      "group": "glass-break",
+      "category": "objects",
+      "file": "banks/sfx/objects/glass-break-01.mp3",
+      "tags": [
+        "glass",
+        "break",
+        "shatter",
+        "breaking"
+      ],
+      "duration": 1.34,
+      "peak": 0.086,
+      "lufs": -20.9,
+      "loop": false,
+      "title": "Glass Breaking",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/378/378568_7020227-hq.mp3",
+        "page": "https://freesound.org/people/ToxicFilmzSRsounds/sounds/378568",
+        "author": "ToxicFilmzSRsounds"
+      }
+    },
+    "glass-break-02": {
+      "group": "glass-break",
+      "category": "objects",
+      "file": "banks/sfx/objects/glass-break-02.mp3",
+      "tags": [
+        "glass",
+        "break",
+        "shatter",
+        "burst"
+      ],
+      "duration": 1.02,
+      "peak": 0.086,
+      "lufs": -17.3,
+      "loop": false,
+      "title": "Glass Break 1.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/371/371094_6901532-hq.mp3",
+        "page": "https://freesound.org/people/mccormick_iain/sounds/371094",
+        "author": "mccormick_iain"
+      }
+    },
+    "keys-jingle-01": {
+      "group": "keys-jingle",
+      "category": "objects",
+      "file": "banks/sfx/objects/keys-jingle-01.mp3",
+      "tags": [
+        "keys",
+        "jingle",
+        "metal",
+        "chinking",
+        "clinking",
+        "jangle",
+        "jangling",
+        "jingling",
+        "tinkle"
+      ],
+      "duration": 2.29,
+      "peak": 1.587,
+      "lufs": -19,
+      "loop": false,
+      "title": "Keys jingling",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/390/390324_4551270-hq.mp3",
+        "page": "https://freesound.org/people/Lightnessko/sounds/390324",
+        "author": "Lightnessko"
+      }
+    },
+    "lock-click-01": {
+      "group": "lock-click",
+      "category": "objects",
+      "file": "banks/sfx/objects/lock-click-01.mp3",
+      "tags": [
+        "lock",
+        "unlock",
+        "click",
+        "key",
+        "close",
+        "creak",
+        "door",
+        "open",
+        "squeak"
+      ],
+      "duration": 0.478,
+      "peak": 0.206,
+      "lufs": -23.6,
+      "loop": false,
+      "title": "Door_Unlocking.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/422/422852_6613468-hq.mp3",
+        "page": "https://freesound.org/people/IPaddeh/sounds/422852",
+        "author": "IPaddeh"
+      }
+    },
+    "match-strike-01": {
+      "group": "match-strike",
+      "category": "objects",
+      "file": "banks/sfx/objects/match-strike-01.mp3",
+      "tags": [
+        "match",
+        "strike",
+        "fire",
+        "light",
+        "striking"
+      ],
+      "duration": 0.94,
+      "peak": 0.136,
+      "lufs": -25.9,
+      "loop": false,
+      "title": "Match strike 01",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/423/423809_2549846-hq.mp3",
+        "page": "https://freesound.org/people/scalywhale/sounds/423809",
+        "author": "scalywhale"
+      }
+    },
+    "candle-blow-01": {
+      "group": "candle-blow",
+      "category": "objects",
+      "file": "banks/sfx/objects/candle-blow-01.mp3",
+      "tags": [
+        "candle",
+        "blow",
+        "extinguish",
+        "blowing",
+        "candles",
+        "fire",
+        "mouth",
+        "noise",
+        "noises",
+        "out"
+      ],
+      "duration": 0.74,
+      "peak": 0.324,
+      "lufs": -16,
+      "loop": false,
+      "title": "BlowingRaspberry.mp3",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/466/466900_2571658-hq.mp3",
+        "page": "https://freesound.org/people/flowerdove2168/sounds/466900",
+        "author": "flowerdove2168"
+      }
+    },
+    "water-drip-01": {
+      "group": "water-drip",
+      "category": "objects",
+      "file": "banks/sfx/objects/water-drip-01.mp3",
+      "tags": [
+        "water",
+        "drip",
+        "drop",
+        "cave",
+        "dropplet"
+      ],
+      "duration": 4.36,
+      "peak": 0.782,
+      "lufs": -16.1,
+      "loop": false,
+      "title": "Water Drips/drops",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/273/273331_2395329-hq.mp3",
+        "page": "https://freesound.org/people/acmkyne/sounds/273331",
+        "author": "acmkyne"
+      }
+    },
+    "coin-drop-01": {
+      "group": "coin-drop",
+      "category": "objects",
+      "file": "banks/sfx/objects/coin-drop-01.mp3",
+      "tags": [
+        "coin",
+        "money",
+        "drop",
+        "metal",
+        "cash",
+        "change",
+        "coins",
+        "jingle",
+        "tinkle"
+      ],
+      "duration": 1.42,
+      "peak": 0.325,
+      "lufs": -16.1,
+      "loop": false,
+      "title": "coin drop on concrete",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/324/324760_5497409-hq.mp3",
+        "page": "https://freesound.org/people/PetervH/sounds/324760",
+        "author": "PetervH"
+      }
+    },
+    "door-open-close-01": {
+      "group": "door-open-close",
+      "category": "objects",
+      "file": "banks/sfx/objects/door-open-close-01.mp3",
+      "tags": [
+        "door",
+        "open",
+        "close",
+        "closing",
+        "creak",
+        "creaking",
+        "dr-0",
+        "hard",
+        "heavy"
+      ],
+      "duration": 3.48,
+      "peak": 3.109,
+      "lufs": -17.7,
+      "loop": false,
+      "title": "Door Open Close Heavy Wooden Hard Loud Creak Seal Theatre",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/402/402465_706234-hq.mp3",
+        "page": "https://freesound.org/people/LampEight/sounds/402465",
+        "author": "LampEight"
+      }
+    },
+    "gunshot-distant-01": {
+      "group": "gunshot-distant",
+      "category": "objects",
+      "file": "banks/sfx/objects/gunshot-distant-01.mp3",
+      "tags": [
+        "gun",
+        "shot",
+        "gunshot",
+        "distant",
+        "firearm",
+        "pistol"
+      ],
+      "duration": 0.83,
+      "peak": 0.038,
+      "lufs": -18,
+      "loop": false,
+      "title": "Single Distant Pistol Gunshot.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/385/385812_5937039-hq.mp3",
+        "page": "https://freesound.org/people/morganpurkis/sounds/385812",
+        "author": "morganpurkis"
+      }
+    },
+    "sword-unsheathe-01": {
+      "group": "sword-unsheathe",
+      "category": "objects",
+      "file": "banks/sfx/objects/sword-unsheathe-01.mp3",
+      "tags": [
+        "sword",
+        "blade",
+        "metal",
+        "draw",
+        "weapon",
+        "shing",
+        "unsheath",
+        "sheath"
+      ],
+      "duration": 1.685,
+      "peak": 0.107,
+      "lufs": -16,
+      "loop": false,
+      "title": "UnsheathingSmallKnife.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/466/466216_9855691-hq.mp3",
+        "page": "https://freesound.org/people/Harrisando/sounds/466216",
+        "author": "Harrisando"
+      }
+    },
+    "car-pass-01": {
+      "group": "car-pass",
+      "category": "objects",
+      "file": "banks/sfx/objects/car-pass-01.mp3",
+      "tags": [
+        "car",
+        "pass",
+        "traffic",
+        "vehicle",
+        "left",
+        "passing",
+        "right",
+        "roaring",
+        "street"
+      ],
+      "duration": 5.19,
+      "peak": 1.508,
+      "lufs": -15.5,
+      "loop": false,
+      "title": "Car passing by.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/171/171447_3191786-hq.mp3",
+        "page": "https://freesound.org/people/hinzebeat/sounds/171447",
+        "author": "hinzebeat"
+      }
+    },
+    "phone-ring-old-01": {
+      "group": "phone-ring-old",
+      "category": "objects",
+      "file": "banks/sfx/objects/phone-ring-old-01.mp3",
+      "tags": [
+        "phone",
+        "telephone",
+        "ring",
+        "old",
+        "alert",
+        "bell",
+        "call",
+        "cell",
+        "electric",
+        "electronic",
+        "mobile"
+      ],
+      "duration": 5.61,
+      "peak": 5.431,
+      "lufs": -16.5,
+      "loop": false,
+      "title": "Phone Ring",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/572/572349_5620304-hq.mp3",
+        "page": "https://freesound.org/people/NachtmahrTV/sounds/572349",
+        "author": "NachtmahrTV"
+      }
+    },
+    "drone-dark-01": {
+      "group": "drone-dark",
+      "category": "tension",
+      "file": "banks/sfx/tension/drone-dark-01.mp3",
+      "tags": [
+        "drone",
+        "dark",
+        "tension",
+        "low",
+        "scary",
+        "cinematic",
+        "ambient"
+      ],
+      "duration": 27.431,
+      "peak": 25.099,
+      "lufs": -20.8,
+      "loop": true,
+      "title": "Dark Drone Ambient",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/500/500326_10243597-hq.mp3",
+        "page": "https://freesound.org/people/LulSayer/sounds/500326",
+        "author": "LulSayer"
+      }
+    },
+    "drone-dark-02": {
+      "group": "drone-dark",
+      "category": "tension",
+      "file": "banks/sfx/tension/drone-dark-02.mp3",
+      "tags": [
+        "drone",
+        "dark",
+        "tension",
+        "low",
+        "atmosphere",
+        "slow",
+        "surround",
+        "winter",
+        "instruments",
+        "horror",
+        "ambient"
+      ],
+      "duration": 90,
+      "peak": 72.94,
+      "lufs": -21.1,
+      "loop": true,
+      "title": "Slow Time Winter Temple Atmo Asia Ambience Fantasy Dark Drone Cinematic Surround.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/612/612645_2282212-hq.mp3",
+        "page": "https://freesound.org/people/szegvari/sounds/612645",
+        "author": "szegvari"
+      }
+    },
+    "tension-riser-01": {
+      "group": "tension-riser",
+      "category": "tension",
+      "file": "banks/sfx/tension/tension-riser-01.mp3",
+      "tags": [
+        "riser",
+        "tension",
+        "build",
+        "crescendo",
+        "fx",
+        "rise",
+        "soundeffect",
+        "synth",
+        "texture"
+      ],
+      "duration": 9.01,
+      "peak": 5.747,
+      "lufs": -15.6,
+      "loop": false,
+      "title": "Tension riser",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/609/609767_13504080-hq.mp3",
+        "page": "https://freesound.org/people/xkeril/sounds/609767",
+        "author": "xkeril"
+      }
+    },
+    "tension-riser-02": {
+      "group": "tension-riser",
+      "category": "tension",
+      "file": "banks/sfx/tension/tension-riser-02.mp3",
+      "tags": [
+        "riser",
+        "tension",
+        "build",
+        "crescendo",
+        "appear",
+        "cymbal",
+        "effect",
+        "fx",
+        "increase",
+        "noise"
+      ],
+      "duration": 7.18,
+      "peak": 3.893,
+      "lufs": -17.5,
+      "loop": false,
+      "title": "rise-crash.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/334/334522_2127539-hq.mp3",
+        "page": "https://freesound.org/people/soneproject/sounds/334522",
+        "author": "soneproject"
+      }
+    },
+    "tinnitus-01": {
+      "group": "tinnitus",
+      "category": "tension",
+      "file": "banks/sfx/tension/tinnitus-01.mp3",
+      "tags": [
+        "tinnitus",
+        "ringing",
+        "ear",
+        "shock",
+        "artificial",
+        "deaf",
+        "hearing",
+        "noise",
+        "ringing-in-ears"
+      ],
+      "duration": 12,
+      "peak": 4.233,
+      "lufs": -16.2,
+      "loop": false,
+      "title": "Tinnitus 10kHz",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/419/419748_2247456-hq.mp3",
+        "page": "https://freesound.org/people/Kinoton/sounds/419748",
+        "author": "Kinoton"
+      }
+    },
+    "stinger-reveal-01": {
+      "group": "stinger-reveal",
+      "category": "cinematic",
+      "file": "banks/sfx/cinematic/stinger-reveal-01.mp3",
+      "tags": [
+        "stinger",
+        "reveal",
+        "cinematic",
+        "hit",
+        "sci-fi",
+        "abstract",
+        "atmosphere",
+        "background",
+        "dark",
+        "destruction",
+        "drone"
+      ],
+      "duration": 1.925,
+      "peak": 0.732,
+      "lufs": -17.7,
+      "loop": false,
+      "title": "Stinger 3.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/441/441342_8698658-hq.mp3",
+        "page": "https://freesound.org/people/AudioPapkin/sounds/441342",
+        "author": "AudioPapkin"
+      }
+    },
+    "stinger-reveal-02": {
+      "group": "stinger-reveal",
+      "category": "cinematic",
+      "file": "banks/sfx/cinematic/stinger-reveal-02.mp3",
+      "tags": [
+        "stinger",
+        "reveal",
+        "cinematic",
+        "hit",
+        "drama",
+        "dramatic",
+        "flstudio",
+        "megalovania",
+        "music",
+        "suspense"
+      ],
+      "duration": 2.87,
+      "peak": 0.045,
+      "lufs": -17.3,
+      "loop": false,
+      "title": "Uh Oh!",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/649/649935_11978831-hq.mp3",
+        "page": "https://freesound.org/people/XanTheRock/sounds/649935",
+        "author": "XanTheRock"
+      }
+    },
+    "braam-01": {
+      "group": "braam",
+      "category": "cinematic",
+      "file": "banks/sfx/cinematic/braam-01.mp3",
+      "tags": [
+        "braam",
+        "horn",
+        "epic",
+        "trailer",
+        "braams",
+        "orchestral",
+        "timpani"
+      ],
+      "duration": 3.265,
+      "peak": 1.795,
+      "lufs": -16.4,
+      "loop": false,
+      "title": "BRAAMS and TIMPANI",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/592/592041_9015615-hq.mp3",
+        "page": "https://freesound.org/people/XHALE303/sounds/592041",
+        "author": "XHALE303"
+      }
+    },
+    "shimmer-01": {
+      "group": "shimmer",
+      "category": "cinematic",
+      "file": "banks/sfx/cinematic/shimmer-01.mp3",
+      "tags": [
+        "shimmer",
+        "magic",
+        "sparkle",
+        "twinkle",
+        "bell",
+        "bright",
+        "cast",
+        "effect",
+        "fae",
+        "fairy",
+        "fantasy",
+        "happy"
+      ],
+      "duration": 3.32,
+      "peak": 0.299,
+      "lufs": -15.5,
+      "loop": false,
+      "title": "Shimmer",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/632/632344_12672694-hq.mp3",
+        "page": "https://freesound.org/people/adh.dreaming/sounds/632344",
+        "author": "adh.dreaming"
+      }
+    },
+    "piano-hit-dark-01": {
+      "group": "piano-hit-dark",
+      "category": "cinematic",
+      "file": "banks/sfx/cinematic/piano-hit-dark-01.mp3",
+      "tags": [
+        "piano",
+        "hit",
+        "dark",
+        "note",
+        "bass",
+        "electric",
+        "guitar",
+        "percussive",
+        "sampling",
+        "string"
+      ],
+      "duration": 5.5,
+      "peak": 0.046,
+      "lufs": -17.5,
+      "loop": false,
+      "title": "Bass Guitar Piano.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/564/564441_5456250-hq.mp3",
+        "page": "https://freesound.org/people/Fester993/sounds/564441",
+        "author": "Fester993"
+      }
+    },
+    "music-box-01": {
+      "group": "music-box",
+      "category": "cinematic",
+      "file": "banks/sfx/cinematic/music-box-01.mp3",
+      "tags": [
+        "music box",
+        "lullaby",
+        "creepy",
+        "child",
+        "ambiance",
+        "antique",
+        "box",
+        "chime",
+        "dsk",
+        "flstudio",
+        "loop",
+        "melody"
+      ],
+      "duration": 12,
+      "peak": 10.051,
+      "lufs": -16.2,
+      "loop": false,
+      "title": "Music Box Melody 1",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/338/338986_5106192-hq.mp3",
+        "page": "https://freesound.org/people/DRFX/sounds/338986",
+        "author": "DRFX"
+      }
+    },
+    "thunder-01": {
+      "group": "thunder",
+      "category": "nature",
+      "file": "banks/sfx/nature/thunder-01.mp3",
+      "tags": [
+        "thunder",
+        "storm",
+        "lightning",
+        "rumble",
+        "heavy",
+        "rain",
+        "thunder-storm",
+        "thunderstorm",
+        "weather"
+      ],
+      "duration": 12,
+      "peak": 0.058,
+      "lufs": -17.5,
+      "loop": false,
+      "title": "Thunder Storm.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/613/613973_13583433-hq.mp3",
+        "page": "https://freesound.org/people/beanogreen/sounds/613973",
+        "author": "beanogreen"
+      }
+    },
+    "thunder-02": {
+      "group": "thunder",
+      "category": "nature",
+      "file": "banks/sfx/nature/thunder-02.mp3",
+      "tags": [
+        "thunder",
+        "storm",
+        "lightning",
+        "rumble",
+        "rumbling",
+        "underwater"
+      ],
+      "duration": 2.785,
+      "peak": 2.185,
+      "lufs": -17.9,
+      "loop": false,
+      "title": "Thunder rumbling, underwater, outdoors_Thunder rumbling.aif",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/151/151854_2094213-hq.mp3",
+        "page": "https://freesound.org/people/carroll27/sounds/151854",
+        "author": "carroll27"
+      }
+    },
+    "birds-morning-01": {
+      "group": "birds-morning",
+      "category": "nature",
+      "file": "banks/sfx/nature/birds-morning-01.mp3",
+      "tags": [
+        "birds",
+        "morning",
+        "chirp",
+        "dawn",
+        "ambiance",
+        "ambience",
+        "ambient",
+        "bird",
+        "birdsong",
+        "bird-song",
+        "cardinal"
+      ],
+      "duration": 62.887,
+      "peak": 41.307,
+      "lufs": -19.8,
+      "loop": true,
+      "title": "loud male cardinal bird.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/467/467956_9786444-hq.mp3",
+        "page": "https://freesound.org/people/JPBILLINGSLEYJR/sounds/467956",
+        "author": "JPBILLINGSLEYJR"
+      }
+    },
+    "owl-01": {
+      "group": "owl",
+      "category": "nature",
+      "file": "banks/sfx/nature/owl-01.mp3",
+      "tags": [
+        "owl",
+        "hoot",
+        "night",
+        "bird",
+        "owl-hooting",
+        "tawny",
+        "birds",
+        "birdsong",
+        "field-recording",
+        "nature",
+        "wildlife"
+      ],
+      "duration": 5.764,
+      "peak": 4.467,
+      "lufs": -13.1,
+      "loop": false,
+      "title": "Owl Hooting.mp3",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/415/415153_1712536-hq.mp3",
+        "page": "https://freesound.org/people/howebzar/sounds/415153",
+        "author": "howebzar"
+      }
+    },
+    "dog-bark-01": {
+      "group": "dog-bark",
+      "category": "nature",
+      "file": "banks/sfx/nature/dog-bark-01.mp3",
+      "tags": [
+        "dog",
+        "bark",
+        "animal",
+        "barking",
+        "clean",
+        "pet",
+        "public-domain",
+        "single"
+      ],
+      "duration": 0.31,
+      "peak": 0.081,
+      "lufs": -13.2,
+      "loop": false,
+      "title": "Single Dog Bark",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/277/277058_4486188-hq.mp3",
+        "page": "https://freesound.org/people/kwahmah_02/sounds/277058",
+        "author": "kwahmah_02"
+      }
+    },
+    "horse-gallop-01": {
+      "group": "horse-gallop",
+      "category": "nature",
+      "file": "banks/sfx/nature/horse-gallop-01.mp3",
+      "tags": [
+        "horse",
+        "gallop",
+        "hooves",
+        "rider",
+        "cowboy",
+        "galloping",
+        "pony",
+        "ranch",
+        "trot",
+        "western"
+      ],
+      "duration": 2.621,
+      "peak": 0.045,
+      "lufs": -22.5,
+      "loop": false,
+      "title": "Horse Gallop - Loopable.mp3",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/197/197212_3001728-hq.mp3",
+        "page": "https://freesound.org/people/HebronTheatre/sounds/197212",
+        "author": "HebronTheatre"
+      }
+    },
+    "crowd-murmur-01": {
+      "group": "crowd-murmur",
+      "category": "crowd",
+      "file": "banks/sfx/crowd/crowd-murmur-01.mp3",
+      "tags": [
+        "crowd",
+        "murmur",
+        "people",
+        "chatter",
+        "ambiance",
+        "ambience",
+        "ambient",
+        "auditorium",
+        "background",
+        "busy",
+        "chat"
+      ],
+      "duration": 27.509,
+      "peak": 2.29,
+      "lufs": -22.6,
+      "loop": true,
+      "title": "Busy Room Ambience / People talking in background #2",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/465/465699_9159316-hq.mp3",
+        "page": "https://freesound.org/people/Breviceps/sounds/465699",
+        "author": "Breviceps"
+      }
+    },
+    "crowd-gasp-01": {
+      "group": "crowd-gasp",
+      "category": "crowd",
+      "file": "banks/sfx/crowd/crowd-gasp-01.mp3",
+      "tags": [
+        "crowd",
+        "gasp",
+        "shock",
+        "audience",
+        "breathe"
+      ],
+      "duration": 1.486,
+      "peak": 0.695,
+      "lufs": -16,
+      "loop": false,
+      "title": "Gasp.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/207/207779_2046066-hq.mp3",
+        "page": "https://freesound.org/people/Dvideoguy/sounds/207779",
+        "author": "Dvideoguy"
+      }
+    },
+    "applause-01": {
+      "group": "applause",
+      "category": "crowd",
+      "file": "banks/sfx/crowd/applause-01.mp3",
+      "tags": [
+        "applause",
+        "clapping",
+        "audience",
+        "applaud",
+        "applauding",
+        "cheer",
+        "clap"
+      ],
+      "duration": 6.32,
+      "peak": 1.639,
+      "lufs": -18.1,
+      "loop": false,
+      "title": "Applause 2.WAV",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/277/277021_1402315-hq.mp3",
+        "page": "https://freesound.org/people/Sandermotions/sounds/277021",
+        "author": "Sandermotions"
+      }
+    },
+    "children-laugh-01": {
+      "group": "children-laugh",
+      "category": "crowd",
+      "file": "banks/sfx/crowd/children-laugh-01.mp3",
+      "tags": [
+        "children",
+        "kids",
+        "laugh",
+        "playground",
+        "giggling",
+        "laughing",
+        "toddler"
+      ],
+      "duration": 4.42,
+      "peak": 0.23,
+      "lufs": -19.2,
+      "loop": false,
+      "title": "Giggling.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/86/86991_1326056-hq.mp3",
+        "page": "https://freesound.org/people/mrbriandesign/sounds/86991",
+        "author": "mrbriandesign"
+      }
+    },
+    "whoosh-deep-01": {
+      "group": "whoosh-deep",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/whoosh-deep-01.mp3",
+      "tags": [
+        "whoosh",
+        "deep",
+        "cinematic",
+        "transition",
+        "air",
+        "fast",
+        "gust",
+        "swish",
+        "swoosh",
+        "wind"
+      ],
+      "duration": 1.7,
+      "peak": 0.214,
+      "lufs": -23.7,
+      "loop": false,
+      "title": "whoosh_short_low.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/449/449992_3217484-hq.mp3",
+        "page": "https://freesound.org/people/DJT4NN3R/sounds/449992",
+        "author": "DJT4NN3R"
+      }
+    },
+    "whoosh-deep-02": {
+      "group": "whoosh-deep",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/whoosh-deep-02.mp3",
+      "tags": [
+        "whoosh",
+        "deep",
+        "cinematic",
+        "transition",
+        "air",
+        "fighting",
+        "fist",
+        "hit",
+        "martial-arts",
+        "punch",
+        "swipes",
+        "whips"
+      ],
+      "duration": 0.594,
+      "peak": 0.093,
+      "lufs": -19.3,
+      "loop": false,
+      "title": "whips04.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/72/72193_1070711-hq.mp3",
+        "page": "https://freesound.org/people/snowflakes/sounds/72193",
+        "author": "snowflakes"
+      }
+    },
+    "whip-02": {
+      "group": "whip",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/whip-02.mp3",
+      "tags": [
+        "whip",
+        "fast",
+        "transition",
+        "crack",
+        "whoosh"
+      ],
+      "duration": 0.505,
+      "peak": 0.08,
+      "lufs": -16,
+      "loop": false,
+      "title": "Whip Crack.m4a",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/529/529925_11751070-hq.mp3",
+        "page": "https://freesound.org/people/SciFiSounds/sounds/529925",
+        "author": "SciFiSounds"
+      }
+    },
+    "riser-short-02": {
+      "group": "riser-short",
+      "category": "transitions",
+      "file": "banks/sfx/transitions/riser-short-02.mp3",
+      "tags": [
+        "riser",
+        "build",
+        "rise",
+        "transition",
+        "fx",
+        "abstract",
+        "effect",
+        "movement",
+        "sfx",
+        "sound"
+      ],
+      "duration": 1.76,
+      "peak": 1.728,
+      "lufs": -18.7,
+      "loop": false,
+      "title": "Riser",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/561/561207_10825267-hq.mp3",
+        "page": "https://freesound.org/people/Rizzard/sounds/561207",
+        "author": "Rizzard"
+      }
+    },
+    "typewriter-ding-01": {
+      "group": "typewriter-ding",
+      "category": "text-ui",
+      "file": "banks/sfx/text-ui/typewriter-ding-01.mp3",
+      "tags": [
+        "typewriter",
+        "bell",
+        "ding",
+        "chime",
+        "desktop-bell",
+        "ping",
+        "ring"
+      ],
+      "duration": 1.32,
+      "peak": 0.139,
+      "lufs": -16,
+      "loop": false,
+      "title": "bell ding 1.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/611/611113_1629501-hq.mp3",
+        "page": "https://freesound.org/people/5ro4/sounds/611113",
+        "author": "5ro4"
+      }
+    },
+    "pin-stick-01": {
+      "group": "pin-stick",
+      "category": "paper",
+      "file": "banks/sfx/paper/pin-stick-01.mp3",
+      "tags": [
+        "pin",
+        "tack",
+        "board",
+        "crash",
+        "drum",
+        "kit",
+        "percussion"
+      ],
+      "duration": 1.23,
+      "peak": 0.025,
+      "lufs": -18.5,
+      "loop": false,
+      "title": "swiss thumbtack crash 1.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/209/209873_3797507-hq.mp3",
+        "page": "https://freesound.org/people/Logicogonist/sounds/209873",
+        "author": "Logicogonist"
+      }
+    },
+    "hospital-01": {
+      "group": "hospital",
+      "category": "ambience",
+      "file": "banks/sfx/ambience/hospital-01.mp3",
+      "tags": [
+        "hospital",
+        "monitor",
+        "beep",
+        "ecg",
+        "die",
+        "flate-line",
+        "heart"
+      ],
+      "duration": 9.441,
+      "peak": 4.73,
+      "lufs": -18.5,
+      "loop": true,
+      "title": "heart monitor beep.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/517/517508_11354478-hq.mp3",
+        "page": "https://freesound.org/people/gustavo.hanke/sounds/517508",
+        "author": "gustavo.hanke"
+      }
+    },
+    "lantern-01": {
+      "group": "lantern",
+      "category": "objects",
+      "file": "banks/sfx/objects/lantern-01.mp3",
+      "tags": [
+        "lantern",
+        "creak",
+        "metal",
+        "swing",
+        "door",
+        "handle",
+        "high",
+        "lever",
+        "mid",
+        "open"
+      ],
+      "duration": 0.79,
+      "peak": 0.31,
+      "lufs": -20.8,
+      "loop": false,
+      "title": "FX_NOISY_METAL_DOOR_OPEN.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/238/238891_4024435-hq.mp3",
+        "page": "https://freesound.org/people/Olichite/sounds/238891",
+        "author": "Olichite"
+      }
+    },
+    "shimmer-02": {
+      "group": "shimmer",
+      "category": "cinematic",
+      "file": "banks/sfx/cinematic/shimmer-02.mp3",
+      "tags": [
+        "shimmer",
+        "magic",
+        "sparkle",
+        "twinkle",
+        "fairy",
+        "fantasy",
+        "flash",
+        "gem",
+        "gems",
+        "saga",
+        "shining"
+      ],
+      "duration": 2.33,
+      "peak": 0.03,
+      "lufs": -16.1,
+      "loop": false,
+      "title": "Sparkling Star 01.wav",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/462/462095_6142149-hq.mp3",
+        "page": "https://freesound.org/people/MATRIXXX_/sounds/462095",
+        "author": "MATRIXXX_"
+      }
+    },
+    "rats-squeak-01": {
+      "group": "rats-squeak",
+      "category": "horror",
+      "file": "banks/sfx/horror/rats-squeak-01.mp3",
+      "tags": [
+        "rats",
+        "squeaking",
+        "baby",
+        "pet",
+        "pet-shop",
+        "pet-store",
+        "rat",
+        "squeak"
+      ],
+      "duration": 5.402,
+      "peak": 1.97,
+      "lufs": -20.2,
+      "loop": false,
+      "title": "Rodents - Brown Rats; Several Babies Squeaking, Close Perspective",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "freesound",
+        "url": "https://cdn.freesound.org/previews/841/841571_15895934-hq.mp3",
+        "page": "https://freesound.org/people/TheKingOfGeeks360/sounds/841571/",
+        "author": "TheKingOfGeeks360"
+      }
+    },
+    "piper-flute-01": {
+      "group": "piper-flute",
+      "category": "ambience",
+      "file": "banks/sfx/ambience/piper-flute-01.mp3",
+      "tags": [
+        "flute",
+        "melody",
+        "medieval",
+        "100-bpm",
+        "gentle",
+        "lead",
+        "line",
+        "loop"
+      ],
+      "duration": 14.46,
+      "peak": 5.939,
+      "lufs": -20.3,
+      "loop": true,
+      "title": "Medieval Flute Riff",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "freesound",
+        "url": "https://cdn.freesound.org/previews/506/506265_8466114-hq.mp3",
+        "page": "https://freesound.org/people/f-r-a-g-i-l-e/sounds/506265/",
+        "author": "f-r-a-g-i-l-e"
+      }
+    },
+    "river-01": {
+      "group": "river",
+      "category": "ambience",
+      "file": "banks/sfx/ambience/river-01.mp3",
+      "tags": [
+        "river",
+        "water",
+        "flowing",
+        "ambient",
+        "babbling",
+        "brook",
+        "bubbling",
+        "creek",
+        "daytime",
+        "field-recording",
+        "flow"
+      ],
+      "duration": 35.13,
+      "peak": 26.813,
+      "lufs": -20.2,
+      "loop": true,
+      "title": "Creek Ambience",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "freesound",
+        "url": "https://cdn.freesound.org/previews/721/721616_12565192-hq.mp3",
+        "page": "https://freesound.org/people/SduggySounds/sounds/721616/",
+        "author": "SduggySounds"
+      }
+    }
+  }
+}

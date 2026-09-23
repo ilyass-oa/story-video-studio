@@ -1,0 +1,30 @@
+{
+  "_doc": "LOOKS = pack (layout family: noir dark / atelier light) + theme (palette, accent font, atmosphere) + backdrop (moving background). Choose by the story's feeling, and never the same theme as the previous two episodes in history/STORIES.md. Visual menu: engine/gallery/looks.jpg (./sv looks).",
+  "defaults": {"noir": "ember", "atelier": "paper"},
+  "backdrops": {
+    "noir": {
+      "smoke": "drifting coloured smoke under a moving glow — the default dark atmosphere",
+      "rays": "soft light beams falling from above through haze — sacred, royal, revelations",
+      "mist": "low fog rolling along the floor — the sea, graveyards, moors, anything cold or lost",
+      "void": "almost nothing: a deep glow and heavy vignette — records, facts, restraint, the true-story voice"
+    },
+    "atelier": {
+      "grid": "paper with a drafting grid — explanations, lists, how things work",
+      "plain": "warm paper and window light only — tender, intimate stories",
+      "lines": "ruled notebook paper — diaries, letters, memories, lessons"
+    }
+  },
+  "themes": {
+    "ember":  {"pack": "noir", "backdrop": "smoke", "label": "Ember — black & blood red, electric yellow words", "use": "horror, murder, curses, gothic tales, anything with fire or blood"},
+    "abyss":  {"pack": "noir", "backdrop": "mist",  "label": "Abyss — midnight blue, ice-cyan words", "use": "the sea, drowning, ghosts, winter, isolation, space, cold cases"},
+    "venom":  {"pack": "noir", "backdrop": "smoke", "label": "Venom — toxic green, acid-lime words, magenta shocks", "use": "plague, poison, witches, rot, experiments, forbidden science"},
+    "gilded": {"pack": "noir", "backdrop": "rays",  "label": "Gilded — black & gold, elegant serif words", "use": "greed, kings and empires, treasure, deals with the devil, luxury gone wrong"},
+    "bone":   {"pack": "noir", "backdrop": "void",  "label": "Bone — ash & sepia archive, pale-amber words, classic serif", "use": "history, war, true records, old photographs, unsolved mysteries told as fact"},
+    "violet": {"pack": "noir", "backdrop": "smoke", "label": "Violet — night purple, orchid words", "use": "dreams, the supernatural, madness, tragic love, fairy-tale darkness"},
+    "paper":  {"pack": "atelier", "backdrop": "grid",  "label": "Paper — grey editorial paper, black words, red accent", "use": "explainers, facts, clean modern stories"},
+    "cream":  {"pack": "atelier", "backdrop": "plain", "label": "Cream — warm cream, brown serif words, burnt orange", "use": "family, childhood, food, nostalgia, gentle parables"},
+    "sage":   {"pack": "atelier", "backdrop": "lines", "label": "Sage — soft green paper, forest words", "use": "nature, wisdom, calm lessons, healing"},
+    "blush":  {"pack": "atelier", "backdrop": "plain", "label": "Blush — rose paper, wine serif words", "use": "love, letters, loss, memories"},
+    "slate":  {"pack": "atelier", "backdrop": "grid",  "label": "Slate — cool blue-grey paper, condensed navy words, orange", "use": "science, inventions, investigations, modern mysteries"}
+  }
+}

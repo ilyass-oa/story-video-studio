@@ -1,0 +1,443 @@
+{
+  "pack": "noir",
+  "music": {
+    "id": "dark-ambient",
+    "volume": 0.09
+  },
+  "ambience": [
+    {
+      "sfx": "river",
+      "from": "s10",
+      "to": "s12",
+      "volume": 0.22
+    },
+    {
+      "sfx": "piper-flute",
+      "from": "s15",
+      "to": "s20",
+      "volume": 0.3
+    },
+    {
+      "sfx": "eerie-drone",
+      "from": "s22",
+      "to": "end",
+      "volume": 0.14
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "A hundred and thirty children / *vanished* in one day.",
+      "template": "type-center",
+      "slots": {
+        "bigWord": "130"
+      }
+    },
+    {
+      "id": "s02",
+      "text": "The town / wrote it *down:*",
+      "template": "photo-framed",
+      "slots": {
+        "photo": {
+          "see": "an old handwritten medieval German chronicle page, faded brown ink on parchment",
+          "find": [
+            "medieval manuscript page german",
+            "old chronicle handwritten parchment",
+            "medieval parchment handwriting"
+          ],
+          "kind": "photo",
+          "at": "wrote",
+          "id": "s02-photo"
+        }
+      }
+    },
+    {
+      "id": "s03",
+      "text": "June twenty-sixth, / *twelve eighty-four.*",
+      "template": "pinned-note"
+    },
+    {
+      "id": "s04",
+      "text": "The legend says Hamelin / was drowning / in *rats.*",
+      "template": "photo-framed",
+      "transition": "blur-dissolve",
+      "slots": {
+        "photo": {
+          "see": "many brown rats crowding together in the dark",
+          "find": [
+            "rats swarm",
+            "brown rats many",
+            "rats in cellar"
+          ],
+          "kind": "photo",
+          "at": "start",
+          "id": "s04-photo"
+        }
+      },
+      "sfx": [
+        {
+          "id": "rats-squeak",
+          "at": "rats.",
+          "volume": 0.45,
+          "durMs": 2200
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "They bit *babies* / in their cradles.",
+      "template": "photo-full",
+      "variant": 1,
+      "slots": {
+        "photo": {
+          "see": "an antique wooden rocking cradle, empty, in an old room",
+          "find": [
+            "antique wooden cradle",
+            "old baby cradle dark room",
+            "vintage wooden crib"
+          ],
+          "kind": "photo",
+          "at": "start",
+          "id": "s05-photo",
+          "focus": [
+            0.36,
+            0.6
+          ]
+        }
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Then a *stranger* came,",
+      "template": "type-center"
+    },
+    {
+      "id": "s07",
+      "text": "in a coat of many colours, / carrying a *pipe.*",
+      "template": "photo-full",
+      "slots": {
+        "photo": {
+          "see": "a man in the Pied Piper's patchwork coat of many colours holding a pipe, on an old cobbled street",
+          "find": [
+            "pied piper of hamelin illustration",
+            "pied piper kate greenaway",
+            "rattenfänger von hameln"
+          ],
+          "kind": "photo",
+          "at": "start",
+          "id": "s07-photo",
+          "focus": [
+            0.5,
+            0.22
+          ]
+        }
+      },
+      "variant": 2
+    },
+    {
+      "id": "s08",
+      "text": "For a thousand *guilders,* / he promised,",
+      "template": "object-hero",
+      "slots": {
+        "object": {
+          "see": "a few old gold gulden coins, medieval German gold coins",
+          "find": [
+            "goldgulden coin",
+            "gold gulden",
+            "medieval gold coin"
+          ],
+          "kind": "cutout",
+          "at": "guilders,",
+          "id": "s08-object"
+        }
+      },
+      "sfx": [
+        {
+          "id": "coin-drop",
+          "at": "guilders,",
+          "volume": 0.45
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "every rat / would be *gone.*",
+      "template": "type-center",
+      "variant": 1
+    },
+    {
+      "id": "s10",
+      "text": "He *played…* / and the rats followed him",
+      "template": "object-hero",
+      "variant": 1,
+      "slots": {
+        "object": {
+          "see": "an antique wooden pipe or recorder flute, a simple old musical instrument",
+          "find": [
+            "antique recorder flute",
+            "wooden fife",
+            "baroque recorder instrument"
+          ],
+          "kind": "cutout",
+          "at": "played…",
+          "id": "s10-object"
+        }
+      },
+      "sfx": [
+        {
+          "id": "piper-flute",
+          "at": "played…",
+          "volume": 0.4,
+          "durMs": 2600
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "to the river, / where every last one *drowned.*",
+      "template": "photo-full",
+      "slots": {
+        "photo": {
+          "see": "a dark river at dusk, cold flowing water, old stone bank",
+          "find": [
+            "dark river water flowing",
+            "river night water",
+            "river dusk"
+          ],
+          "kind": "video",
+          "at": "start",
+          "id": "s11-photo"
+        }
+      },
+      "sfx": [
+        {
+          "id": "underwater",
+          "at": "drowned.",
+          "volume": 0.35,
+          "durMs": 1800
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "But the mayor / ^refused^ to pay.",
+      "template": "type-center"
+    },
+    {
+      "id": "s13",
+      "text": "So the piper / came back / one *morning,*",
+      "template": "photo-full",
+      "variant": 1,
+      "slots": {
+        "photo": {
+          "see": "misty morning over the rooftops of an old half-timbered German town, no people",
+          "find": [
+            "hameln old town",
+            "half timbered houses morning mist",
+            "medieval german town morning"
+          ],
+          "kind": "photo",
+          "at": "start",
+          "id": "s13-photo"
+        }
+      }
+    },
+    {
+      "id": "s14",
+      "text": "while the parents / were at / *church.*",
+      "template": "split-panel",
+      "slots": {
+        "photo": {
+          "see": "inside an old church, anonymous people sitting in the pews seen from behind, candles",
+          "find": [
+            "church congregation from behind",
+            "people in church pews back",
+            "old church interior people praying"
+          ],
+          "kind": "photo",
+          "at": "start",
+          "id": "s14-photo"
+        }
+      },
+      "sfx": [
+        {
+          "id": "church-bell",
+          "at": "church.",
+          "volume": 0.4
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "He played / a *different song.*",
+      "template": "photo-framed",
+      "slots": {
+        "photo": {
+          "see": "close-up of a man's hands playing a wooden flute, dark background, no face",
+          "find": [
+            "hands playing wooden flute",
+            "playing flute close up hands",
+            "recorder flute hands"
+          ],
+          "kind": "photo",
+          "at": "start",
+          "id": "s15-photo"
+        }
+      }
+    },
+    {
+      "id": "s16",
+      "text": "Doors flew open. / Little *feet* / ran into the street.",
+      "template": "photo-full",
+      "transition": "whip-left",
+      "slots": {
+        "photo": {
+          "see": "small bare feet of children running on old cobblestones, motion, no faces",
+          "find": [
+            "children feet running cobblestones",
+            "kids bare feet running",
+            "children running feet"
+          ],
+          "kind": "photo",
+          "at": "start",
+          "id": "s16-photo"
+        }
+      },
+      "sfx": [
+        {
+          "id": "door-creak",
+          "at": "Doors",
+          "volume": 0.45,
+          "durMs": 1200
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Every child / in Hamelin / *followed* / him,",
+      "template": "split-panel",
+      "variant": 1,
+      "slots": {
+        "photo": {
+          "see": "silhouettes of a line of children walking away up a path, seen from behind, backlit, no faces",
+          "find": [
+            "children walking away silhouette",
+            "kids walking path from behind",
+            "children silhouette walking"
+          ],
+          "kind": "photo",
+          "at": "start",
+          "id": "s17-photo"
+        }
+      },
+      "sfx": [
+        {
+          "id": "children-laugh",
+          "at": "followed",
+          "volume": 0.22,
+          "durMs": 2200
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "through the gate, / up the *hill…*",
+      "template": "photo-full",
+      "variant": 1,
+      "slots": {
+        "photo": {
+          "see": "a path climbing toward a misty hill at dusk, no people",
+          "find": [
+            "path up hill fog",
+            "foggy hill path dusk",
+            "misty hillside trail"
+          ],
+          "kind": "photo",
+          "at": "start",
+          "id": "s18-photo"
+        }
+      }
+    },
+    {
+      "id": "s19",
+      "text": "and they were / never seen *again.*",
+      "template": "type-center",
+      "transition": "cut",
+      "quiet": true
+    },
+    {
+      "id": "s20",
+      "text": "Only one *lame* boy / was left behind.",
+      "template": "object-hero",
+      "variant": 2,
+      "slots": {
+        "object": {
+          "see": "the lame child on crutches — an illustration of the legend",
+          "find": [
+            "The Lame Child pied piper illustration"
+          ],
+          "kind": "cutout",
+          "at": "lame",
+          "id": "s20-object"
+        }
+      }
+    },
+    {
+      "id": "s21",
+      "text": "He couldn't / _keep up._",
+      "template": "type-center",
+      "variant": 1
+    },
+    {
+      "id": "s22",
+      "text": "But the oldest records / never mention / a single *rat.*",
+      "template": "photo-framed",
+      "transition": "blur-dissolve",
+      "slots": {
+        "photo": {
+          "see": "the oldest picture of the Pied Piper (1592 copy of the Hamelin church window): the piper in a striped many-coloured costume, the children on the hill, the town, the river — no rats",
+          "find": [
+            "Pied piper.jpg Moersperg 1592"
+          ],
+          "kind": "photo",
+          "at": "records",
+          "id": "s22-photo"
+        }
+      }
+    },
+    {
+      "id": "s23",
+      "text": "The rats were added / almost *three hundred* years later.",
+      "template": "type-center",
+      "slots": {
+        "bigWord": "300"
+      }
+    },
+    {
+      "id": "s24",
+      "text": "The children / were *not.*",
+      "template": "outro-hold",
+      "transition": "blur-dissolve",
+      "slots": {
+        "object": {
+          "see": "a pair of small old worn children's leather shoes, antique",
+          "find": [
+            "old children's shoes",
+            "antique child shoes",
+            "vintage worn baby shoes"
+          ],
+          "kind": "cutout",
+          "at": "children",
+          "id": "s24-object"
+        }
+      },
+      "sfx": [
+        {
+          "id": "sub-drop",
+          "at": "not.",
+          "volume": 0.45
+        }
+      ]
+    }
+  ]
+}

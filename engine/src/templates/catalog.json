@@ -1,0 +1,102 @@
+{
+  "_doc": "LOCKED template bank. Agents choose `template`, optional `variant`, and fill ONLY the listed slots. Slot kinds: cutout = transparent PNG subject (auto background removal), photo = rectangular photo or clip, photos/objects = arrays, device = bank device with screen rect, string = short text. `variants` lists the layouts a variant number selects (variant % count). `maxWords` / `maxLineChars` are hard limits for the text block.",
+  "templates": {
+    "type-center": {
+      "use": "Pure kinetic typography. Hooks, punchlines, abstract statements, anything with no concrete visual. The workhorse between visual scenes.",
+      "slots": {"bigWord": {"kind": "string", "required": false, "note": "optional faint giant word behind the text"}},
+      "variants": ["centred", "centred-high"],
+      "maxWords": 9, "maxLineChars": 16, "minSeconds": 0.8
+    },
+    "object-hero": {
+      "use": "One concrete object/subject the line is about (a heart, a watch, a lantern, an eye). Text above the object.",
+      "slots": {"object": {"kind": "cutout", "required": true}},
+      "variants": ["text-top", "text-bottom", "text-top-left-aligned"],
+      "maxWords": 8, "maxLineChars": 16, "minSeconds": 1.2
+    },
+    "object-side": {
+      "use": "Object on one side, 2–4 short stacked lines on the other. Good for a list-like or rhythmic sentence (\"It's not / just / what\").",
+      "slots": {"object": {"kind": "cutout", "required": true}},
+      "variants": ["object-right", "object-left"],
+      "maxWords": 7, "maxLineChars": 9, "minSeconds": 1.2
+    },
+    "word-behind": {
+      "use": "Depth reveal: a giant word or letter behind a subject standing in front of it. Use for the single most important word of a beat. The bigWord is removed from the small caption line.",
+      "slots": {"object": {"kind": "cutout", "required": true}, "bigWord": {"kind": "string", "required": false, "note": "defaults to the first *accent* word"}},
+      "variants": ["default"],
+      "maxWords": 7, "maxLineChars": 18, "minSeconds": 1.4
+    },
+    "photo-full": {
+      "use": "Establishing shots and places (a room, a street at night, a face). Full-bleed graded photo or clip with a slow Ken Burns move.",
+      "slots": {"photo": {"kind": "photo", "required": true, "accepts": ["image", "video"]}},
+      "variants": ["text-bottom", "text-top", "text-bottom-push-in"],
+      "maxWords": 9, "maxLineChars": 16, "minSeconds": 1.2
+    },
+    "photo-framed": {
+      "use": "A photo presented as evidence/memory: glowing rimmed card (noir) or pinned polaroid (atelier).",
+      "slots": {"photo": {"kind": "photo", "required": true}},
+      "variants": ["tilt-left", "tilt-right"],
+      "maxWords": 8, "maxLineChars": 16, "minSeconds": 1.2
+    },
+    "card-stack": {
+      "use": "Accumulation: several moments/people/examples. 2–4 photo cards fly in one after another on the narration.",
+      "slots": {"photos": {"kind": "photos", "required": true, "min": 2, "max": 4}},
+      "variants": ["stack-left", "stack-right"],
+      "maxWords": 9, "maxLineChars": 18, "minSeconds": 1.6
+    },
+    "tv-screen": {
+      "use": "Watching / being watched / memory / broadcast. A vintage TV with a photo on its screen (an eye, a face, a place).",
+      "slots": {"screen": {"kind": "photo", "required": true, "accepts": ["image", "video"]}, "device": {"kind": "device", "required": false, "default": "device:tv-vintage"}},
+      "variants": ["default"],
+      "maxWords": 7, "maxLineChars": 16, "minSeconds": 1.4
+    },
+    "phone-screen": {
+      "use": "Modern life / scrolling / messages / a call. A phone rises; its screen shows a photo or 1–3 words.",
+      "slots": {"screen": {"kind": "photo", "required": false}, "screenText": {"kind": "string", "required": false, "note": "1-3 words shown on the phone"}},
+      "variants": ["default"],
+      "maxWords": 7, "maxLineChars": 16, "minSeconds": 1.4
+    },
+    "pinned-note": {
+      "use": "A clue, a note, a detail on paper. Torn note pinned to the board; words printed on it; optional object on the note.",
+      "slots": {"object": {"kind": "cutout", "required": false}},
+      "variants": ["tilt-left", "tilt-right"],
+      "maxWords": 8, "maxLineChars": 14, "minSeconds": 1.4
+    },
+    "split-panel": {
+      "use": "A person or place revealed on a tall panel swinging open like a door; text beside it. Good for introducing a character.",
+      "slots": {"photo": {"kind": "photo", "required": true}},
+      "variants": ["panel-right", "panel-left"],
+      "maxWords": 6, "maxLineChars": 10, "minSeconds": 1.4
+    },
+    "scatter": {
+      "use": "A cluster of related objects around one phrase (clues, belongings, symbols). 2–5 small cutouts pop in on the narration.",
+      "slots": {"objects": {"kind": "cutouts", "required": true, "min": 2, "max": 5}},
+      "variants": ["default"],
+      "maxWords": 7, "maxLineChars": 14, "minSeconds": 1.6
+    },
+    "figure-spotlight": {
+      "use": "A character on stage: person cutout in a spotlight, text beside. Introductions, confessions, a lone figure.",
+      "slots": {"figure": {"kind": "cutout", "required": true, "note": "full or 3/4 body person"}},
+      "variants": ["default"],
+      "maxWords": 7, "maxLineChars": 11, "minSeconds": 1.4
+    },
+    "outro-hold": {
+      "use": "The final line only. Calm hold, optional small object, fades to the ground colour.",
+      "slots": {"object": {"kind": "cutout", "required": false}},
+      "variants": ["default"],
+      "maxWords": 10, "maxLineChars": 16, "minSeconds": 2.0
+    }
+  },
+  "transitions": {
+    "cut": "hard cut (use for shock beats)",
+    "blur-zoom": "outgoing zooms and blurs out, incoming settles from zoom (noir default)",
+    "blur-dissolve": "soft blurred cross-dissolve (atelier default)",
+    "whip-left": "fast horizontal whip with directional blur",
+    "whip-right": "fast horizontal whip with directional blur",
+    "whip-up": "fast vertical whip with directional blur",
+    "flash": "warm light-leak flash on the cut (turns, revelations)",
+    "zoom-through": "camera flies through the outgoing scene",
+    "slide-up": "incoming scene slides up over the old one like paper",
+    "glitch": "RGB split jitter (tension, horror, digital)"
+  },
+  "cameras": ["push", "pull", "drift", "still"]
+}

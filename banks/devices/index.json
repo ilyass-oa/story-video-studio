@@ -1,0 +1,28 @@
+{
+  "devices": {
+    "tv-vintage": {
+      "kind": "device",
+      "file": "banks/devices/tv-vintage.png",
+      "width": 666,
+      "height": 1116,
+      "screen": [
+        0.1687,
+        0.0828,
+        0.5392,
+        0.2639
+      ],
+      "tags": [
+        "tv",
+        "television",
+        "retro",
+        "vintage",
+        "1950s"
+      ],
+      "source": {
+        "page": "https://commons.wikimedia.org/wiki/File:Televisio,_ASA-TV_221,_1956,_Turku._Tampereen_museot._Kuva_Timo_Lehtinen,_Vapriikin_kuva-arkisto._(16455946181).jpg",
+        "license": "CC BY 2.0",
+        "attribution": "Televisio, ASA-TV 221, 1956, Turku. Tampereen museot. Kuva Timo Lehtinen, Vapriikin kuva-arkisto. (16455946181).jpg by Museokeskus Vapriikki (CC BY 2.0)"
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# ─── secrets: your API keys live only in config/secrets.env (template: config/secrets.example.env)
+config/secrets.env
+.env
+*.env
+!config/secrets.example.env
+
+# ─── environments & AI models (recreated by ./sv setup)
+engine/node_modules/
+tools/py/.venv/
+tools/py/models/
+__pycache__/
+*.pyc
+
+# ─── your own work stays local
+# episodes in progress (only the layout README is shared)
+episodes/*
+!episodes/README.md
+# your story log and finished videos (only the README is shared; ./sv setup creates STORIES.md)
+history/*
+!history/README.md
+# third-party style references (optional local folder, never published)
+/references/
+
+# ─── editors, agents, OS
+.vscode/
+.idea/
+.claude/
+*.swp
+*.log
+.DS_Store
+Thumbs.db

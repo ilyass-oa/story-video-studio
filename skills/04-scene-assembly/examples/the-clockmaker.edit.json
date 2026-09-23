@@ -1,0 +1,153 @@
+{
+  "pack": "atelier",
+  "music": {
+    "id": "sad-piano",
+    "volume": 0.13
+  },
+  "ambience": [
+    {
+      "sfx": "clock-room",
+      "from": "start",
+      "to": "end",
+      "volume": 0.2
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Every *morning,*",
+      "template": "type-center"
+    },
+    {
+      "id": "s02",
+      "text": "an old clockmaker / wound a *clock*",
+      "template": "object-hero",
+      "slots": {
+        "object": {
+          "see": "the open brass movement of an antique clock, gears visible",
+          "find": [
+            "antique brass clock mechanism gears",
+            "clock movement gears"
+          ],
+          "kind": "cutout",
+          "at": "clock"
+        }
+      },
+      "sfx": [
+        {
+          "id": "clock-tick",
+          "at": "wound",
+          "volume": 0.45
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "he would never / see _finished._",
+      "template": "split-panel",
+      "slots": {
+        "photo": {
+          "see": "an elderly watchmaker's hands working on a clock at a wooden workbench",
+          "find": [
+            "old watchmaker at his workbench",
+            "watchmaker hands repairing clock"
+          ],
+          "kind": "photo"
+        }
+      }
+    },
+    {
+      "id": "s04",
+      "text": "His *apprentice* / asked him why.",
+      "template": "pinned-note",
+      "slots": {
+        "object": {
+          "see": "an antique pocket watch with its winding key",
+          "find": [
+            "antique pocket watch key",
+            "pocket watch with key"
+          ],
+          "kind": "cutout",
+          "at": "start"
+        }
+      }
+    },
+    {
+      "id": "s05",
+      "text": "\"Because *time*",
+      "template": "word-behind",
+      "slots": {
+        "object": {
+          "see": "an antique gold pocket watch, open",
+          "find": [
+            "antique gold pocket watch",
+            "open pocket watch"
+          ],
+          "kind": "cutout"
+        },
+        "bigWord": "Time"
+      }
+    },
+    {
+      "id": "s06",
+      "text": "is not something / you _keep,\"_ / he said.",
+      "template": "type-center"
+    },
+    {
+      "id": "s07",
+      "text": "\"It is something / you *give.\"*",
+      "template": "object-hero",
+      "variant": 1,
+      "slots": {
+        "object": {
+          "see": "an antique wooden hourglass with sand running",
+          "find": [
+            "antique hourglass",
+            "wooden hourglass sand"
+          ],
+          "kind": "cutout"
+        }
+      }
+    },
+    {
+      "id": "s08",
+      "text": "He died / that _winter._",
+      "template": "photo-full",
+      "variant": 1,
+      "slots": {
+        "photo": {
+          "see": "snow falling outside a window in winter, seen from inside",
+          "find": [
+            "snow falling outside window winter",
+            "snowy window view"
+          ],
+          "kind": "photo",
+          "at": "winter."
+        }
+      }
+    },
+    {
+      "id": "s09",
+      "text": "The clock / is still *ticking.*",
+      "template": "outro-hold",
+      "slots": {
+        "object": {
+          "see": "an old clock face with hands, ticking, close-up",
+          "find": [
+            "old clock face close up",
+            "antique clock dial"
+          ],
+          "kind": "cutout",
+          "at": "clock"
+        }
+      },
+      "sfx": [
+        {
+          "id": "clock-tick",
+          "at": "ticking.",
+          "volume": 0.6
+        }
+      ]
+    }
+  ]
+}

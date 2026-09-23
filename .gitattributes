@@ -1,0 +1,10 @@
+# Unix line endings everywhere (the ./sv launcher and Python scripts break with CRLF on Windows clones)
+* text=auto eol=lf
+
+# binary assets of the banks and gallery
+*.png binary
+*.jpg binary
+*.mp3 binary
+*.wav binary
+*.ogg binary
+*.mp4 binary

@@ -1,0 +1,42 @@
+{
+  "_doc": "Gemini TTS voice catalog (gender = Google Cloud docs; character = Google's own one-word descriptor + casting notes). Cast by the story, not by habit: ./sv voice-audition <slug> --voices A,B,C, then listen. Pace targets are words per minute for the finished master (pauses included).",
+  "voices": {
+    "Algieba":       {"gender": "male",   "character": "smooth", "cast": "late-night storyteller, confessions, noir, mystery"},
+    "Charon":        {"gender": "male",   "character": "informative", "cast": "documentary, history, true crime, explainers"},
+    "Enceladus":     {"gender": "male",   "character": "breathy", "cast": "intimate horror, whispered secrets, ASMR-leaning"},
+    "Algenib":       {"gender": "male",   "character": "gravelly", "cast": "old men, war, westerns, dark folklore, villains"},
+    "Iapetus":       {"gender": "male",   "character": "clear", "cast": "science, facts, clean educational"},
+    "Orus":          {"gender": "male",   "character": "firm", "cast": "epic history, battles, authority"},
+    "Alnilam":       {"gender": "male",   "character": "firm", "cast": "serious drama, motivation with weight"},
+    "Rasalgethi":    {"gender": "male",   "character": "informative", "cast": "mythology, lore, museum-style narration"},
+    "Sadaltager":    {"gender": "male",   "character": "knowledgeable", "cast": "philosophy, parables told by an elder"},
+    "Schedar":       {"gender": "male",   "character": "even", "cast": "calm reflective essays"},
+    "Umbriel":       {"gender": "male",   "character": "easy-going", "cast": "relaxed anecdotes, lighter stories"},
+    "Achird":        {"gender": "male",   "character": "friendly", "cast": "wholesome, uplifting, fables for all ages"},
+    "Zubenelgenubi": {"gender": "male",   "character": "casual", "cast": "conversational, internet stories, storytime"},
+    "Puck":          {"gender": "male",   "character": "upbeat", "cast": "fun facts, energetic hooks"},
+    "Fenrir":        {"gender": "male",   "character": "excitable", "cast": "thrillers at high tension, chases"},
+    "Sadachbia":     {"gender": "male",   "character": "lively", "cast": "adventure, comedy"},
+    "Sulafat":       {"gender": "female", "character": "warm", "cast": "parables, emotional true stories, bedtime-dark fairy tales"},
+    "Achernar":      {"gender": "female", "character": "soft", "cast": "tender, melancholic, poetic stories"},
+    "Gacrux":        {"gender": "female", "character": "mature", "cast": "grandmother tales, folklore, gothic"},
+    "Vindemiatrix":  {"gender": "female", "character": "gentle", "cast": "calm, soothing, reflective"},
+    "Kore":          {"gender": "female", "character": "firm", "cast": "true crime, investigations, confident narration"},
+    "Despina":       {"gender": "female", "character": "smooth", "cast": "mystery, elegant history, luxury"},
+    "Erinome":       {"gender": "female", "character": "clear", "cast": "educational, science, clean explainers"},
+    "Pulcherrima":   {"gender": "female", "character": "forward", "cast": "bold hooks, opinion, dramatic reveals"},
+    "Leda":          {"gender": "female", "character": "youthful", "cast": "young narrator, coming-of-age, first person teen"},
+    "Aoede":         {"gender": "female", "character": "breezy", "cast": "light, curious, travel"},
+    "Callirrhoe":    {"gender": "female", "character": "easy-going", "cast": "conversational storytime"},
+    "Autonoe":       {"gender": "female", "character": "bright", "cast": "positive, motivational"},
+    "Zephyr":        {"gender": "female", "character": "bright", "cast": "upbeat facts, lifestyle"},
+    "Laomedeia":     {"gender": "female", "character": "upbeat", "cast": "fun, fast, social"}
+  },
+  "pace": {
+    "_doc": "maxPause/dramatic = seconds kept by the mastering pause tightener; wpm = target range for the finished narration. The master is sped up (pitch-safe, max ×1.10) if it lands below the range.",
+    "tense":      {"wpm": [150, 170], "maxPause": 0.38, "dramatic": 0.65, "for": "horror, thriller, true crime, mystery"},
+    "story":      {"wpm": [145, 165], "maxPause": 0.42, "dramatic": 0.7,  "for": "folklore, history, drama, adventure"},
+    "reflective": {"wpm": [138, 155], "maxPause": 0.48, "dramatic": 0.8,  "for": "parables, emotional, philosophy"},
+    "energetic":  {"wpm": [165, 190], "maxPause": 0.3,  "dramatic": 0.5,  "for": "facts, lists, motivation, comedy"}
+  }
+}

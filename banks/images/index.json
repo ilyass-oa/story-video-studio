@@ -1,0 +1,366 @@
+{
+  "assets": {
+    "anatomical-heart": {
+      "file": "banks/images/cutouts/anatomical-heart.png",
+      "kind": "cutout",
+      "width": 1416,
+      "height": 1596,
+      "query": "anatomical human heart model",
+      "source": {
+        "provider": "wikimedia",
+        "title": "Dresden, Deutsches Hygiene-Museum, anatomisches Modell, Herz.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Dresden,_Deutsches_Hygiene-Museum,_anatomisches_Modell,_Herz.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Dresden%2C_Deutsches_Hygiene-Museum%2C_anatomisches_Modell%2C_Herz.jpg/1920px-Dresden%2C_Deutsches_Hygiene-Museum%2C_anatomisches_Modell%2C_Herz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "license": "CC BY 4.0",
+        "attribution": "Dresden, Deutsches Hygiene-Museum, anatomisches Modell, Herz.jpg by Dguendel (CC BY 4.0)"
+      },
+      "quality": {
+        "ok": true,
+        "flags": [],
+        "coverage": 0.4654
+      },
+      "created": "2026-09-23T00:13:48.811Z",
+      "tags": [
+        "anatomical-heart",
+        "heart",
+        "anatomy",
+        "organ",
+        "model",
+        "anatomical",
+        "human"
+      ],
+      "from": "tell-tale-heart"
+    },
+    "pocket-watch-gold": {
+      "file": "banks/images/cutouts/pocket-watch-gold.png",
+      "kind": "cutout",
+      "width": 708,
+      "height": 721,
+      "query": "antique gold pocket watch",
+      "source": {
+        "provider": "openverse:flickr",
+        "title": "Pocket Watch",
+        "page": "https://www.flickr.com/photos/26072061@N06/4434778251",
+        "url": "https://live.staticflickr.com/4060/4434778251_727ac7eb30_b.jpg",
+        "license": "BY 2.0",
+        "attribution": "Pocket Watch by BenGrantham (BY 2.0)"
+      },
+      "quality": {
+        "ok": true,
+        "flags": [],
+        "coverage": 0.2983
+      },
+      "created": "2026-09-23T00:17:54.593Z",
+      "tags": [
+        "pocket-watch-gold",
+        "pocket watch",
+        "watch",
+        "time",
+        "antique",
+        "gold",
+        "pocket"
+      ],
+      "from": "tell-tale-heart"
+    },
+    "vulture-flying": {
+      "file": "banks/images/cutouts/vulture-flying.png",
+      "kind": "cutout",
+      "width": 1506,
+      "height": 730,
+      "query": "vulture bird",
+      "source": {
+        "provider": "wikimedia",
+        "title": "Turkey vulture (Cathartes aura) in flight.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Turkey_vulture_(Cathartes_aura)_in_flight.JPG",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Turkey_vulture_%28Cathartes_aura%29_in_flight.JPG/1920px-Turkey_vulture_%28Cathartes_aura%29_in_flight.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Turkey vulture (Cathartes aura) in flight.JPG by Charles J. Sharp (CC BY-SA 4.0)"
+      },
+      "quality": {
+        "ok": true,
+        "flags": [],
+        "coverage": 0.088
+      },
+      "created": "2026-09-23T00:15:17.927Z",
+      "tags": [
+        "vulture-flying",
+        "vulture",
+        "bird",
+        "buzzard",
+        "flying"
+      ],
+      "from": "tell-tale-heart"
+    },
+    "victorian-gentleman": {
+      "file": "banks/images/cutouts/victorian-gentleman.png",
+      "kind": "cutout",
+      "width": 539,
+      "height": 1424,
+      "query": "victorian gentleman standing full length photograph",
+      "source": {
+        "provider": "smithsonian",
+        "title": "Carte-de-visite of a young man wearing a long overcoat in Napa, California",
+        "page": "https://nmaahc.si.edu/object/nmaahc_2020.10.10.12",
+        "url": "https://ids.si.edu/ids/download?id=NMAAHC-2020_10_10_12_001.jpg",
+        "license": "CC0 (Smithsonian Open Access)",
+        "attribution": null
+      },
+      "quality": {
+        "ok": true,
+        "flags": [],
+        "coverage": 0.1564
+      },
+      "created": "2026-09-23T00:12:59.098Z",
+      "tags": [
+        "victorian-gentleman",
+        "victorian",
+        "man",
+        "gentleman",
+        "19th century",
+        "figure",
+        "standing",
+        "full",
+        "length",
+        "photograph"
+      ],
+      "from": "tell-tale-heart"
+    },
+    "oil-lantern": {
+      "file": "banks/images/cutouts/oil-lantern.png",
+      "kind": "cutout",
+      "width": 360,
+      "height": 913,
+      "query": "antique oil lantern",
+      "source": {
+        "provider": "openverse:rawpixel",
+        "title": "Lantern (1935–1942) Edith Magnette",
+        "page": "https://www.rawpixel.com/image/3381905/free-illustration-image-antique-art-artwork",
+        "url": "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L3BkMTA5LXBkb2JqMDEwOTEtaW1hZ2UuanBn.jpg",
+        "license": "CC0 1.0",
+        "attribution": null
+      },
+      "quality": {
+        "ok": true,
+        "flags": [],
+        "coverage": 0.2025
+      },
+      "created": "2026-09-23T00:16:59.610Z",
+      "tags": [
+        "oil-lantern",
+        "lantern",
+        "light",
+        "antique",
+        "oil lamp",
+        "oil"
+      ],
+      "from": "tell-tale-heart"
+    },
+    "mantel-clock": {
+      "file": "banks/images/cutouts/mantel-clock.png",
+      "kind": "cutout",
+      "width": 767,
+      "height": 1310,
+      "query": "antique mantel clock",
+      "source": {
+        "provider": "wikimedia",
+        "title": "Antique clock.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Antique_clock.JPG",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Antique_clock.JPG/1920px-Antique_clock.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Antique clock.JPG by Invantory.com (CC BY-SA 3.0)"
+      },
+      "quality": {
+        "ok": true,
+        "flags": [],
+        "coverage": 0.3051
+      },
+      "created": "2026-09-23T00:16:03.288Z",
+      "tags": [
+        "mantel-clock",
+        "clock",
+        "antique",
+        "midnight",
+        "time",
+        "mantel"
+      ],
+      "from": "tell-tale-heart"
+    },
+    "armchair-antique": {
+      "file": "banks/images/cutouts/armchair-antique.png",
+      "kind": "cutout",
+      "width": 1031,
+      "height": 1412,
+      "query": "antique wooden chair",
+      "source": {
+        "provider": "smithsonian",
+        "title": "Armchair",
+        "page": "https://collection.cooperhewitt.org/view/objects/asitem/id/146524",
+        "url": "https://ids.si.edu/ids/download?id=CHSDM-E377EE88BD0F2-000001.jpg",
+        "license": "CC0 (Smithsonian Open Access)",
+        "attribution": null
+      },
+      "quality": {
+        "ok": true,
+        "flags": [],
+        "coverage": 0.191
+      },
+      "created": "2026-09-23T00:19:08.100Z",
+      "tags": [
+        "armchair-antique",
+        "chair",
+        "armchair",
+        "antique",
+        "furniture",
+        "wooden"
+      ],
+      "from": "tell-tale-heart"
+    },
+    "dark-door-hallway": {
+      "file": "banks/images/photos/dark-door-hallway.jpg",
+      "kind": "photo",
+      "width": 941,
+      "height": 1672,
+      "query": "an old heavy wooden bedroom door slightly ajar in a pitch-dark 19th century hallway, a thin ray of lantern light through the gap",
+      "source": {
+        "provider": "generated:codex-imagegen",
+        "license": "AI-generated (OpenAI terms) — disclose if required",
+        "prompt": "Cinematic vertical 9:16 film still of an old heavy wooden bedroom door slightly ajar in a pitch-dark 19th century hallway, a thin ray of lantern light through the gap, low-key lighting, deep blacks, muted desaturated colours with a faint warm-red cast, 35mm film grain, shallow depth of field, photorealistic, no text, no watermark."
+      },
+      "quality": {
+        "ok": true,
+        "flags": []
+      },
+      "created": "2026-09-23T00:21:04.045Z",
+      "tags": [
+        "dark-door-hallway",
+        "door",
+        "hallway",
+        "dark",
+        "night",
+        "interior",
+        "generated",
+        "an",
+        "old",
+        "heavy",
+        "wooden",
+        "bedroom",
+        "slightly",
+        "ajar",
+        "in",
+        "a",
+        "pitch-dark",
+        "19th",
+        "century",
+        "hallway,",
+        "thin",
+        "ray",
+        "of",
+        "lantern",
+        "light",
+        "through",
+        "the",
+        "gap"
+      ],
+      "from": "tell-tale-heart"
+    },
+    "eye-closeup": {
+      "file": "banks/images/photos/eye-closeup.jpg",
+      "kind": "photo",
+      "width": 1722,
+      "height": 1029,
+      "query": "close up of an old man's eye",
+      "source": {
+        "provider": "wikimedia",
+        "title": "Eye Central Heterochromia crop and lighter.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Eye_Central_Heterochromia_crop_and_lighter.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Eye_Central_Heterochromia_crop_and_lighter.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "CC BY 3.0",
+        "attribution": "Eye Central Heterochromia crop and lighter.jpg by Adam Cuerden, modified by Greg A L (CC BY 3.0)"
+      },
+      "quality": {
+        "ok": true,
+        "flags": []
+      },
+      "created": "2026-09-23T00:14:30.250Z",
+      "tags": [
+        "eye-closeup",
+        "eye",
+        "iris",
+        "closeup",
+        "macro",
+        "close",
+        "up",
+        "of",
+        "an",
+        "old",
+        "man's"
+      ],
+      "from": "tell-tale-heart"
+    },
+    "wooden-floorboards": {
+      "file": "banks/images/photos/wooden-floorboards.jpg",
+      "kind": "photo",
+      "width": 722,
+      "height": 1024,
+      "query": "old dark wooden floorboards",
+      "source": {
+        "provider": "openverse:flickr",
+        "title": "Aston Hall Long Gallery Floorboards",
+        "page": "https://www.flickr.com/photos/37804979@N00/4627099626",
+        "url": "https://live.staticflickr.com/4072/4627099626_3d8faf70fd_b.jpg",
+        "license": "BY 2.0",
+        "attribution": "Aston Hall Long Gallery Floorboards by ahisgett (BY 2.0)"
+      },
+      "quality": {
+        "ok": true,
+        "flags": []
+      },
+      "created": "2026-09-23T00:14:11.001Z",
+      "tags": [
+        "wooden-floorboards",
+        "floor",
+        "floorboards",
+        "wood",
+        "planks",
+        "old",
+        "dark",
+        "wooden"
+      ],
+      "from": "tell-tale-heart"
+    },
+    "old-man-portrait": {
+      "file": "banks/images/photos/old-man-portrait.jpg",
+      "kind": "photo",
+      "width": 1457,
+      "height": 2400,
+      "query": "portrait photograph of an elderly man 19th century",
+      "source": {
+        "provider": "wikimedia",
+        "title": "W H Gill Devonport 004.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:W_H_Gill_Devonport_004.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/W_H_Gill_Devonport_004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "license": "Public domain",
+        "attribution": null
+      },
+      "quality": {
+        "ok": true,
+        "flags": []
+      },
+      "created": "2026-09-23T00:17:13.863Z",
+      "tags": [
+        "old-man-portrait",
+        "old man",
+        "portrait",
+        "victorian",
+        "elderly",
+        "photograph",
+        "of",
+        "an",
+        "man",
+        "19th",
+        "century"
+      ],
+      "from": "tell-tale-heart"
+    }
+  }
+}

@@ -1,0 +1,503 @@
+{
+  "sounds": {
+    "dark-ambient-01": {
+      "group": "dark-ambient",
+      "category": "dark",
+      "file": "banks/music/dark/dark-ambient-01.mp3",
+      "tags": [
+        "dark",
+        "ambient",
+        "horror",
+        "drone",
+        "atmosphere",
+        "background",
+        "creepy",
+        "deep",
+        "electronic"
+      ],
+      "duration": 79.22,
+      "peak": 66.072,
+      "lufs": -22.7,
+      "loop": true,
+      "title": "Dark Ambient backgrounding 001",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/238/238251_1474204-hq.mp3",
+        "page": "https://freesound.org/people/steaq/sounds/238251",
+        "author": "steaq"
+      }
+    },
+    "dark-ambient-02": {
+      "group": "dark-ambient",
+      "category": "dark",
+      "file": "banks/music/dark/dark-ambient-02.mp3",
+      "tags": [
+        "dark",
+        "ambient",
+        "horror",
+        "drone",
+        "ambience",
+        "atmosphere",
+        "background",
+        "creepy",
+        "deep"
+      ],
+      "duration": 90,
+      "peak": 87.331,
+      "lufs": -21.8,
+      "loop": true,
+      "title": "Dark Ambient 1",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/415/415891_5406086-hq.mp3",
+        "page": "https://freesound.org/people/strathamer/sounds/415891",
+        "author": "strathamer"
+      }
+    },
+    "horror-score-01": {
+      "group": "horror-score",
+      "category": "dark",
+      "file": "banks/music/dark/horror-score-01.mp3",
+      "tags": [
+        "horror",
+        "creepy",
+        "scary",
+        "ambience",
+        "berceuse",
+        "clown",
+        "dark",
+        "fear",
+        "haunted"
+      ],
+      "duration": 90,
+      "peak": 78.912,
+      "lufs": -22.6,
+      "loop": true,
+      "title": "lullaby music box",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/236/236813_2583807-hq.mp3",
+        "page": "https://freesound.org/people/Thejack288/sounds/236813",
+        "author": "Thejack288"
+      }
+    },
+    "horror-score-02": {
+      "group": "horror-score",
+      "category": "dark",
+      "file": "banks/music/dark/horror-score-02.mp3",
+      "tags": [
+        "horror",
+        "creepy",
+        "scary",
+        "ambience",
+        "ambient",
+        "atmosphere",
+        "dark",
+        "deep",
+        "drone",
+        "film",
+        "foreboding"
+      ],
+      "duration": 90,
+      "peak": 50.22,
+      "lufs": -20.7,
+      "loop": true,
+      "title": "Dark Voyager",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/233/233668_2906614-hq.mp3",
+        "page": "https://freesound.org/people/deleted_user_2906614/sounds/233668",
+        "author": "deleted_user_2906614"
+      }
+    },
+    "suspense-01": {
+      "group": "suspense",
+      "category": "tension",
+      "file": "banks/music/tension/suspense-01.mp3",
+      "tags": [
+        "suspense",
+        "tension",
+        "thriller",
+        "1min",
+        "ambience",
+        "ambient",
+        "anxious",
+        "atmosphere",
+        "background",
+        "background-sound",
+        "bass"
+      ],
+      "duration": 49.722,
+      "peak": 21.497,
+      "lufs": -23.3,
+      "loop": true,
+      "title": "Deep Cinematic Rumble Stereo",
+      "license": "BY 4.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/207/207555_2986310-hq.mp3",
+        "page": "https://freesound.org/people/PatrickLieberkind/sounds/207555",
+        "author": "PatrickLieberkind"
+      }
+    },
+    "suspense-02": {
+      "group": "suspense",
+      "category": "tension",
+      "file": "banks/music/tension/suspense-02.mp3",
+      "tags": [
+        "suspense",
+        "tension",
+        "thriller",
+        "action",
+        "mystery",
+        "suspenseful",
+        "adventure",
+        "arpeggio"
+      ],
+      "duration": 90,
+      "peak": 0.077,
+      "lufs": -21.5,
+      "loop": true,
+      "title": "Thriller Documentary Pack #1",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/435/435370_7043405-hq.mp3",
+        "page": "https://freesound.org/people/dekstromoramid/sounds/435370",
+        "author": "dekstromoramid"
+      }
+    },
+    "sad-piano-01": {
+      "group": "sad-piano",
+      "category": "emotional",
+      "file": "banks/music/emotional/sad-piano-01.mp3",
+      "tags": [
+        "sad",
+        "piano",
+        "emotional",
+        "melancholy",
+        "away",
+        "cinema",
+        "compact",
+        "cry",
+        "dark",
+        "distance",
+        "distant",
+        "dream"
+      ],
+      "duration": 78.03,
+      "peak": 27.139,
+      "lufs": -19.5,
+      "loop": true,
+      "title": "Distant Sad Piano",
+      "license": "BY 4.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/216/216669_2986310-hq.mp3",
+        "page": "https://freesound.org/people/PatrickLieberkind/sounds/216669",
+        "author": "PatrickLieberkind"
+      }
+    },
+    "sad-piano-02": {
+      "group": "sad-piano",
+      "category": "emotional",
+      "file": "banks/music/emotional/sad-piano-02.mp3",
+      "tags": [
+        "sad",
+        "piano",
+        "emotional",
+        "melancholy",
+        "cinematic",
+        "credits",
+        "dramatic",
+        "hall",
+        "movie",
+        "reverb"
+      ],
+      "duration": 72.95,
+      "peak": 61.224,
+      "lufs": -20.8,
+      "loop": true,
+      "title": "Sad Piano",
+      "license": "BY 4.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/341/341913_3914271-hq.mp3",
+        "page": "https://freesound.org/people/tyops/sounds/341913",
+        "author": "tyops"
+      }
+    },
+    "mystery-01": {
+      "group": "mystery",
+      "category": "mystery",
+      "file": "banks/music/mystery/mystery-01.mp3",
+      "tags": [
+        "mystery",
+        "curious",
+        "magic",
+        "atmospheric",
+        "box",
+        "captivating",
+        "cinematic",
+        "compelling",
+        "creepy",
+        "dark",
+        "delicate"
+      ],
+      "duration": 65.32,
+      "peak": 55.04,
+      "lufs": -22,
+      "loop": true,
+      "title": "Mysterious Music Box Atmosphere",
+      "license": "BY 4.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/773/773658_15090270-hq.mp3",
+        "page": "https://freesound.org/people/Universfield/sounds/773658",
+        "author": "Universfield"
+      }
+    },
+    "mystery-02": {
+      "group": "mystery",
+      "category": "mystery",
+      "file": "banks/music/mystery/mystery-02.mp3",
+      "tags": [
+        "mystery",
+        "curious",
+        "magic",
+        "adventure",
+        "adventurous",
+        "ambient",
+        "bass",
+        "battle",
+        "boss",
+        "cartoon",
+        "creepy"
+      ],
+      "duration": 90,
+      "peak": 71.531,
+      "lufs": -18.5,
+      "loop": true,
+      "title": "Underground Ambient",
+      "license": "BY 4.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/510/510800_6627602-hq.mp3",
+        "page": "https://freesound.org/people/TheoJT/sounds/510800",
+        "author": "TheoJT"
+      }
+    },
+    "calm-ambient-01": {
+      "group": "calm-ambient",
+      "category": "calm",
+      "file": "banks/music/calm/calm-ambient-01.mp3",
+      "tags": [
+        "calm",
+        "ambient",
+        "peaceful",
+        "soft",
+        "ambience",
+        "background-sound",
+        "birds",
+        "branches",
+        "forrest",
+        "leaves"
+      ],
+      "duration": 90,
+      "peak": 62.019,
+      "lufs": -19.5,
+      "loop": true,
+      "title": "Calm ambient forrest sounds.mp3",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/620/620449_10859468-hq.mp3",
+        "page": "https://freesound.org/people/ZHR%C3%98/sounds/620449",
+        "author": "ZHRØ"
+      }
+    },
+    "calm-ambient-02": {
+      "group": "calm-ambient",
+      "category": "calm",
+      "file": "banks/music/calm/calm-ambient-02.mp3",
+      "tags": [
+        "calm",
+        "ambient",
+        "peaceful",
+        "soft",
+        "apocalyptique",
+        "bass",
+        "doublebass",
+        "instrumental",
+        "scifi",
+        "speed_medium"
+      ],
+      "duration": 90,
+      "peak": 75.873,
+      "lufs": -20.8,
+      "loop": true,
+      "title": "PARPG Solitude (Calm, Ambient)",
+      "license": "BY-SA 3.0",
+      "source": {
+        "provider": "openverse:jamendo",
+        "url": "https://prod-1.storage.jamendo.com/?trackid=875307&format=mp32",
+        "page": "https://www.jamendo.com/track/875307",
+        "author": "Pal Zoltan Illes"
+      }
+    },
+    "lofi-01": {
+      "group": "lofi",
+      "category": "calm",
+      "file": "banks/music/calm/lofi-01.mp3",
+      "tags": [
+        "lofi",
+        "chill",
+        "beat",
+        "study",
+        "aetherial",
+        "ambient",
+        "angelic",
+        "atmosphere",
+        "breathy",
+        "calm",
+        "cinematic"
+      ],
+      "duration": 84.176,
+      "peak": 13.852,
+      "lufs": -20.7,
+      "loop": true,
+      "title": "Flashlight (Version I) - 100% loopable",
+      "license": "BY 4.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/610/610747_6738752-hq.mp3",
+        "page": "https://freesound.org/people/kjartan_abel/sounds/610747",
+        "author": "kjartan_abel"
+      }
+    },
+    "epic-cinematic-01": {
+      "group": "epic-cinematic",
+      "category": "epic",
+      "file": "banks/music/epic/epic-cinematic-01.mp3",
+      "tags": [
+        "epic",
+        "cinematic",
+        "orchestral",
+        "history",
+        "bass",
+        "brass",
+        "cello",
+        "double-bass",
+        "dramatic",
+        "drums"
+      ],
+      "duration": 45.32,
+      "peak": 8.138,
+      "lufs": -22.7,
+      "loop": true,
+      "title": "Epic Orchestra - LOOP.wav",
+      "license": "BY 4.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/250/250856_4146089-hq.mp3",
+        "page": "https://freesound.org/people/joshuaempyre/sounds/250856",
+        "author": "joshuaempyre"
+      }
+    },
+    "epic-cinematic-02": {
+      "group": "epic-cinematic",
+      "category": "epic",
+      "file": "banks/music/epic/epic-cinematic-02.mp3",
+      "tags": [
+        "epic",
+        "cinematic",
+        "orchestral",
+        "history",
+        "cello",
+        "chior",
+        "delay",
+        "echo",
+        "film",
+        "movie",
+        "orchestra"
+      ],
+      "duration": 90,
+      "peak": 76.9,
+      "lufs": -20.5,
+      "loop": true,
+      "title": "Epic Orchestra",
+      "license": "CC0 1.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/218/218744_2376154-hq.mp3",
+        "page": "https://freesound.org/people/edtijo/sounds/218744",
+        "author": "edtijo"
+      }
+    },
+    "uplifting-01": {
+      "group": "uplifting",
+      "category": "uplifting",
+      "file": "banks/music/uplifting/uplifting-01.mp3",
+      "tags": [
+        "uplifting",
+        "inspiring",
+        "motivational",
+        "hope",
+        "ambient",
+        "atmospheric",
+        "chillout",
+        "ethereal",
+        "expansive",
+        "freedom",
+        "music"
+      ],
+      "duration": 90,
+      "peak": 16.126,
+      "lufs": -23.9,
+      "loop": true,
+      "title": "Ambient Journey",
+      "license": "BY 4.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/795/795723_16936704-hq.mp3",
+        "page": "https://freesound.org/people/Matio888/sounds/795723",
+        "author": "Matio888"
+      }
+    },
+    "uplifting-02": {
+      "group": "uplifting",
+      "category": "uplifting",
+      "file": "banks/music/uplifting/uplifting-02.mp3",
+      "tags": [
+        "uplifting",
+        "inspiring",
+        "motivational",
+        "hope",
+        "ambient",
+        "atmospheric",
+        "bold-and-serene",
+        "captures-the-essence-of-the-nordic-landscape",
+        "cinematic",
+        "creative-commons-licensed",
+        "dynamic-blend-of-saxophones-and-piano",
+        "emotive"
+      ],
+      "duration": 90,
+      "peak": 72.952,
+      "lufs": -20.6,
+      "loop": true,
+      "title": "Saxophone and piano Nordic-themed soundtrack. Perfect for movies",
+      "license": "BY 4.0",
+      "source": {
+        "provider": "openverse:freesound",
+        "url": "https://cdn.freesound.org/previews/662/662394_6738752-hq.mp3",
+        "page": "https://freesound.org/people/kjartan_abel/sounds/662394",
+        "author": "kjartan_abel"
+      }
+    }
+  }
+}
