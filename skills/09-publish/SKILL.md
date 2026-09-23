@@ -48,8 +48,7 @@ Nothing else: no source line, no AI notes, no line about cropping or grading.
 
 **Comments** (if your tools can): YouTube `pinnedComment` / Instagram `firstComment` = a question that
 splits opinions, or the one extra fact that did not fit (*"The street where they vanished still forbids music."*).
-If licensed visuals need attribution beyond the 300-character description, add concise credit comments with
-creator, work, licence, source and any edits. Post a question even when the tool cannot pin it; report that limit.
+Post the question even when the tool cannot pin it; report that limit.
 **Series**: if a playlist fits (`youtube.playlist`, e.g. "Twist Endings"), add the Short to it.
 
 Keywords everywhere, stuffing nowhere: the story's name, author and genre in title, first lines and tags.
