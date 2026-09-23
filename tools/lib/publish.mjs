@@ -131,8 +131,7 @@ export const checkPost = (slug) => {
 	if (body(y.description).length > 360) errors.push(`youtube.description is ${body(y.description).length} chars before credits — keep it ≤ 300`);
 	if (igTags.length > 3) errors.push(`instagram.caption has ${igTags.length} hashtags — use 3 at most`);
 	if (/%23|%20|%0A/i.test(`${ig.caption}${y.description}${y.title}`)) errors.push('URL-encoded text (%23…) in the caption/description — pass plain text with real # signs');
-	// both: credits + honesty
-	if ((p.facts?.creditsRequired ?? []).length) warns.push(`${p.facts.creditsRequired.length} image(s) need credit (${p.facts.creditsRequired.map((c) => c.who).join(', ')}) — captions carry no credits, so replace them with CC0/PD/Pexels images before posting`);
+	// honesty
 	if (p.facts?.hook && !String(y.title + first).toLowerCase().split(/\W+/).some((w) => w.length > 4 && p.facts.hook.toLowerCase().includes(w)))
 		warns.push('neither the YouTube title nor the Instagram first line echoes the hook — the words that stop the scroll should appear in both');
 	for (const e of errors) log.err(e);

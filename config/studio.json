@@ -25,8 +25,7 @@
   ],
   "licenses": {
     "allowShareAlike": true,
-    "_doc": "creditFreeOnly: only CC0 / public-domain / Pexels-Pixabay-Unsplash images (no credit line needed in captions). allowShareAlike applies when creditFreeOnly is false.",
-    "creditFreeOnly": true
+    "_doc": "CC BY-SA assets are ranked last; set false to exclude them entirely (safest for monetised channels). CC BY needs credit (./sv credits)."
   },
   "render": {
     "previewScale": 0.5,

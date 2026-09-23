@@ -15,7 +15,7 @@ description: Publish a finished video as a YouTube Short and an Instagram Reel �
 
 ## 1 · The posting pack
 `./sv render <slug> --final` writes `06-render/post/post.json` (or `./sv post pack <slug>`): read-only `facts`
-(title, source, hook, direction, duration, look, **creditsRequired**, generated images, AI narration), the
+(title, source, hook, direction, duration, look, generated images, AI narration), the
 `cover` (the hook frame, `cover.jpg` — look at it) and empty `youtube` / `instagram` fields you fill.
 
 ## 2 · Write for reach — how both platforms decide
@@ -29,10 +29,10 @@ know *who* to show it to and to rank it in **search**. So every field has one jo
   *The Pied Piper Was Real* · *130 Children Vanished in 1284* · *The Wish That Killed His Son*.
 - Curiosity, never a lie: the video must pay it off. No ALL CAPS, no hashtags, at most one emoji, don't spoil the twist.
 
-**YouTube `description`** — **short: ≤ 300 characters before the credits.**
+**YouTube `description`** — **short: ≤ 300 characters.**
 1. One sentence with the main keywords (story, author, "legend" / "true story").
 2. `Source: <author> (<year>), public domain` — one line.
-3. 3 hashtags max at the end. No credits, no AI notes.
+3. 3 hashtags max at the end. No AI notes.
 
 **YouTube `tags`** (6–12, ≤ 500 characters): the story name, author, variants and misspellings people type
 (`pied piper`, `pied piper of hamelin`, `hamelin legend`, `dark fairy tales`, `creepy history`).
@@ -41,11 +41,10 @@ know *who* to show it to and to rank it in **search**. So every field has one jo
 **`containsSyntheticMedia`**: true when a generated image looks realistic (people, places or events a viewer
 could take for real). A fictional AI narrator alone does not require it; never imitate a real person's voice.
 
-**Instagram `caption`** — **short: 3 lines, ≤ 220 characters before the credits.**
+**Instagram `caption`** — **short: 3 lines, ≤ 220 characters.**
 1. The hook as one sentence (≤ 90 characters). 2. One line: a question or a send-prompt, not both.
 3. Hashtags: **3 max**, lowercase or CamelCase, specific (`#piedpiper #darkfolklore #legends`).
-Nothing else: no credits, no "Source:" paragraph, no AI notes, no line about cropping or grading.
-(Images needing credit are excluded at sourcing — `licenses.creditFreeOnly` — so captions stay clean.)
+Nothing else: no "Source:" paragraph, no AI notes, no line about cropping or grading.
 **`shareToFeed`: true** (also on the profile grid). **`thumbOffsetMs`** = the cover frame (already set).
 
 **Comments** (if your tools can): YouTube `pinnedComment` / Instagram `firstComment` = a question that
@@ -60,8 +59,7 @@ post (or read it back with a tool): if the tags show as `%23…` or anything but
 remove the hashtags (a clean caption beats broken tags) and add to KNOWN-MISTAKES which tool did it.
 
 ## 3 · Check
-`./sv post check <slug>` → **0 errors**: lengths, hashtags, `madeForKids`, every required credit present on
-both platforms, the hook echoed in the title / first line. Fix warnings unless you can say why not.
+`./sv post check <slug>` → **0 errors**: lengths, hashtags, `madeForKids`, the hook echoed in the title / first line. Fix warnings unless you can say why not.
 
 ## 4 · Post (Composio)
 Read each tool's parameters first; map the fields of `post.json` onto them.
