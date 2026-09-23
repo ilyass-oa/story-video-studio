@@ -29,12 +29,11 @@ know *who* to show it to and to rank it in **search**. So every field has one jo
   *The Pied Piper Was Real* · *130 Children Vanished in 1284* · *The Wish That Killed His Son*.
 - Curiosity, never a lie: the video must pay it off. No ALL CAPS, no hashtags, at most one emoji, don't spoil the twist.
 
-**YouTube `description`**
-1. Line 1: one sentence with the main keywords (story, author, "true story" / "legend" / "horror story").
-2. One or two lines of intrigue that tease — never reveal — the twist.
-3. `Source:` author (year), public domain / the records used.
-4. Credits: every `facts.creditsRequired` item — *"Photo: "Boat cradle" by quinet (CC BY 2.0)"*.
-5. 3–5 hashtags at the end: 1 broad + 2–3 niche + 1 story-specific (`#shorts` may be one of them).
+**YouTube `description`** — **short: ≤ 300 characters before the credits.**
+1. One sentence with the main keywords (story, author, "legend" / "true story").
+2. `Source: <author> (<year>), public domain` — one line.
+3. The compact credit line (same as Instagram) only if `creditsRequired` is not empty.
+4. 3 hashtags max at the end.
 
 **YouTube `tags`** (6–12, ≤ 500 characters): the story name, author, variants and misspellings people type
 (`pied piper`, `pied piper of hamelin`, `hamelin legend`, `dark fairy tales`, `creepy history`).
@@ -43,12 +42,11 @@ know *who* to show it to and to rank it in **search**. So every field has one jo
 **`containsSyntheticMedia`**: true when a generated image looks realistic (people, places or events a viewer
 could take for real). A fictional AI narrator alone does not require it; never imitate a real person's voice.
 
-**Instagram `caption`** (≤ 2 200 characters; only the first ~125 show before "more")
-1. **Line 1 = the scroll-stopper**: the same promise as the YouTube title in different words, as a sentence.
-2. One teaser line, then **one action line** that earns sends or comments — *"Send this to the friend who
-   loves dark history."* / *"Would you have paid the piper?"* — a real question, not "like and follow".
-3. `Source:` line and the credits (same as YouTube). No links (not clickable on Reels).
-4. 3–5 hashtags at the very end (1 broad + 2–3 niche + 1 story-specific): `#darkhistory #folklore #legends #piedpiper`.
+**Instagram `caption`** — **short: 3 lines, ≤ 220 characters before the credits.**
+1. The hook as one sentence (≤ 90 characters). 2. One line: a question or a send-prompt, not both.
+3. Hashtags: **3 max**, lowercase or CamelCase, specific (`#piedpiper #darkfolklore #legends`).
+Then one compact credit line only if `creditsRequired` is not empty: `Photos: quinet (CC BY), Hamelenser (CC BY-SA)`.
+No "Source:" paragraph, no "AI narration / archival visuals" notes, no line about cropping or grading.
 **`shareToFeed`: true** (also on the profile grid). **`thumbOffsetMs`** = the cover frame (already set).
 
 **Comments** (if your tools can): YouTube `pinnedComment` / Instagram `firstComment` = a question that
@@ -57,6 +55,10 @@ splits opinions, or the one extra fact that did not fit (*"The street where they
 
 Keywords everywhere, stuffing nowhere: the story's name, author and genre in title, first lines and tags.
 Never promise what the video does not deliver; never "banned", "they don't want you to know", fake urgency.
+
+**Hashtags must arrive as `#`.** Pass the caption as plain text — never URL-encode it. After posting, open the
+post (or read it back with a tool): if the tags show as `%23…` or anything but `#tag`, edit the caption to
+remove the hashtags (a clean caption beats broken tags) and add to KNOWN-MISTAKES which tool did it.
 
 ## 3 · Check
 `./sv post check <slug>` → **0 errors**: lengths, hashtags, `madeForKids`, every required credit present on

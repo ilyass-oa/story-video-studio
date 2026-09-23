@@ -94,6 +94,11 @@ must still do. Read the section of each step before doing that step.
 - **Running-footsteps search found nothing.** **You**: after two queries, use a nearby sound that tells the
   same thing (distant children laughing) rather than nothing or a wrong one.
 
+## Publishing
+- **A caption came out as a 9-line paragraph and the hashtags posted as `%23DarkHistory`.** → `./sv post check`
+  blocks long captions, > 3 hashtags and URL-encoded text. **You**: 3 short lines, plain text with real `#`;
+  read the post back — broken tags → remove them.
+
 ## Render & review
 - **The Interlopers passed review despite photos appearing cut off.** **You**: source-image approval
   does not approve the rendered framing. Inspect individual scenes at entry, settled position, maximum

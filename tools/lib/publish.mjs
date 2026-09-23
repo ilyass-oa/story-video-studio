@@ -112,7 +112,7 @@ export const checkPost = (slug) => {
 	if ((y.description ?? '').length > 5000) errors.push('youtube.description > 5000 chars');
 	const yTags = hashtags(y.description);
 	if (yTags.length > 15) errors.push(`youtube.description has ${yTags.length} hashtags (YouTube ignores all past 60; use 3–5)`);
-	else if (yTags.length < 2 || yTags.length > 6) warns.push(`youtube.description has ${yTags.length} hashtags — use 3–5 specific ones`);
+	else if (yTags.length > 3) warns.push(`youtube.description has ${yTags.length} hashtags — use 3 at most`);
 	if (JSON.stringify(y.tags ?? []).length > 500) errors.push('youtube.tags exceed 500 characters in total');
 	if (y.madeForKids !== false) errors.push('youtube.madeForKids must be false (dark stories are not made for kids; it also disables comments)');
 	if (!['24', '27', '22', '1'].includes(String(y.categoryId))) warns.push(`youtube.categoryId ${y.categoryId}: stories = 24 Entertainment, true history = 27 Education`);
@@ -123,8 +123,14 @@ export const checkPost = (slug) => {
 	if (first.length > 125) warns.push(`instagram first line is ${first.length} chars — only ~125 show before "more": put the hook there`);
 	const igTags = hashtags(ig.caption);
 	if (igTags.length > 30) errors.push(`instagram.caption has ${igTags.length} hashtags (max 30)`);
-	else if (igTags.length < 3 || igTags.length > 5) warns.push(`instagram.caption has ${igTags.length} hashtags — Instagram recommends 3–5 relevant ones`);
+	
 	if (/https?:\/\//.test(ig.caption ?? '')) warns.push('instagram.caption contains a link (not clickable on Reels) — move sources to a short text line');
+	// short and clean: the viewer reads one line, not a paragraph
+	const body = (t) => String(t ?? '').split('\n').filter((l) => !/^(photos?|credits?|music)\s*:/i.test(l.trim())).join('\n');
+	if (body(ig.caption).length > 260) errors.push(`instagram.caption is ${body(ig.caption).length} chars before credits — keep it ≤ 220 (3 short lines)`);
+	if (body(y.description).length > 360) errors.push(`youtube.description is ${body(y.description).length} chars before credits — keep it ≤ 300`);
+	if (igTags.length > 3) errors.push(`instagram.caption has ${igTags.length} hashtags — use 3 at most`);
+	if (/%23|%20|%0A/i.test(`${ig.caption}${y.description}${y.title}`)) errors.push('URL-encoded text (%23…) in the caption/description — pass plain text with real # signs');
 	// both: credits + honesty
 	for (const c of p.facts?.creditsRequired ?? []) {
 		if (!String(y.description).includes(c.who)) errors.push(`youtube.description must credit "${c.who}" (${c.credit})`);
