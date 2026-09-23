@@ -31,8 +31,7 @@ know *who* to show it to and to rank it in **search**. So every field has one jo
 
 **YouTube `description`** — **short: ≤ 300 characters.**
 1. One sentence with the main keywords (story, author, "legend" / "true story").
-2. `Source: <author> (<year>), public domain` — one line.
-3. 3 hashtags max at the end. No AI notes.
+2. 3 hashtags max at the end. No source line, no AI notes.
 
 **YouTube `tags`** (6–12, ≤ 500 characters): the story name, author, variants and misspellings people type
 (`pied piper`, `pied piper of hamelin`, `hamelin legend`, `dark fairy tales`, `creepy history`).
@@ -44,11 +43,13 @@ could take for real). A fictional AI narrator alone does not require it; never i
 **Instagram `caption`** — **short: 3 lines, ≤ 220 characters.**
 1. The hook as one sentence (≤ 90 characters). 2. One line: a question or a send-prompt, not both.
 3. Hashtags: **3 max**, lowercase or CamelCase, specific (`#piedpiper #darkfolklore #legends`).
-Nothing else: no "Source:" paragraph, no AI notes, no line about cropping or grading.
+Nothing else: no source line, no AI notes, no line about cropping or grading.
 **`shareToFeed`: true** (also on the profile grid). **`thumbOffsetMs`** = the cover frame (already set).
 
 **Comments** (if your tools can): YouTube `pinnedComment` / Instagram `firstComment` = a question that
 splits opinions, or the one extra fact that did not fit (*"The street where they vanished still forbids music."*).
+If licensed visuals need attribution beyond the 300-character description, add concise credit comments with
+creator, work, licence, source and any edits. Post a question even when the tool cannot pin it; report that limit.
 **Series**: if a playlist fits (`youtube.playlist`, e.g. "Twist Endings"), add the Short to it.
 
 Keywords everywhere, stuffing nowhere: the story's name, author and genre in title, first lines and tags.

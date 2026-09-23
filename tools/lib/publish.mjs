@@ -13,7 +13,7 @@ const postedFile = (ep) => path.join(dir(ep), 'posted.json');
 const briefField = (md, heading) => (md.match(new RegExp(`## ${heading}[^\\n]*\\n([\\s\\S]*?)(\\n## |$)`)) ?? [])[1]?.trim() ?? '';
 
 /**
- * Credits a post description must carry: every CC BY / BY-SA item of 06-render/credits.txt
+ * CC BY / BY-SA items from 06-render/credits.txt that require attribution in the post or comments
  * (lines "id: work — licence — url"; CC0, public domain and generated images need none).
  * `who` = the author to name (or the work's title when no author is recorded).
  */
@@ -105,20 +105,26 @@ export const checkPost = (slug) => {
 	const ig = p.instagram ?? {};
 	// YouTube
 	if (!y.title) errors.push('youtube.title is empty');
-	if ((y.title ?? '').length > 100) errors.push(`youtube.title is ${y.title.length} chars (max 100)`);
-	else if ((y.title ?? '').length > 60) warns.push(`youtube.title is ${y.title.length} chars — keep ≤ 60 so it is not cut on phones`);
+	if ((y.title ?? '').length > 60) errors.push(`youtube.title is ${y.title.length} chars (max 60)`);
+	if (hashtags(y.title).length) errors.push('youtube.title must not contain hashtags');
+	if (/[A-Z]/.test(y.title ?? '') && y.title === y.title.toUpperCase()) errors.push('youtube.title must not be all caps');
 	if (/[<>]/.test(y.title ?? '') || /[<>]/.test(y.description ?? '')) errors.push('youtube title/description may not contain < or >');
 	if (!y.description) errors.push('youtube.description is empty');
-	if ((y.description ?? '').length > 5000) errors.push('youtube.description > 5000 chars');
+	if ((y.description ?? '').length > 300) errors.push(`youtube.description is ${y.description.length} chars (max 300)`);
 	const yTags = hashtags(y.description);
-	if (yTags.length > 15) errors.push(`youtube.description has ${yTags.length} hashtags (YouTube ignores all past 60; use 3–5)`);
-	else if (yTags.length > 3) warns.push(`youtube.description has ${yTags.length} hashtags — use 3 at most`);
+	if (yTags.length > 3) errors.push(`youtube.description has ${yTags.length} hashtags — use 3 at most`);
+	if (yTags.length && !/^\s*(?:#[\p{L}\p{N}_]+\s*){1,3}$/u.test(String(y.description).trim().split('\n').at(-1))) errors.push('youtube.description hashtags must be on the last line');
+	if (!/^Source:/m.test(y.description ?? '')) errors.push('youtube.description needs a one-line Source: credit');
+	if (/\bAI\s+(?:narration|generated|voice)\b/i.test(y.description ?? '')) errors.push('youtube.description must omit AI notes');
+	if (!Array.isArray(y.tags) || y.tags.length < 6 || y.tags.length > 12) errors.push('youtube.tags must contain 6–12 search variants');
 	if (JSON.stringify(y.tags ?? []).length > 500) errors.push('youtube.tags exceed 500 characters in total');
 	if (y.madeForKids !== false) errors.push('youtube.madeForKids must be false (dark stories are not made for kids; it also disables comments)');
+	if (y.defaultLanguage !== 'en') errors.push('youtube.defaultLanguage must be en');
+	if (y.privacyStatus !== 'public') errors.push('youtube.privacyStatus must be public');
 	if (!['24', '27', '22', '1'].includes(String(y.categoryId))) warns.push(`youtube.categoryId ${y.categoryId}: stories = 24 Entertainment, true history = 27 Education`);
 	// Instagram
 	if (!ig.caption) errors.push('instagram.caption is empty');
-	if ((ig.caption ?? '').length > 2200) errors.push('instagram.caption > 2200 chars');
+	if ((ig.caption ?? '').length > 220) errors.push('instagram.caption > 220 chars');
 	const first = String(ig.caption ?? '').split('\n')[0];
 	if (first.length > 125) warns.push(`instagram first line is ${first.length} chars — only ~125 show before "more": put the hook there`);
 	const igTags = hashtags(ig.caption);
@@ -127,8 +133,6 @@ export const checkPost = (slug) => {
 	if (/https?:\/\//.test(ig.caption ?? '')) warns.push('instagram.caption contains a link (not clickable on Reels) — move sources to a short text line');
 	// short and clean: the viewer reads one line, not a paragraph
 	const body = (t) => String(t ?? '').split('\n').filter((l) => !/^(photos?|credits?|music)\s*:/i.test(l.trim())).join('\n');
-	if (body(ig.caption).length > 260) errors.push(`instagram.caption is ${body(ig.caption).length} chars before credits — keep it ≤ 220 (3 short lines)`);
-	if (body(y.description).length > 360) errors.push(`youtube.description is ${body(y.description).length} chars before credits — keep it ≤ 300`);
 	if (igTags.length > 3) errors.push(`instagram.caption has ${igTags.length} hashtags — use 3 at most`);
 	if (/%23|%20|%0A/i.test(`${ig.caption}${y.description}${y.title}`)) errors.push('URL-encoded text (%23…) in the caption/description — pass plain text with real # signs');
 	// honesty
