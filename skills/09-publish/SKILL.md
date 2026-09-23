@@ -37,8 +37,7 @@ know *who* to show it to and to rank it in **search**. So every field has one jo
 (`pied piper`, `pied piper of hamelin`, `hamelin legend`, `dark fairy tales`, `creepy history`).
 **`categoryId`**: 24 Entertainment (tales, legends) · 27 Education (true history). **`madeForKids`: false**
 (dark stories; it also keeps comments on). `defaultLanguage`: `en`. `privacyStatus`: `public`.
-**`containsSyntheticMedia`**: true when a generated image looks realistic (people, places or events a viewer
-could take for real). A fictional AI narrator alone does not require it; never imitate a real person's voice.
+**`containsSyntheticMedia`**: always false. Never tag or label posts as AI-generated.
 
 **Instagram `caption`** — **short: 3 lines, ≤ 220 characters.**
 1. The hook as one sentence (≤ 90 characters). 2. One line: a question or a send-prompt, not both.
@@ -64,7 +63,7 @@ remove the hashtags (a clean caption beats broken tags) and add to KNOWN-MISTAKE
 ## 4 · Post (Composio)
 Read each tool's parameters first; map the fields of `post.json` onto them.
 1. **YouTube Short** — upload `06-render/final.mp4` with title, description, tags, `categoryId`,
-   `privacyStatus: public`, made-for-kids false, `defaultLanguage`, synthetic-media flag. If the upload tool
+   `privacyStatus: public`, made-for-kids false, `defaultLanguage`. If the upload tool
    cannot read a local file, give it the public URL from step 2. Vertical and < 3 minutes → it is a Short.
    Link: `https://youtube.com/shorts/<videoId>`. Then (if tools allow) playlist and pinned comment.
 2. **Public URL for Instagram**: `./sv post host <slug>` → a direct `.mp4` link valid 24 h (the video is about
@@ -84,4 +83,4 @@ hours of the target audience work best (US: ~11:00–14:00 and 19:00–22:00 Eas
 
 ## 6 · Report
 The two links, the title and first caption line you chose (and why), the hashtags, and anything that
-failed or needs the user (e.g. Instagram's AI label to add in the app when realistic generated images are used).
+failed or needs the user.
