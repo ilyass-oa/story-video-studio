@@ -14,7 +14,7 @@ import '@fontsource/dm-serif-display/400-italic.css';
 import '@fontsource/special-elite/400.css';
 import '@fontsource/anton/400.css';
 import {useEffect, useState} from 'react';
-import {continueRender, delayRender} from 'remotion';
+import {cancelRender, continueRender, delayRender} from 'remotion';
 
 const FACES = [
 	'900 100px "Fraunces Variable"',
@@ -49,8 +49,8 @@ export const useFontsReady = () => {
 	const [handle] = useState(() => delayRender('fonts'));
 	useEffect(() => {
 		loadAll()
-			.then(() => setReady(true))
-			.finally(() => continueRender(handle));
+			.then(() => { setReady(true); continueRender(handle); })
+			.catch((error) => cancelRender(error));
 	}, [handle]);
 	return ready;
 };

@@ -4,6 +4,7 @@ import path from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {P, UserError, config, fail, ffprobe, log, py, readJSON, rel, sh, writeJSON} from './env.mjs';
 import {episode} from './episode.mjs';
+import {auditEpisode, assetVersion, hashFile, selectReviewFile} from './quality.mjs';
 
 const need = (v, what) => {
 	if (!v) throw new UserError(`missing ${what}. See ./sv help`);
@@ -11,6 +12,25 @@ const need = (v, what) => {
 };
 
 const C = {};
+
+const qualityAudit = (ep, props) => {
+	const assets = {...readJSON(P.imageIndex, {assets: {}}).assets, ...readJSON(P.deviceIndex, {devices: {}}).devices, ...readJSON(ep.f('manifest'), {assets: {}}).assets};
+	const soundIndex = Object.fromEntries([P.sfxIndex, P.musicIndex].flatMap((p) => Object.values(readJSON(p, {sounds: {}}).sounds)).map((s) => [s.file, s]));
+	const audit = auditEpisode({props, edit: readJSON(ep.f('edit')), wordsDoc: readJSON(ep.f('words')),
+		script: fs.readFileSync(ep.f('script'), 'utf8'), assets, soundIndex});
+	writeJSON(path.join(ep.dir, '06-render', 'review', 'quality.json'), audit);
+	return audit;
+};
+
+C.audit = async ([slug]) => {
+	const ep = episode(need(slug, '<slug>'));
+	const r = await compileOrDie(slug, {});
+	const audit = qualityAudit(ep, r.props);
+	console.log(JSON.stringify(audit.metrics, null, 2));
+	printIssues(audit);
+	if (audit.errors.length) fail(`${audit.errors.length} final-readiness issue(s); see 06-render/review/quality.json`);
+	log.ok('measurable final-readiness checks passed; visual/audio review still required');
+};
 
 // ───────────────────────── sound banks ─────────────────────────
 C.sfx = async ([sub, q], flags) => {
@@ -188,7 +208,7 @@ C.stills = async ([slug], flags) => {
 			return {frame: s.from + Math.min(s.duration - 2, Math.max(settled, 16)), name: `${s.id}-${s.template}`};
 		});
 	const dir = path.join(ep.dir, '06-render', 'review', 'stills');
-	fs.rmSync(dir, {recursive: true, force: true});
+	// A selected-scene review must not erase the other approved stills.
 	const files = await renderStills(r.props, frames, dir, {scale: Number(flags.scale ?? 0.5)});
 	const sheet = path.join(ep.dir, '06-render', 'review', 'stills.jpg');
 	py('imagekit.py', ['sheet', sheet, ...files, '--labels', frames.map((f) => f.name).join('|')], {quiet: true});
@@ -199,9 +219,20 @@ C.render = async ([slug], flags) => {
 	const ep = episode(need(slug, '<slug>'));
 	const final = !!flags.final;
 	const range = parseRange(flags.scenes);
+	if (final && range) fail('--final cannot be combined with --scenes; use a preview for a scene range');
 	if (final && !flags.force) {
 		const {readVerdicts} = await import('./assets.mjs');
 		const v = [...readVerdicts(ep).entries()];
+		const verdicts = new Map(v);
+		const edit = readJSON(ep.f('edit'));
+		const manifest = readJSON(ep.f('manifest'), {assets: {}}).assets;
+		const bank = readJSON(P.imageIndex, {assets: {}}).assets;
+		for (const sc of edit.scenes) for (const [slot, value] of Object.entries(sc.slots ?? {})) for (const item of Array.isArray(value) ? value : [value]) {
+			const ref = typeof item === 'string' ? item : item?.id;
+			const asset = ref?.startsWith('bank:') ? bank[ref.slice(5)] : manifest[ref];
+			if (!asset) continue;
+			if (!/^\s*(✓|ok\b)/i.test(verdicts.get(`${sc.id}|${slot}|${ref}@${assetVersion(asset)}`) ?? '')) fail(`${sc.id}.${slot}: current asset ${ref} has no approval; regenerate image review and inspect the replacement`);
+		}
 		const open_ = v.filter(([, x]) => !/^\s*(✓|ok\b)/i.test(x));
 		if (!v.length) fail(`no image review yet — run ./sv img review ${slug}, look at 05-assets/review.jpg and write a verdict for every image (or --force)`);
 		if (open_.length) fail(`${open_.length} image(s) without a ✓ verdict in 05-assets/review.md (${open_.slice(0, 4).map(([k]) => k.split('|')[0]).join(', ')}…) — look, judge, fix or approve each one (or --force)`);
@@ -210,11 +241,16 @@ C.render = async ([slug], flags) => {
 		if (named.length) fail(`${named.join(', ')}: a real, named person stands in for a story character — pick an anonymous image (if the story IS about that person, name them in the slot's "see") and re-run ./sv img review ${slug}`);
 	}
 	const r = await compileOrDie(slug, {debug: !!flags.debug, range});
+	if (final) {
+		const audit = qualityAudit(ep, r.props);
+		printIssues(audit);
+		if (audit.errors.length) fail(`${audit.errors.length} final-readiness issue(s); fix before final export`);
+	}
 	writeJSON(ep.f('props'), r.props);
 	const {renderVideo} = await import('./render.mjs');
 	const name = final ? 'final.mp4' : range ? `preview-${range.join('-')}.mp4` : 'preview.mp4';
 	const out = path.join(ep.dir, '06-render', name);
-	await renderVideo(r.props, out, {scale: final ? 1 : Number(flags.scale ?? config().render?.previewScale ?? 0.5), crf: final ? (config().render?.crf ?? 17) : 23});
+	await renderVideo(r.props, out, {scale: final ? 1 : Number(flags.scale ?? config().render?.previewScale ?? 0.5), crf: final ? (config().render?.crf ?? 17) : 23, ...(flags.concurrency ? {concurrency: Number(flags.concurrency)} : {})});
 	if (final) {
 		await C.credits([slug]);
 		(await import('./history.mjs')).record(slug);
@@ -226,21 +262,26 @@ C.render = async ([slug], flags) => {
 C.review = async ([slug], flags) => {
 	const ep = episode(need(slug, '<slug>'));
 	const dir = path.join(ep.dir, '06-render');
-	const f = flags.file ?? (flags.final || fs.existsSync(path.join(dir, 'final.mp4')) ? path.join(dir, 'final.mp4') : path.join(dir, 'preview.mp4'));
+	const f = selectReviewFile(dir, {file: flags.file, final: !!flags.final, preview: !!flags.preview});
 	if (!fs.existsSync(f)) fail(`nothing rendered yet (${rel(f)})`);
 	const m = ffprobe(f);
+	const fingerprint = await hashFile(f);
 	const out = path.join(dir, 'review');
 	fs.mkdirSync(out, {recursive: true});
 	const n = Math.min(40, Math.ceil(m.duration));
 	const fps = n / m.duration;
 	sh('ffmpeg', ['-v', 'error', '-y', '-i', f, '-vf', `fps=${fps.toFixed(4)},scale=216:-1,drawtext=text='%{pts\\:hms}':x=6:y=6:fontsize=14:fontcolor=yellow:box=1:boxcolor=black@0.6,tile=8x${Math.ceil(n / 8)}`, '-frames:v', '1', path.join(out, 'contact.jpg')]);
 	const a = py('audiokit.py', ['stats', f], {quiet: true});
-	const report = `# Review — ${path.basename(f)}\n\n- duration ${m.duration.toFixed(2)}s, ${m.width}x${m.height}\n- loudness ${a.lufs} LUFS integrated (target -14 ±1), true peak ${a.truePeakDb} dBFS (must be < -1)\n- contact sheet: review/contact.jpg (1 frame per second) · stills: review/stills.jpg\n\n## Director's scorecard (1–5, fix anything below 4 — skills/07-render-review)\n| criterion | score | evidence / fix |\n|---|---|---|\n| hook | | |\n| voice | | |\n| image accuracy | | |\n| variety | | |\n| sync | | |\n| readability | | |\n| sound | | |\n| ending | | |\n`;
+	const report = `# Review — ${path.basename(f)}\n\n- source: ${rel(f)}\n- duration ${m.duration.toFixed(2)}s, ${m.width}x${m.height}\n- loudness ${a.lufs} LUFS integrated (target -14 ±1), true peak ${a.truePeakDb} dBFS (must be < -1)\n- contact sheet: review/contact.jpg (${n} evenly spaced samples, approximately ${(1 / fps).toFixed(2)}s apart; not a full frame-by-frame review) · stills: review/stills.jpg\n\n## Director's scorecard (1–5, fix anything below 4 — skills/07-render-review)\n| criterion | score | evidence / fix |\n|---|---|---|\n| hook | | |\n| voice | | |\n| image accuracy | | |\n| variety | | |\n| sync | | |\n| readability | | |\n| sound | | |\n| ending | | |\n`;
 	const rp = path.join(out, 'report.md');
 	// refresh the measurements, keep a scorecard that was already filled in
 	const prev = fs.existsSync(rp) ? fs.readFileSync(rp, 'utf8') : '';
 	const keep = prev.indexOf("## Director's scorecard");
-	fs.writeFileSync(rp, keep >= 0 ? report.slice(0, report.indexOf("## Director's scorecard")) + prev.slice(keep) : report);
+	const evidenceFile = path.join(out, 'review.json');
+	const sameArtifact = readJSON(evidenceFile, {}).sha256 === fingerprint;
+	if (prev && !sameArtifact) fs.writeFileSync(path.join(out, 'report.previous.md'), prev);
+	fs.writeFileSync(rp, sameArtifact && keep >= 0 ? report.slice(0, report.indexOf("## Director's scorecard")) + prev.slice(keep) : report);
+	writeJSON(evidenceFile, {file: rel(f), sha256: fingerprint, durationSeconds: m.duration, sampleCount: n, sampleIntervalSeconds: 1 / fps, loudness: a, reviewedAt: new Date().toISOString()});
 	log.ok(`contact sheet → ${rel(path.join(out, 'contact.jpg'))}`);
 	(a.lufs < -16 || a.lufs > -12 ? log.warn : log.ok)(`loudness ${a.lufs} LUFS, true peak ${a.truePeakDb} dBFS`);
 };
@@ -283,7 +324,7 @@ const bankCredits = () => {
 	log.ok(`bank credits → ${rel(f)} (${credit.length} with attribution, ${free.length} CC0/PD)`);
 };
 
-C.credits = async ([slug], flags) => {
+C.credits = async ([slug], flags = {}) => {
 	if (flags.banks) return bankCredits();
 	const ep = episode(need(slug, '<slug>'));
 	const man = readJSON(ep.f('manifest'), {assets: {}});
@@ -324,8 +365,8 @@ C.post = async ([sub, slug], flags) => {
 	}
 	if (sub === 'host') return P.host(slug, {hours: Number(flags.hours ?? 24)});
 	if (sub === 'done') {
-		if (!flags.youtube && !flags.instagram) fail('give at least one link: --youtube <url> --instagram <url>');
-		return P.posted(slug, {youtube: flags.youtube, instagram: flags.instagram});
+		if (!flags.youtube && !flags.instagram && !flags.tiktok) fail('give at least one link: --youtube <url> --instagram <url> --tiktok <url>');
+		return P.posted(slug, {youtube: flags.youtube, instagram: flags.instagram, tiktok: flags.tiktok});
 	}
 	if (sub === 'status') return console.log(P.alreadyPosted(slug));
 	throw new UserError('post subcommands: pack | check | host | done | status');

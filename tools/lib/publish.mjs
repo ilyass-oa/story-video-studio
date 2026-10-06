@@ -1,4 +1,4 @@
-// Publishing: a posting pack per video (YouTube Shorts + Instagram Reels), checked against platform limits,
+// Publishing: checked metadata for YouTube Shorts + Instagram Reels, three-platform success records,
 // a temporary public URL for the video (Instagram fetches videos from a URL), and a log of what was posted.
 // The agent writes the words (skill 09); posting itself goes through the agent's own tools (e.g. Composio).
 import fs from 'node:fs';
@@ -58,7 +58,7 @@ export const postPack = (slug, {force = false} = {}) => {
 	}
 	const duration = props ? +(props.durationInFrames / props.fps).toFixed(1) : null;
 	const pack = {
-		_doc: 'Fill youtube.* and instagram.* (skill 09), then ./sv post check <slug>. facts are read-only context.',
+		_doc: 'Fill youtube.* and instagram.* (skill 09), then ./sv post check <slug>. facts are read-only context. Publish TikTok through Studio per skill 09, then log all verified platform links.',
 		facts: {
 			title: meta.title ?? slug,
 			source: meta.source ?? '',
@@ -170,7 +170,7 @@ export const posted = async (slug, links) => {
 	const now = {...prev, ...Object.fromEntries(Object.entries(links).filter(([, v]) => v).map(([k, v]) => [k, {url: v, at: new Date().toISOString()}]))};
 	writeJSON(postedFile(ep), now);
 	const H = await import('./history.mjs');
-	H.setPosted(slug, Object.entries(now).map(([k, v]) => `${k === 'youtube' ? 'YT' : k === 'instagram' ? 'IG' : k}: ${v.url}`).join(' · '));
+	H.setPosted(slug, Object.entries(now).map(([k, v]) => `${({youtube: 'YT', instagram: 'IG', tiktok: 'TT'})[k] ?? k}: ${v.url}`).join(' · '), {posted: now});
 	log.ok(`posted → ${rel(postedFile(ep))} + history`);
 	return now;
 };

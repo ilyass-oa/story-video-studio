@@ -57,6 +57,7 @@ const punch = (scene: CompiledScene, frame: number, pack: Pack) => {
 };
 
 const cameraTransform = (scene: CompiledScene, frame: number, dur: number, pack: Pack) => {
+	if (scene.camera === 'still') return 'none'; // respect a deliberate locked-off composition
 	const t = prog(frame, 0, dur, EASE.soft);
 	const p = punch(scene, frame, pack);
 	// noir: barely-there handheld breathing so no frame is ever dead still

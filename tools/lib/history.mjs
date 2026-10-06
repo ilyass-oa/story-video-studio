@@ -49,9 +49,9 @@ export const ensureHistory = () => {
 
 const cell = (v) => String(v ?? '').replace(/\|/g, '/').replace(/\s+/g, ' ').trim();
 
-export const readHistory = () => {
-	if (!fs.existsSync(MD)) return {rows: [], text: TEMPLATE};
-	const text = fs.readFileSync(MD, 'utf8');
+const readHistoryFile = (file) => {
+	if (!fs.existsSync(file)) return {rows: [], text: TEMPLATE};
+	const text = fs.readFileSync(file, 'utf8');
 	const a = text.indexOf(START);
 	const b = text.indexOf(END);
 	if (a < 0 || b < 0) return {rows: [], text};
@@ -69,13 +69,15 @@ export const readHistory = () => {
 	return {rows, text};
 };
 
-const writeHistory = (rows) => {
-	const {text} = readHistory();
+export const readHistory = () => readHistoryFile(MD);
+
+const writeHistory = (rows, file = MD) => {
+	const {text} = readHistoryFile(file);
 	const base = text.includes(START) ? text : TEMPLATE;
 	const table = [`| ${COLS.join(' | ')} |`, `|${COLS.map(() => '---').join('|')}|`, ...rows.map((r) => `| ${COLS.map((k) => cell(r[k])).join(' | ')} |`)].join('\n');
 	const out = base.slice(0, base.indexOf(START) + START.length) + '\n' + table + '\n' + base.slice(base.indexOf(END));
-	fs.mkdirSync(path.dirname(MD), {recursive: true});
-	fs.writeFileSync(MD, out);
+	fs.mkdirSync(path.dirname(file), {recursive: true});
+	fs.writeFileSync(file, out);
 };
 
 /** Copy the final video into history/videos and upsert the story row. */
@@ -134,9 +136,61 @@ export const recent = (n = 2) => {
 	return {looks: rows.map((r) => r.look).filter(Boolean), voices: rows.map((r) => r.voice).filter(Boolean)};
 };
 
-/** Log where a video was published (YT/IG links) in its history row. */
-export const setPosted = (slug, text) => {
-	const {rows} = readHistory();
-	if (!rows.some((r) => r.slug === slug)) return log.warn(`${slug} is not in history/STORIES.md yet (render --final first)`);
-	writeHistory(rows.map((r) => (r.slug === slug ? {...r, posted: text} : r)));
+const PLATFORMS = ['youtube', 'instagram', 'tiktok'];
+const validSlug = (slug) => /^[a-z0-9][a-z0-9-]*$/.test(String(slug));
+const validDate = (date) => {
+	if (!/^\d{4}-\d{2}-\d{2}$/.test(String(date))) return false;
+	const [year, month, day] = String(date).split('-').map(Number);
+	const d = new Date(Date.UTC(year, month - 1, day));
+	return d.getUTCFullYear() === year && d.getUTCMonth() === month - 1 && d.getUTCDate() === day;
+};
+const verifiedUrl = (value) => {
+	const url = typeof value === 'string' ? value : value?.url;
+	return typeof url === 'string' && /^https?:\/\/\S+$/i.test(url);
+};
+const allPlatformsPosted = (posted) => posted && PLATFORMS.every((platform) => verifiedUrl(posted[platform]));
+
+/**
+ * Remove only the archive named by a well-formed history row. A missing file
+ * at that exact, validated path is also safe to clear; anything uncertain
+ * leaves the row pointing at its archive for manual recovery.
+ */
+const clearPostedArchive = (row, slug, videosDir) => {
+	if (row.slug !== slug || !validSlug(slug) || !validDate(row.date)) return {clearVideo: false, reason: 'invalid story identity'};
+	const video = String(row.video ?? '').trim();
+	const expectedName = `${row.date}_${slug}.mp4`;
+	const expectedRelative = path.posix.join('history', 'videos', expectedName);
+	if (!video || video === '—' || video === '-') return {clearVideo: false, reason: 'no archive path'};
+	if (path.isAbsolute(video) || path.posix.normalize(video) !== video || video !== expectedRelative) return {clearVideo: false, reason: 'archive path does not match the story'};
+	try {
+		if (!fs.lstatSync(videosDir).isDirectory()) return {clearVideo: false, reason: 'history/videos is not a regular directory'};
+	} catch {
+		return {clearVideo: false, reason: 'history/videos could not be verified'};
+	}
+	const root = path.resolve(videosDir);
+	const target = path.resolve(root, expectedName);
+	if (path.dirname(target) !== root) return {clearVideo: false, reason: 'archive path escapes history/videos'};
+	try {
+		const stat = fs.lstatSync(target);
+		if (!stat.isFile()) return {clearVideo: false, reason: 'archive is not a regular file'};
+		fs.unlinkSync(target);
+		return {clearVideo: true, removed: true};
+	} catch (error) {
+		if (error?.code === 'ENOENT') return {clearVideo: true, removed: false};
+		return {clearVideo: false, reason: 'archive could not be verified'};
+	}
+};
+
+/** Log where a video was published and retire its single archive after all platforms are verified. */
+export const setPosted = (slug, text, {posted, historyFile = MD, videosDir = VIDEOS} = {}) => {
+	const {rows} = readHistoryFile(historyFile);
+	const row = rows.find((r) => r.slug === slug);
+	if (!row) return log.warn(`${slug} is not in history/STORIES.md yet (render --final first)`);
+	let next = {...row, posted: text};
+	if (allPlatformsPosted(posted) && next.video && !['—', '-'].includes(String(next.video).trim())) {
+		const cleanup = clearPostedArchive(next, slug, videosDir);
+		if (cleanup.clearVideo) next.video = '';
+		else log.warn(`${slug}: all three post links are recorded, but the history archive was retained (${cleanup.reason})`);
+	}
+	writeHistory(rows.map((r) => (r.slug === slug ? next : r)), historyFile);
 };

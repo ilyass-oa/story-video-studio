@@ -29,3 +29,10 @@ history/*
 *.log
 .DS_Store
 Thumbs.db
+
+# Local editorial memory, measurements and upgrade evidence
+/PERFORMANCE_LEARNING.md
+/UPGRADE_NOTES.md
+/performance/*
+!/performance/pipeline.py
+!/performance/test_pipeline.py

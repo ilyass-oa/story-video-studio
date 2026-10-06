@@ -1,12 +1,12 @@
 // Asset pipeline: search → rank (CLIP) → contact sheet → pick → process (cutout / photo / video) → register.
 // Priority order is fixed: episode assets → reusable bank → free/licensed sources → image generation (last resort).
-import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import {P, config, download, fail, ffprobe, log, py, readJSON, rel, sh, slugify, writeJSON} from './env.mjs';
 import {search} from './sources.mjs';
 import {episode} from './episode.mjs';
 import {namedMisfit} from './people.mjs';
+import {assetVersion} from './quality.mjs';
 
 const manifestPath = (ep) => path.join(ep.dir, '05-assets', 'manifest.json');
 export const loadManifest = (ep) => readJSON(manifestPath(ep), {assets: {}});
@@ -428,7 +428,7 @@ export const reviewSheet = (slug) => {
 				const b1 = Array.isArray(brief) ? brief[0] : brief;
 				const named = namedMisfit(b1, a.source?.title, a.source?.desc);
 				// the verdict belongs to THIS image: a replaced image (new pick / new file) gets a new version → "?" again
-				const ver = crypto.createHash('sha1').update(`${a.source?.url ?? a.file}|${a.created ?? ''}`).digest('hex').slice(0, 6);
+				const ver = assetVersion(a);
 				rows.push({scene: sc.id, slot, asset: `${ref}@${ver}`, file: f, time: range[sc.id] ?? '', words: clean(sc.text), brief: b1, source: a.source?.provider ?? '', named});
 			}
 		}

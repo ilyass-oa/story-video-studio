@@ -16,14 +16,6 @@ export const norm = (w) =>
 		.replace(/[’']/g, '')
 		.replace(/[^a-z0-9]/g, '');
 
-const lev = (a, b) => {
-	const d = Array.from({length: a.length + 1}, (_, i) => [i, ...Array(b.length).fill(0)]);
-	for (let j = 1; j <= b.length; j++) d[0][j] = j;
-	for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
-	return d[a.length][b.length];
-};
-const same = (a, b) => a === b || (a.length >= 4 && b.length >= 4 && lev(a, b) <= 1);
-
 /** Parse scene markup → tokens [{text, style, hidden, br}] */
 export const parseMarkup = (text) => {
 	const out = [];
@@ -247,6 +239,20 @@ export const compile = (slug, {debug = false, range, pendingOk = false} = {}) =>
 	const fr = (ms) => Math.round((ms / 1000) * FPS) + voiceFrom;
 	const errors = [];
 	const warnings = [];
+	if (!Array.isArray(edit.scenes) || !edit.scenes.length) fail('edit.json needs a nonempty scenes array');
+	if (edit.tailSeconds !== undefined && (!Number.isFinite(edit.tailSeconds) || edit.tailSeconds < 0 || edit.tailSeconds > 2)) fail('tailSeconds must be a finite number from 0 to 2; do not pad duration with silence');
+	const ids = new Set();
+	const transitions = new Set(['cut', 'blur-zoom', 'blur-dissolve', 'whip-left', 'whip-right', 'whip-up', 'flash', 'zoom-through', 'slide-up', 'glitch']);
+	for (const [i, sc] of edit.scenes.entries()) {
+		const id = sc.id ?? `s${String(i + 1).padStart(2, '0')}`;
+		if (ids.has(id)) errors.push(`duplicate scene id: ${id}`);
+		ids.add(id);
+		if (!parseMarkup(sc.text ?? '').some((t) => t.text)) errors.push(`${id}: scene must contain spoken words`);
+		if (sc.transition && !transitions.has(sc.transition)) errors.push(`${id}: unknown transition ${sc.transition}`);
+		if (sc.camera && !['push', 'pull', 'drift', 'still'].includes(sc.camera)) errors.push(`${id}: unknown camera ${sc.camera}`);
+	}
+	for (const [i, w] of W.entries()) if (!Number.isFinite(w.start) || !Number.isFinite(w.end) || w.start < 0 || w.end < w.start || (i > 0 && w.start < W[i - 1].start)) errors.push(`word ${i + 1}: invalid or non-monotonic timestamps; re-align`);
+	if (errors.length) return {errors, warnings};
 
 	// ── 1. map scene markup onto spoken words, in order ──
 	let wp = 0;
@@ -266,7 +272,7 @@ export const compile = (slug, {debug = false, range, pendingOk = false} = {}) =>
 				errors.push(`${id}: text has more words than the narration ("${t.text}")`);
 				break;
 			}
-			if (!same(norm(t.text), norm(w.text))) {
+			if (norm(t.text) !== norm(w.text)) {
 				errors.push(`${id}: expected spoken word #${wp} "${w.text}" but scene text has "${t.text}" — scene texts must follow the narration word for word (use {word} to hide a spoken word)`);
 				break;
 			}
@@ -337,7 +343,7 @@ export const compile = (slug, {debug = false, range, pendingOk = false} = {}) =>
 			}
 			if (spec.kind !== 'string' && spec.kind !== 'photos' && spec.kind !== 'cutouts') {
 				const an = anchorFor(v, s.toks);
-				if (an?.miss) warnings.push(`${s.id}: slot "${name}" at "${an.miss}" — that word is not in this scene`);
+				if (an?.miss) errors.push(`${s.id}: slot "${name}" at "${an.miss}" — that word is not in this scene`);
 				else if (an?.word) anchors[name] = fr(an.word.w.start) - from;
 			}
 			if (pendingOk && (isPending(v) || (Array.isArray(v) && v.some(isPending)))) {
@@ -375,7 +381,7 @@ export const compile = (slug, {debug = false, range, pendingOk = false} = {}) =>
 			_toks: s.toks,
 		};
 	});
-	for (let i = 2; i < compiled.length; i++) if (compiled[i].template === compiled[i - 1].template && compiled[i].template === compiled[i - 2].template) warnings.push(`${compiled[i].id}: 3× ${compiled[i].template} in a row — vary templates`);
+	for (let i = 2; i < compiled.length; i++) if (compiled[i].template === compiled[i - 1].template && compiled[i].template === compiled[i - 2].template) warnings.push(`${compiled[i].id}: 3× ${compiled[i].template} in a row — inspect rhythm; keep if the sequence benefits`);
 	if (errors.length) return {errors, warnings};
 
 	// ── 3. sound: explicit story cues + restrained automatic design ──
@@ -391,7 +397,7 @@ export const compile = (slug, {debug = false, range, pendingOk = false} = {}) =>
 		const natural = Math.ceil(s.duration * FPS) + 2;
 		sfx.push({src: s.file, frame: Math.max(0, frame - off), volume, durationFrames: maxFrames ? Math.min(natural, maxFrames) : natural, _id: s.id});
 	};
-	const auto = edit.autoSfx !== false;
+	const auto = edit.autoSfx === true; // deliberate opt-in; narration is never decorated by default
 	compiled.forEach((c, i) => {
 		const quiet = c._sc.quiet === true;
 		if (auto && !quiet && i > 0 && TRANSITION_SFX[c.transitionIn]) {
@@ -596,12 +602,15 @@ export const draft = (slug, {pack} = {}) => {
 		pack: pack ?? epMeta.pack ?? 'noir',
 		_help: 'Fill each scene: template (catalog), emphasis marks in text (*accent* _script_ ~muted~ ^pop^, / = line break, {hidden}), slots ({"find": "query", "kind": "cutout|photo"} or an asset id), optional sfx cues. Keep the words exactly as spoken. See skills/04-scene-assembly/SKILL.md',
 		music: null,
+		autoSfx: false,
 		ambience: [],
 		scenes: scenes.map((ws, i) => ({
 			id: `s${String(i + 1).padStart(2, '0')}`,
 			seconds: +((ws[ws.length - 1].end - ws[0].start) / 1000).toFixed(2),
 			text: ws.map((w) => w.text).join(' '),
 			template: '?',
+			transition: 'cut',
+			camera: 'still',
 			slots: {},
 		})),
 	};

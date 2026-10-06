@@ -36,11 +36,12 @@ sv — story video studio. Run from the project root:  ./sv <command>   (Windows
   align <slug>                           word timestamps → 03-timing/words.json (must be 100% match)
   draft <slug>                           split the narration into scenes → 04-edit/edit.json (then fill it)
   check <slug>                           validate edit.json (templates, words, slots) — no render
+  audit <slug>                           measured final-readiness: alignment, duration, imagery, sound → quality.json
   assets <slug> [--review]               resolve every {"find": …} image → 05-assets/ + review.jpg (LOOK at it)
   stills <slug> [--scenes s01,s04]       one settled frame per scene → 06-render/review/stills.jpg
   render <slug> [--scenes s03-s06]       fast 540x960 preview → 06-render/preview.mp4
   render <slug> --final                  1080x1920 final + credits + copy to history/
-  review <slug>                          contact sheet + loudness report of the last render
+  review <slug> [--final|--preview|--file path]  review newest export, or an explicit file; sampled contact sheet + loudness
 
  IMAGES
   img find <slug> <id> "<q1> | <q2>" [--see "<brief>"] [--kind cutout|photo|video] [--providers pexels,met]   candidates + sheet.jpg
@@ -61,10 +62,10 @@ sv — story video studio. Run from the project root:  ./sv <command>   (Windows
   gallery [--pack noir|atelier]          render every template → engine/gallery/<pack>.jpg (the visual menu)
   looks [--list]                         the themes (palette · accent font · backdrop) → engine/gallery/looks.jpg
   device add <id> <cutout.png> [--screen-prompt "screen"]   add an object-with-screen (TV, monitor…)
-  post pack <slug>                       after --final: posting pack (06-render/post/post.json + cover.jpg) for Shorts + Reels
+  post pack <slug>                       after --final: posting pack (06-render/post/post.json + cover.jpg) for Shorts + Reels + TikTok
   post check <slug>                      validate titles/captions/hashtags/credits against platform limits (skill 09)
   post host <slug> [--hours 24]          temporary public URL of final.mp4 (Instagram fetches videos from a URL)
-  post done <slug> --youtube <url> --instagram <url>   record the published links (never post twice)
+  post done <slug> [--youtube url] [--instagram url] [--tiktok url]  record verified links (never post twice)
   credits <slug> | credits --banks       licences for a video's post description | banks/CREDITS.md for the repo
   studio <slug>                          open Remotion Studio on the episode (frame-by-frame scrubbing)
   setup | doctor                         install everything / health report
